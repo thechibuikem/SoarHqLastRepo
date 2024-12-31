@@ -19,21 +19,42 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- development's general container -->
     <div class="container">
-      <section class="heroSection">
+      <!-- hero section starts -->
+      <section id="heroSection">
+        <!-- nav bar starts  -->
+        <!-- top nav bar -->
         <nav id="nav-bar">
+          <!-- logo on navBar -->
           <div class="grp1">
-            <img id="logo" src="images/SOAR HQLOGO IN WHITE.png" alt="" />
+            <img id="logo" src="images/SOAR HQLOGO-A PNG.png" />
             <!-- <img id="logo" src="images/SOAR HQLOGO-A PNG.png" alt=""> -->
           </div>
+
+          <!-- navBar list of links -->
           <div class="grp2">
             <ul>
-              <li><a href="" id="g2-1" class="grp2-member">home</a></li>
-              <li><a href="" id="g2-2" class="grp2-member">about</a></li>
+              <!-- home -->
+              <li>
+                <a href="#heroSection" id="g2-1" class="grp2-member">home</a>
+              </li>
+
+              <!-- about us -->
+              <li>
+                <a href="#mission" id="g2-2" class="grp2-member">about</a>
+              </li>
+              
+              <!-- meet our team link -->
+              <li>
+                <a href="#meetOurTeam" id="" class="grp2-member">the workforce</a>
+              </li>
+
+              <!-- coaching plans -->
               <li>
                 <a href="" id="g2-3" class="grp2-member">Coaching plans</a>
 
-                <a href="">
+                <a href="" style="display: none;">
                   <svg
                     id="firstDown"
                     xmlns="http://www.w3.org/2000/svg"
@@ -44,49 +65,120 @@
                   >
                     <path
                       fill="none"
-                      stroke="#f2f3f7"
+                      stroke="#2c2b2b"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      stroke-width="2"
+                      stroke-width="1.75"
                       d="m6 9l6 6l6-6"
                     />
                   </svg>
                 </a>
 
-                <div id="firstDownShow"></div>
+                <div id="firstDownShow">
+                  <h1>coming soon</h1>
+                </div>
               </li>
-              <li><a href="" id="g2-4" class="grp2-member">e-library</a></li>
+              
+
+              <!-- elibrary -->
+              <li><a href="elibrary/elibrary.html" id="g2-4" class="grp2-member">e-library</a></li>
             </ul>
           </div>
+
+          <!-- navBar invisible trippleBar -->
+          <button id="inviNav">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="64"
+              height="64"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="#d4af35"
+                fill-rule="evenodd"
+                d="M1.25 3.25A.75.75 0 0 1 2 2.5h12A.75.75 0 0 1 14 4H2a.75.75 0 0 1-.75-.75m0 4.75A.75.75 0 0 1 2 7.25h12a.75.75 0 0 1 0 1.5H2A.75.75 0 0 1 1.25 8M2 12a.75.75 0 0 0 0 1.5h12a.75.75 0 0 0 0-1.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+
+          <!-- navBar stops -->
         </nav>
 
+        <!-- right nav bar -->
+        <nav id="navBarRight" class="navBarRightStyle">
+          <div class="rightNavBarGrp1">
+            <img src="images/SOAR HQLOGO-A PNG.png" alt="" />
+          </div>
+          <div class="rightNavBarGrp2">
+            <ul>
+              <!-- right nav bar home -->
+              <li>
+                <a href="">home</a>
+              </li>
+              <!-- right nav bar about -->
+
+              <li>
+                <a href="">about</a>
+              </li>
+
+              <!-- right nav bar coaching plans -->
+
+              <li>
+                <a href="">Coaching plans</a>
+              </li>
+              <!-- right nav bar elibrary -->
+
+              <li>
+                <a href="">e-library</a>
+              </li>
+            </ul>
+          </div>
+          <button id="cancel" class="rightNavBarGrp3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="64"
+              height="64"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#dbdada"
+                d="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12z"
+              />
+            </svg>
+          </button>
+        </nav>
+
+        <!-- reminant of hero section -->
         <div class="remHero">
           <!-- <div class="remHeroCon"> -->
           <div id="remHeroText">
             <div class="remHeroText1">
-              <span class="span1"> Raising </span>
+              <span class="span1"> Discipling </span>
 
-              <span class="span2"> women </span>
+              <span class="span2"> Nations </span>
             </div>
             <div class="remHeroText2">
-              to excel in excellence <br />
-              walk in dominion and transform nations
+             <!-- <br/> -->
+              For Excellence and Dominion
             </div>
           </div>
 
           <div id="discoverXlearnmore">
-            <button id="discover">Discover Our Journey</button>
+            <button id="discover">Dive into our world</button>
 
             <div class="learnMore">
               <a href="" class="learnMoreText">learn more</a>
-              <a class="learnMoreIcon" href="">
+              <a class="" href="">
                 <svg
+                  class="learnMoreIconBg"
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
                   height="0.75em"
                   viewBox="0 0 48 48"
                 >
                   <path
+                    class="learnMoreIcon"
                     fill="none"
                     stroke="#f2f3f7"
                     stroke-linecap="round"
@@ -102,43 +194,189 @@
         </div>
       </section>
 
-      <!-- about us -->
-      <section class="moreAboutSection">
-        <div class="aboutHeader">Vision Statement:</div>
+      <!-- falling nav scripts -->
+      <script src="js/falligNav.js"></script>
+
+      <!-- about us section starts-->
+      <section id="moreAboutSection">
+        <div class="aboutHeader">Vision Statement</div>
         <div class="aboutUs">
           To be sculpted into living lives of purpose, as originally designed by
           God.
         </div>
       </section>
 
-      <section class="testimonials">
-        <figure class="testimonialBox" style="display: none;">
-          <figure class="testLeft">
-            <div>
-              <img class="testLeftImage" src="images/girl.svg" alt="" />
-            </div>
-            <div class="testLeftText">
-              <div class="testLeftText1 testLeftText0">Chukwuemeka sylvia</div>
-              <div class="testLeftText2 testLeftText0">Front-end Engineer</div>
-            </div>
-          </figure>
-          <figure class="testRight">
-            Joining this coaching and discipleship program has been a
-            life-changing experience. <br />
-            The guidance, wisdom, and encouragement I received have helped me
-            grow not only in my personal faith but also in my relationships and
-            daily life. <br />
-            The coaches are deeply invested in your journey, providing practical
-            tools, heartfelt support, and a clear path toward spiritual and
-            personal development. <br />
+      <!-- testimonial section starts -->
+      <section id="testimonialSection">
 
+        <div class="missionHeader">
+          <h3>who do men say we are?</h3>
+        </div>
+
+        <div class="figureWrap">
+          <figure class="testFigure" style="display: none">
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+
+            <div class="grp2">
+              <img
+                class="testImg"
+                src="images/girl.svg"
+                alt="testimonial girl"
+              />
+              <h2>Chukwuemeka David</h2>
+              <div id="grpOfStar"></div>
+            </div>
           </figure>
-        </figure>
+
+          <figure id="testimonialBlock">
+            <div id="tBlockGrp1">
+            <img src="images/girl.svg" alt="" />
+            </div>
+            <div id="tBlockGrp2">
+              <h3>Chukwuemeka David</h3>
+              <h4>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident alias expedita ipsum possimus minima quos molestiae deleniti voluptatem dolore illo magnam doloremque nulla eligendi nam, dignissimos sapiente itaque totam dicta! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quaerat illo laudantium incidunt facere quis quo laboriosam consectetur, blanditiis ab! Illo tempora eveniet doloremque, fugiat maxime rem nemo inventore eum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quia assumenda mollitia dicta accusantium sit excepturi natus aspernatur ab voluptates tenetur necessitatibus culpa magnam quo consectetur sequi, quam asperiores! Pariatur.
+              </h4>
+            </div>
+          </figure>
+        </div>
       </section>
 
-      <section class="footer"></section>
-    </div>
+      <!-- meet our team section starts -->
+      <section id="meetOurTeam">
+        <div class="meetHeader">
+          <h3>a few of our faithful stewards</h3>
+        </div>
+        <div class="meetOurTeamWrap">
+          <div class="meetOurTeamLayer">
+            <figure class="meetOurTeamFigure">
+              <div class="figureGrp1">
+                <img src="images/girl.svg" class="meetImg" alt="" />
+                <!-- <img src="images/headshot.png" class="meetImg" alt="" /> -->
+              </div>
+              <div class="figureGrp2">
+                <h4>Chukwuemeka David</h4>
+                <h3>Web Engineer</h3>
+              </div>
+            </figure>
+            <figure class="meetOurTeamFigure">
+              <div class="figureGrp1">
+                <img src="images/girl.svg" class="meetImg" alt="" />
+                <!-- <img src="images/headshot.png" class="meetImg" alt="" /> -->
+              </div>
+              <div class="figureGrp2">
+                <h4>Chukwuemeka David</h4>
+                <h3>Web Engineer</h3>
+              </div>
+            </figure>
+            <figure class="meetOurTeamFigure">
+              <div class="figureGrp1">
+                <img src="images/girl.svg" class="meetImg" alt="" />
+                <!-- <img src="images/headshot.png" class="meetImg" alt="" /> -->
+              </div>
+              <div class="figureGrp2">
+                <h4>Chukwuemeka David</h4>
+                <h3>Web Engineer</h3>
+              </div>
+            </figure>
+          </div>
+          <div class="meetOurTeamLayer">
+            <figure class="meetOurTeamFigure">
+              <div class="figureGrp1">
+                <img src="images/girl.svg" class="meetImg" alt="" />
+                <!-- <img src="images/headshot.png" class="meetImg" alt="" /> -->
+              </div>
+              <div class="figureGrp2">
+                <h4>Chukwuemeka David</h4>
+                <h3>Web Engineer</h3>
+              </div>
+            </figure>
+            <figure class="meetOurTeamFigure">
+              <div class="figureGrp1">
+                <img src="images/girl.svg" class="meetImg" alt="" />
+                <!-- <img src="images/headshot.png" class="meetImg" alt="" /> -->
+              </div>
+              <div class="figureGrp2">
+                <h4>Chukwuemeka David</h4>
+                <h3>Web Engineer</h3>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
 
-    <script src="js/script.js"></script>
+      <!-- mission section starts -->
+      <section id="mission">
+        <div class="missionHeader">
+          <h3>our mission</h3>
+        </div>
+        <div class="missionwrap">
+          <div class="missionLeft">
+            <img src="images/brownearth.jpg" alt="" />
+          </div>
+          <div class="missionRight">
+            <div class="missionBody">
+              A discipleship nation of women empowered through coaching and
+              intentional commitments to lead excellent lives and walk in
+              dominion on Earth.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer section starts -->
+      <footer class="footer">
+        <!-- main foot wrap -->
+        <div class="footerWrap">
+          <!-- 1st column -->
+          <div class="footX">
+            <img id="footerImg" src="images/SOAR HQLOGO-A PNG.png" alt="" />
+          </div>
+
+          <!--2 middle columns -->
+
+          <div class="midFoot">
+            <div class="foot">
+              <ul>
+                <li><h2>information</h2></li>
+                <li><a href="#mission">about us</a></li>
+                <li><a href="#heroSection">home</a></li>
+                <li><a href="">coaching plans</a></li>
+                <li><a href="">partner with us</a></li>
+                <!-- <li><a href="">our developer</a></li> -->
+              </ul>
+            </div>
+            <div class="foot foot3">
+              <ul>
+                <li>
+                  <h2>reach us</h2>
+                </li>
+                <li>
+                  <h3 id="soarAddress">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h3>
+                </li>
+                <li><a href="mailto:info@soarhq.org ">info@soarhq.org</a></li>
+                <li><a href="tell:+2349041489503">+2349041489503</a></li>
+                <li><a href="">contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- visit elibrary column -->
+          <div class="footX">
+            <h2>visit our E-library</h2>
+            <button>E-Library</button>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
+
+  <!-- updating testimonial cards list -->
+  <script src="js/testimonial.js"></script>
+
+  <!-- activating and deactivating the sidepanel for media queries -->
+  <script src="js/toggleSideNav.js"></script>
 </html>

@@ -1,0 +1,156 @@
+
+/* navigation bar */
+
+#nav-bar {
+  position: relative;
+  width: 100%;
+  height: 16vh;
+  background-color: #f2f3f7;
+  background-color: #fcfbfa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+/* :hover #nav-bar{
+  background-color: #2c2b2b;
+} */
+
+#logo {
+  width: 8rem;
+}
+
+#nav-bar .grp2 ul {
+  display: flex;
+  list-style: none;
+  gap: 5rem;
+}
+
+#nav-bar .grp2-member {
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #2c2b2b;
+  transition: 0.5s ease;
+}
+
+#nav-bar .grp2-member:hover {
+  /* font-size: 1.4rem; */
+  color: #d4af37;
+}
+
+#nav-bar .grp2 ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* gap: rem; */
+  /* align-content: center; */
+}
+/* drop down button */
+.down:hover {
+  animation: rotate 1s ease-in-out;
+}
+
+
+/* the drop panel itself */
+#firstDownShow {
+  height: 40vh;
+  width: 100%;
+  box-shadow: 0 2px 0.25rem #2e2e2e21;
+  border-bottom: 2px solid #2c2b2b23;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  top: 100%;
+  font-size: 6rem;
+  text-transform: uppercase;
+  padding-top: 4rem;
+}
+
+#firstDownShow h1 {
+  color: #302f2fe8;
+  text-shadow: 1px 1px 0.1rem #cfcfcf;
+  text-align: center;
+}
+
+/* when the downarrow is hovered */
+.down:hover + #firstDownShow {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #16101069;
+}
+
+/* button that shows the right nav bar */
+#inviNav {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* rightnavbar styling */
+.navBarRightStyle {
+  width: 30%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  /* left:0; */
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c2b2bab;
+  backdrop-filter: blur(10px);
+  gap: 2rem;
+  transition: 2s ease;
+  display: none;
+  /* border-left: 1px solid #fffffffd; */
+  box-shadow: -1px 0 0.25rem #8f8f8f4f;
+}
+
+/* declaring classes that would hide  and remove sidenav */
+.showsideNav {
+  /* position: fixed; */
+  /* background-color: red; */
+  display: flex;
+}
+
+/* logo in the sidebar */
+#navBarRight .rightNavBarGrp1 img {
+  width: 50%;
+  background-color: #f2f3f7;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navBarRight .rightNavBarGrp2 ul {
+  list-style: none;
+}
+
+#navBarRight .rightNavBarGrp2 li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  line-height: 3;
+}
+
+/* sidenavbar toggle button  */
+.rightNavBarGrp3 {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* sidenavbar toggle button svg */
+#navBarRight .rightNavBarGrp3 svg {
+  margin-left: -8rem;
+}
+
