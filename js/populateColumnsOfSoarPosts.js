@@ -22,4 +22,4 @@ let column2 = column1.cloneNode(true);
 // let column3 = column1.cloneNode(true);
 
 // adding the two extra columns to my column collection wrapper
-columnWrapper.append(column2, column3);
+columnWrapper.append(column2);
