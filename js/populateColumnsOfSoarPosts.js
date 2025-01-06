@@ -19,7 +19,7 @@ column1.append(columnFigureCloned, columnFigureCloned2);
 
 // cloning my new cloumn to get two extra columns
 let column2 = column1.cloneNode(true);
-// let column3 = column1.cloneNode(true);
+let column3 = column1.cloneNode(true);
 
 // adding the two extra columns to my column collection wrapper
-columnWrapper.append(column2);
+columnWrapper.append(column2,column3);
