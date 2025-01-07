@@ -312,6 +312,8 @@ html {
   border: 2px solid #f2f3f750;
 }
 
+
+/* text on the discover section */
 .learnMore {
   display: flex;
   flex-direction: column;
@@ -328,6 +330,7 @@ html {
   letter-spacing: 2px;
   color: #f2f3f7;
   font-weight: lighter;
+  padding-bottom: 5rem;
 }
 
 .learnMoreIcon{
@@ -350,7 +353,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;~
   height: fit-content;
   height: 50vh;
   gap: 2rem;
@@ -883,4 +886,105 @@ color: #2c2b2b;
   .navBarRightStyle {
     width: 70%;
   }
+}
+
+
+/* Android smart phones close to samsung S23ultra */
+
+@media (max-width: 450px) {
+.container{
+
+}
+
+  #nav-bar {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+    padding: 0;
+    align-items: center;
+
+  }
+
+  /* logo */
+#logo{
+  width: 6rem;
+}
+
+#remHero{
+  /* max-height: 60vh; */
+/* height: fit-content; */
+}
+
+#remHeroText{
+  width: 80%;
+  max-width: 80%;
+  padding-top: 6rem;
+  font-size: 3.8rem;
+  letter-spacing: 2px;
+}
+
+.remHeroText1{
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.remHeroText2{
+  letter-spacing: 1px;
+}
+
+#discover{
+  padding: 1rem 1rem;  
+  font-size: 1.4rem;
+  border-radius: 0.25rem;
+  letter-spacing: 2px;
+  max-width: 80%;
+  width: 80%;
+  line-height: 1.4;
+}
+
+#discoverXlearnmore{
+  padding-top:2.5rem;
+}
+
+.learnMore{
+  padding-top: 4rem;
+}
+
+
+#moreAboutSection{
+  margin: 0;
+  width: 80%;
+  align-self: center;
+  text-align: center;
+}
+
+#testimonialSection{
+  height: fit-content;
+}
+}
+
+
+@media (max-width: 415px){
+#remHeroText{
+  font-size: 3.8;
+}
+}
+
+@media (max-width: 400px){
+
+}
+
+
+@media (max-width: 360px){
+  #remHeroText{
+font-size: 3rem;}
+
+#discover{
+  padding: 1rem 0.9~rem;  
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+  
 }
