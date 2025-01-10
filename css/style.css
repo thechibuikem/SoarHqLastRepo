@@ -233,7 +233,7 @@ html {
 }
 
 /* the hero section */
-m #heroSection {
+#heroSection {
   width: 100%;
   height: 120vh;
   height: fit-content;
@@ -755,6 +755,7 @@ m #heroSection {
   transition: 0.4s ease-in-out;
 }
 
+
 /* soarHq logo in the footer */
 #footerImg {
   max-width: 12rem;
@@ -1030,8 +1031,8 @@ m #heroSection {
     background-size: cover;
     height: fit-content;
   color: #f2f3f7;
-  padding-top: 2rem;
-  height: 40vh;
+  padding: 3rem 1rem;
+  height: 45vh;
   }
 
 /* styling missions header */
@@ -1046,14 +1047,48 @@ m #heroSection {
 
   .missionRight{
     width: 100%;
-    background-image: url(brownearth.jpg);
+    /* background-image: url(brownearth.jpg); */
     background-blend-mode: darken;
-    background-color: #000000be;
+    /* background-color: #000000be; */
     background-size: cover;
   }
 
   .missionBody{
     color: #f2f3f7;
+  }
+
+  /* footer responsive */
+.footer{
+  display: flex;
+  justify-content: center;
+}
+  
+  .footerWrap{
+    flex-direction: column-reverse;
+    /* padding: 0 1rem; */
+    padding: 0 0;
+    width: 80%;
+  }
+
+  .midFoot{
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  #footerImage{
+    flex-direction: row;
+  }
+
+  .footX h2{
+    font-size: 2rem;
+  }
+
+  #eLibraryBtnSection{
+    margin-bottom:3rem ;
+  }
+
+  #eLibraryBtnSection button{
+    font-size: 1.2rem;
   }
 
 
