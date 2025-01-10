@@ -904,17 +904,18 @@ color: #2c2b2b;
     gap: 9rem;
     padding: 0;
     align-items: center;
-
-  }
+}
 
   /* logo */
 #logo{
   width: 6rem;
 }
 
-#remHero{
+.remHero{
   /* max-height: 60vh; */
 /* height: fit-content; */
+background-image: url(resBgPhoneSlim.jpg);
+background-size: cover;
 }
 
 #remHeroText{
@@ -926,12 +927,13 @@ color: #2c2b2b;
 }
 
 .remHeroText1{
-  line-height: 1.6;
+  line-height: 1.2;
   letter-spacing: 1px;
 }
 
 .remHeroText2{
   letter-spacing: 1px;
+  line-height: 1.2;
 }
 
 #discover{
@@ -942,14 +944,17 @@ color: #2c2b2b;
   max-width: 80%;
   width: 80%;
   line-height: 1.4;
+  /* background-color: transparent; */
+  /* border: 2px solid #f2f3f7; */
+  
 }
 
 #discoverXlearnmore{
-  padding-top:2.5rem;
+  padding-top:3.7rem;
 }
 
 .learnMore{
-  padding-top: 4rem;
+  padding-top: 4.5rem;
 }
 
 
