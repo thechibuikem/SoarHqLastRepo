@@ -7,7 +7,13 @@
   /* color: #2c2b2b; */
 }
 
+html{
+  width: 100%;
+overflow-x: hidden;
+}
+
 body {
+  width: 100%;
 }
 
 /* animation for spin */
@@ -327,7 +333,7 @@ m #heroSection {
   letter-spacing: 2px;
   color: #f2f3f7;
   font-weight: lighter;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
 }
 
 .learnMoreIcon {
@@ -904,6 +910,7 @@ m #heroSection {
     /* height: fit-content; */
     background-image: url(resBgPhoneSlim.jpg);
     background-size: cover;
+    height: 50vh;
   }
 
   #remHeroText {
@@ -990,6 +997,6 @@ m #heroSection {
   }
 
   .learnMore {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
