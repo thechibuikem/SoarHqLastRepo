@@ -8,12 +8,12 @@
 }
 
 html{
-  width: 100%;
-overflow-x: hidden;
+  width: 100vw;
+/* overflow-x: hidden; */
 }
 
 body {
-  width: 100%;
+  width: 100vw;
 }
 
 /* animation for spin */
@@ -252,7 +252,7 @@ m #heroSection {
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: darken;
-  background-color: rgba(0, 0, 0, 0.747);
+  background-color: #000000be;
   font-size: 5.6rem;
   font-weight: 600;
   color: #f2f3f7;
@@ -519,7 +519,7 @@ m #heroSection {
 
 #tBlockGrp2 {
   margin-top: 3rem;
-  width: 85%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -590,7 +590,6 @@ m #heroSection {
 }
 
 /* meet our team section */
-
 #meetOurTeam {
   height: 120vh;
   width: 100%;
@@ -944,7 +943,7 @@ m #heroSection {
   }
 
   #discoverXlearnmore {
-    padding-top: 3.7rem;
+    padding-top: 4rem;
   }
 
   .learnMore {
@@ -971,9 +970,93 @@ m #heroSection {
     font-size: 1.2rem;
   }
 
+
+  /* making testimonials responsive */
   #testimonialSection {
     height: fit-content;
   }
+
+  #testimonialBlock{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+    gap: 0.4rem;
+  }
+
+  #tBlockGrp2{
+    margin-top: 0;
+  }
+
+  #tBlockGrp2 h3{
+    /* width: 80%; */
+    text-align: center;
+  }
+
+  #tBlockGrp2 h4{
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+  }
+
+  /* making meet our team in homepage responsive */
+
+#meetOurTeam{
+  height: fit-content;
+  gap: 2rem;
+  margin-bottom: 0;
+
+}
+
+#meetOurTeam h3{
+  font-size: 1.2rem;
+}
+
+  .meetOurTeamLayer{
+    flex-direction: column;
+    /* position: relative; */
+    gap: 2rem;
+  }
+
+  .meetOurTeamFigure{
+    min-width: 100%;
+    /* position: absolute; */
+  }
+
+  /* our mission section */
+  #mission{
+    gap: 2rem;
+    background-image: url(brownearth.jpg);
+    background-blend-mode: darken;
+    background-color: #000000be;
+    background-size: cover;
+    height: fit-content;
+  color: #f2f3f7;
+  padding-top: 2rem;
+  height: 40vh;
+  }
+
+/* styling missions header */
+
+#mission h3{
+  text-align: left;
+}
+
+  .missionLeft{
+    display: none;
+  }
+
+  .missionRight{
+    width: 100%;
+    background-image: url(brownearth.jpg);
+    background-blend-mode: darken;
+    background-color: #000000be;
+    background-size: cover;
+  }
+
+  .missionBody{
+    color: #f2f3f7;
+  }
+
+
 }
 
 @media (max-width: 415px) {
