@@ -73,9 +73,11 @@ body {
 html {
 }
 /* main container */
+
 .container {
   display: flex;
   flex-direction: column;
+  height: fit-content;
 }
 
 /* navigation bar */
@@ -124,10 +126,9 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* gap: rem; */
-  /* align-content: center; */
+
 }
-/* drop down button */
+
 .down:hover {
   animation: rotate 1s ease-in-out;
 }
@@ -189,6 +190,7 @@ html {
   display: none;
   /* border-left: 1px solid #fffffffd; */
   box-shadow: -1px 0 0.25rem #8f8f8f4f;
+  z-index: 4;
 }
 
 /* declaring classes that would hide  and remove sidenav */
@@ -218,6 +220,9 @@ html {
   text-transform: capitalize;
   font-size: 1.5rem;
   line-height: 3;
+  color: #f2f3f7;
+  text-shadow: 1px 1px 0.25rem #000000e8;
+  
 }
 
 /* sidenavbar toggle button  */
@@ -714,6 +719,11 @@ html {
   gap: 6rem;
 }
 
+/* address part */
+#soarAddress{
+  line-height: 1.6;
+}
+
 /* list of links in 2nd and 3rd column of footer*/
 .foot ul {
   display: flex;
@@ -888,7 +898,13 @@ html {
 
 @media (max-width: 450px) {
   .container {
+   padding-bottom: 4rem;
+   height: fit-content;
   }
+
+body{
+  height: fit-content;
+}
 
   #nav-bar {
     height: 15vh;
@@ -1047,14 +1063,13 @@ html {
 
   .missionRight{
     width: 100%;
-    /* background-image: url(brownearth.jpg); */
     background-blend-mode: darken;
-    /* background-color: #000000be; */
     background-size: cover;
   }
 
   .missionBody{
     color: #f2f3f7;
+  text-shadow: 1px 1px 0.25rem #000000e8;
   }
 
   /* footer responsive */
@@ -1065,7 +1080,6 @@ html {
   
   .footerWrap{
     flex-direction: column-reverse;
-    /* padding: 0 1rem; */
     padding: 0 0;
     width: 80%;
   }
@@ -1075,16 +1089,24 @@ html {
     max-width: 100%;
   }
 
+#soarAddress{
+  line-height: 1.4;
+}
+
   #footerImage{
     flex-direction: row;
   }
+
+#footerImg{
+  margin-bottom: 4rem;
+}
 
   .footX h2{
     font-size: 2rem;
   }
 
   #eLibraryBtnSection{
-    margin-bottom:3rem ;
+    margin-bottom:7rem;
   }
 
   #eLibraryBtnSection button{
