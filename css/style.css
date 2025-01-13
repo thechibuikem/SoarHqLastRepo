@@ -860,27 +860,111 @@ html {
 
 /* screens closest to the base screen I used to build (1440px)*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   body {
   }
 
-  #inviNav {
-    display: block;
+  /* #inviNav {
+    display: none;
   }
 
   .grp2 {
     display: none;
+  } */
+
+  .remHero{
+    min-height: 62vh;
   }
+
+  #remHeroText{
+    font-size: 7.5rem;
+  }
+
+  #discover{
+    font-size: 2rem;
+    padding: 1rem 1rem;
+width: 45%;
+  }
+
+  #moreAboutSection{
+    margin: 0;
+    height: 50vh;
+    width: 80%;
+    align-self: center;
+  }
+
+  .aboutHeader{
+    font-size: 2rem;
+  }
+
+  .aboutUs{
+    font-size: 2.8rem;
+    text-align: center;
+    /* width: 80%; */
+  }
+
+  #testimonialSection{
+    height: fit-content;
+  }
+
+  #meetOurTeam{
+    height: fit-content;
+  }
+
+#meetOurTeam h3{
+  font-size: 2rem;
+}
+
+  /* our mission section */
+  #mission{
+    gap: 2rem;
+    background-image: url(brownearth.jpg);
+    background-blend-mode: darken;
+    background-color: #000000be;
+    background-size: cover;
+    height: fit-content;
+  color: #f2f3f7;
+  padding: 3rem 1rem;
+  height: 30vh;
+  }
+
+  
+  .missionLeft{
+    display: none;
+  }
+
+  .missionRight{
+    width: 100%;
+    background-blend-mode: darken;
+    background-size: cover;
+    text-align: center;
+    height: fit-content;
+  }
+
+  .missionBody{
+    color: #f2f3f7;
+  text-shadow: 1px 1px 0.25rem #000000e8;
+    font-size: 2.8rem;
+  }
+
+  #mission h3{
+    font-size: 2rem;
+  }
+
+  .missionwrap{
+    height: fit-content;
+  }
+
 }
 
 @media (max-width: 950px) {
-  #inviNav {
-    display: block;
+  /* #inviNav {
+    display: none;
   }
 
   .grp2 {
-    display: none;
-  }
+    display: block;
+  } */
 
   #remHeroText {
     font-size: 3.7rem;
