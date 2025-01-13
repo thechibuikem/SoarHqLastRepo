@@ -871,7 +871,7 @@ html {
   .grp2 {
     display: none;
   } */
-
+/* 
   .remHero{
     min-height: 62vh;
   }
@@ -884,8 +884,8 @@ html {
     font-size: 2rem;
     padding: 1rem 1rem;
 width: 45%;
-  }
-
+  } */
+/* 
   #moreAboutSection{
     margin: 0;
     height: 50vh;
@@ -895,13 +895,13 @@ width: 45%;
 
   .aboutHeader{
     font-size: 2rem;
-  }
+  } */
 
-  .aboutUs{
+  /* .aboutUs{
     font-size: 2.8rem;
     text-align: center;
     /* width: 80%; */
-  }
+  /* }
 
   #testimonialSection{
     height: fit-content;
@@ -909,14 +909,14 @@ width: 45%;
 
   #meetOurTeam{
     height: fit-content;
-  }
+  }  */
 
-#meetOurTeam h3{
+/* #meetOurTeam h3{
   font-size: 2rem;
-}
+} */
 
   /* our mission section */
-  #mission{
+  /* #mission{
     gap: 2rem;
     background-image: url(brownearth.jpg);
     background-blend-mode: darken;
@@ -926,9 +926,9 @@ width: 45%;
   color: #f2f3f7;
   padding: 3rem 1rem;
   height: 30vh;
-  }
+  } */
 
-  
+/*   
   .missionLeft{
     display: none;
   }
@@ -939,9 +939,9 @@ width: 45%;
     background-size: cover;
     text-align: center;
     height: fit-content;
-  }
+  } */
 
-  .missionBody{
+  /* .missionBody{
     color: #f2f3f7;
   text-shadow: 1px 1px 0.25rem #000000e8;
     font-size: 2.8rem;
@@ -953,18 +953,18 @@ width: 45%;
 
   .missionwrap{
     height: fit-content;
-  }
+  } */
 
-}
+/* } */
 
 @media (max-width: 950px) {
-  /* #inviNav {
-    display: none;
+  #inviNav {
+    display: block;
   }
 
   .grp2 {
-    display: block;
-  } */
+    display: none;
+  }
 
   #remHeroText {
     font-size: 3.7rem;
