@@ -207,8 +207,8 @@ html {
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 2rem;
+  /* margin-right: auto; */
 }
 
 #navBarRight .rightNavBarGrp2 ul {
@@ -860,63 +860,93 @@ html {
 
 /* screens closest to the base screen I used to build (1440px)*/
 
-@media (max-width: 1300px) {
+@media (min-width: 600px)  and (max-width: 1024px) {
   body {
   }
 
-  /* #inviNav {
+  #inviNav {
     display: none;
   }
 
   .grp2 {
     display: none;
-  } */
-/* 
+  }
+
+  .showsideNav{
+    width: 50vw;
+  }
+
   .remHero{
     min-height: 62vh;
   }
 
   #remHeroText{
     font-size: 7.5rem;
+    padding-top: 7rem;
+    max-width:80%;
+    font-size: 5rem;
+  line-height: 1.4;
   }
 
+.remHeroText2 {
+  line-height: 1.4 ;
+}
+
   #discover{
-    font-size: 2rem;
-    padding: 1rem 1rem;
-width: 45%;
-  } */
-/* 
+    font-size: 1.5rem;
+    padding: 1.25rem 1rem;
+width: 50%;
+  }
+
+  #discoverXlearnmore {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .learnMore{
+    padding-top: 4rem;
+  }
+
   #moreAboutSection{
-    margin: 0;
-    height: 50vh;
-    width: 80%;
+    /* margin: 0; */
+    /* height: 50vh; */
+    /* width: 80%; */
     align-self: center;
+    margin: 0;
   }
 
   .aboutHeader{
-    font-size: 2rem;
-  } */
+    /* font-size: 2rem; */
+  }
 
-  /* .aboutUs{
-    font-size: 2.8rem;
+  .aboutUs{
+    /* font-size: 2.8rem; */
     text-align: center;
-    /* width: 80%; */
-  /* }
+    width: 80%;
+}
 
   #testimonialSection{
     height: fit-content;
   }
 
+  #testimonialBlock{
+    gap: 0.5rem;
+  }
+
+  #tBlockGrp1{
+min-width: 27%;
+  }
+
   #meetOurTeam{
     height: fit-content;
-  }  */
+  } 
 
-/* #meetOurTeam h3{
+#meetOurTeam h3{
   font-size: 2rem;
-} */
+}
 
   /* our mission section */
-  /* #mission{
+  #mission{
     gap: 2rem;
     background-image: url(brownearth.jpg);
     background-blend-mode: darken;
@@ -925,10 +955,10 @@ width: 45%;
     height: fit-content;
   color: #f2f3f7;
   padding: 3rem 1rem;
-  height: 30vh;
-  } */
+  /* height: 30vh; */
+  }
 
-/*   
+  
   .missionLeft{
     display: none;
   }
@@ -939,12 +969,12 @@ width: 45%;
     background-size: cover;
     text-align: center;
     height: fit-content;
-  } */
+  }
 
-  /* .missionBody{
+  .missionBody{
     color: #f2f3f7;
   text-shadow: 1px 1px 0.25rem #000000e8;
-    font-size: 2.8rem;
+    /* font-size: 2.8rem; */
   }
 
   #mission h3{
@@ -953,9 +983,9 @@ width: 45%;
 
   .missionwrap{
     height: fit-content;
-  } */
+  }
 
-/* } */
+}
 
 @media (max-width: 950px) {
   #inviNav {
@@ -967,7 +997,7 @@ width: 45%;
   }
 
   #remHeroText {
-    font-size: 3.7rem;
+    /* font-size: 3.7rem; */
     width: 99%;
   }
 }
@@ -1086,6 +1116,9 @@ body{
 
   #tBlockGrp2{
     margin-top: 0;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
   }
 
   #tBlockGrp2 h3{
@@ -1095,7 +1128,12 @@ body{
 
   #tBlockGrp2 h4{
     font-size: 1.25rem;
+    margin: 0 auto;
+    text-align: center;
     margin-bottom: 3rem;
+    display: block;
+
+    /* text-align:center; */
   }
 
   /* making meet our team in homepage responsive */
@@ -1186,7 +1224,7 @@ body{
 }
 
   .footX h2{
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   #eLibraryBtnSection{
@@ -1194,7 +1232,7 @@ body{
   }
 
   #eLibraryBtnSection button{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
 
