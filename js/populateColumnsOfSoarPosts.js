@@ -9,17 +9,20 @@ console.log(columnFigure1);
 
 
 // cloning the first to get two extra new blocks
-let columnFigureCloned = columnFigure1.cloneNode(true)
 
-let columnFigureCloned2 = columnFigure1.cloneNode(true);
+for (
+  let i = 0; i< 8; i++
+){
+let columnFigureCloned = columnFigure1.cloneNode(true);
+column1.appendChild(columnFigureCloned);
+}
 
 
 // addind the two extra blocks to my column of figure posts
-column1.append(columnFigureCloned, columnFigureCloned2);
 
-// cloning my new cloumn to get two extra columns
-let column2 = column1.cloneNode(true);
-let column3 = column1.cloneNode(true);
+// adding my new cloumn to get two extra columns
+// let column2 = column1.cloneNode(true);
+// let column3 = column1.cloneNode(true);
 
 // adding the two extra columns to my column collection wrapper
 columnWrapper.append(column2,column3);
