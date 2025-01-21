@@ -81,7 +81,7 @@
               
 
               <!-- elibrary -->
-              <li><a href="elibrary.html" id="g2-4" class="grp2-member">e-library</a></li>
+              <li><a href="elibrary.html" id="g2-4" class="grp2-member">Digital Library</a></li>
             </ul>
           </div>
 
@@ -130,7 +130,7 @@
               <!-- right nav bar elibrary -->
 
               <li>
-                <a target="_blank" href="elibrary.html">e-library</a>
+                <a target="_blank" href="elibrary.html">Digital Library</a>
               </li>
             </ul>
           </div>
@@ -194,25 +194,14 @@
           <h3>who do men say we are?</h3>
         </div>
 
-        <div class="figureWrap">
-          <figure class="testFigure" style="display: none">
-            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
 
-            <div class="grp2">
-              <img
-                class="testImg"
-                src="images/girl.svg"
-                alt="testimonial girl"
-              />
-              <h2>Chukwuemeka David</h2>
-              <div id="grpOfStar"></div>
-            </div>
-          </figure>
+        <section class="figureWrap">
+          <figure class="invi" id="testimonialBlock" class="arrange">
 
-          <figure id="testimonialBlock">
             <div id="tBlockGrp1">
             <img src="images/girl.svg" alt="" />
             </div>
+
             <div id="tBlockGrp2">
               <h3>Chukwuemeka David</h3>
               <h4>
@@ -220,7 +209,8 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quia assumenda mollitia dicta accusantium sit excepturi natus aspernatur ab voluptates tenetur necessitatibus culpa magnam quo consectetur sequi, quam asperiores! Pariatur.
               </h4>
             </div>
-          </figure>
+            </figure>
+          </section>
         </div>
       </section>
 
@@ -348,16 +338,22 @@
           <!-- visit elibrary column -->
           <div class="footX" id="eLibraryBtnSection">
             <h2>visit our E-library</h2>
-            <button>E-Library</button>
-          </div>
+            <button id="ELibraryBtn">E-Library</button>
+ 
+          </div>  
+
         </div>
       </footer>
     </div>
   </body>
 
-  <!-- updating testimonial cards list -->
-  <script src="js/testimonial.js"></script>
-
   <!-- activating and deactivating the sidepanel for media queries -->
   <script src="js/toggleSideNav.js"></script>
+
+
+  <!-- navigating the buttons -->
+   <script src="js/indexButtons.js"></script>
+
+   <!-- creating carousel from  Testimonial section -->
+    <script src="js/creatingTestimonialCarousel.js"></script>
 </html>

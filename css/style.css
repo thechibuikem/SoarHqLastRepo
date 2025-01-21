@@ -250,7 +250,7 @@ html {
 /* the rest of the hero section, the most populus part */
 .remHero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 68vh;
   height: fit-content;
   /* padding-bottom: ; */
   background-image: url(REPLACE\ THIS\ SCREEN11112111711111111.jpg);
@@ -302,7 +302,7 @@ html {
 /* button on hero */
 #discover {
   border: 2px solid #d4af35;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 0.7rem 2rem;
   padding: 0.75rem 3rem;
   text-transform: uppercase;
@@ -310,6 +310,7 @@ html {
   color: #f2f3f7;
   /* background-color: #f0f8ff15; */
   background-color: #d4af35;
+  border: 2px solid #f2f3f7;
   border: 2px solid #f2f3f750;
   transition: 0.5s ease-in;
   cursor: pointer;
@@ -338,7 +339,7 @@ html {
   letter-spacing: 2px;
   color: #f2f3f7;
   font-weight: lighter;
-  /* padding-bottom: 5rem; */
+  padding-bottom: 3rem;
 }
 
 .learnMoreIcon {
@@ -388,80 +389,15 @@ html {
 /* testimonial styling starts */
 
 #testimonialSection {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  /* gap: 3rem; */
-  /* gap: 4.5rem; */
   gap: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 9rem;
-  overflow: hidden;
-}
-
-@keyframes scrollThrough {
-  0% {
-    transform: translateX(-90%);
-  }
-
-  50% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(90%);
-  }
-}
-
-@keyframes grow {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* setting testimonial animations */
-#testimonialSection:hover > .figureWrap {
-  /* animation: grow 3s 2s ease-in-out infinite; */
-  overflow: hidden;
-}
-
-.figureWrap {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
-  align-items: center;
-  /* padding: 0 1rem; */
-}
-
-.figureWrap::-webkit-scrollbar {
-  display: none;
-}
-
-.testFigure {
-  /* max-height: 99%; */
-  justify-content: space-around;
-  max-width: 25%;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid #d4af35;
-  border-radius: 0.25rem;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 0.5rem;
-  background-color: #d1bd7d77;
-  /* background-color: #0f0e0e;
-  box-shadow: 4px 4px 0.25rem #d4af35; */
+  /* overflow: hidden; */
 }
 
 .testFigure h3 {
@@ -492,27 +428,37 @@ html {
   font-size: 1rem;
 }
 
-#grpOfStar:hover {
-  cursor: pointer;
+.figureWrap{
+  width: 80%;
+  height: 100%;
+  display: block;
+  position: relative;
 }
 
 /* coping the immersce testimonial */
 #testimonialBlock {
   height: 100%;
-  height: fit-content;
-  width: 80%;
-  /* background-color: red; */
+  /* height: fit-content; */
   display: flex;
-  border: 2px solid #d4af37;
+  width: 100%;
+  border: 1px solid #d4af37;
   box-shadow: px 1px 0.25rem #cfcfcf;
   padding-bottom: 6rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border-radius: 0.5rem;
 }
 
+.arrange{
+  position: absolute;
+}
+ 
+
+.testCard{
+  opacity: 0;
+}
+
 #tBlockGrp1 {
   min-width: 25%;
-  /* display:flex; */
 }
 
 #tBlockGrp1 img {
@@ -846,6 +792,17 @@ html {
   }
 }
 
+
+@media (min-width:1500px) {
+  
+  .learnMoreText{
+    margin-bottom: 4rem;
+  }
+
+  .remNav{
+    height: 80vh;
+  }
+}
 @media (min-width: 1680px) {
   body {
     .grp2-member {
