@@ -7,9 +7,9 @@
   /* color: #2c2b2b; */
 }
 
-html{
+html {
   width: 100vw;
-/* overflow-x: hidden; */
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -126,7 +126,6 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 
 .down:hover {
@@ -222,7 +221,6 @@ html {
   line-height: 3;
   color: #f2f3f7;
   text-shadow: 1px 1px 0.25rem #000000e8;
-  
 }
 
 /* sidenavbar toggle button  */
@@ -428,7 +426,7 @@ html {
   font-size: 1rem;
 }
 
-.figureWrap{
+.figureWrap {
   width: 80%;
   height: 100vh;
   display: flex;
@@ -452,11 +450,10 @@ html {
   overflow: hidden;
 }
 
-.arrange{
+.arrange {
 }
- 
 
-.testCard{
+.testCard {
   opacity: 0;
   position: absolute;
 }
@@ -670,7 +667,7 @@ html {
 }
 
 /* address part */
-#soarAddress{
+#soarAddress {
   line-height: 1.6;
 }
 
@@ -714,7 +711,6 @@ html {
   margin-top: 1rem;
   transition: 0.4s ease-in-out;
 }
-
 
 /* soarHq logo in the footer */
 #footerImg {
@@ -796,14 +792,12 @@ html {
   }
 }
 
-
-@media (min-width:1500px) {
-  
-  .learnMoreText{
+@media (min-width: 1500px) {
+  .learnMoreText {
     margin-bottom: 4rem;
   }
 
-  .remNav{
+  .remNav {
     height: 80vh;
   }
 }
@@ -821,7 +815,7 @@ html {
 
 /* screens closest to the base screen I used to build (1440px)*/
 
-@media (min-width: 600px)  and (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1024px) {
   body {
   }
 
@@ -833,30 +827,30 @@ html {
     display: none;
   }
 
-  .showsideNav{
+  .showsideNav {
     width: 50vw;
   }
 
-  .remHero{
+  .remHero {
     min-height: 62vh;
   }
 
-  #remHeroText{
+  #remHeroText {
     font-size: 7.5rem;
     padding-top: 7rem;
-    max-width:80%;
+    max-width: 80%;
     font-size: 5rem;
-  line-height: 1.4;
+    line-height: 1.4;
   }
 
-.remHeroText2 {
-  line-height: 1.4 ;
-}
+  .remHeroText2 {
+    line-height: 1.4;
+  }
 
-  #discover{
+  #discover {
     font-size: 1.5rem;
     padding: 1.25rem 1rem;
-width: 50%;
+    width: 50%;
   }
 
   #discoverXlearnmore {
@@ -864,11 +858,11 @@ width: 50%;
     padding-bottom: 4rem;
   }
 
-  .learnMore{
+  .learnMore {
     padding-top: 4rem;
   }
 
-  #moreAboutSection{
+  #moreAboutSection {
     /* margin: 0; */
     /* height: 50vh; */
     /* width: 80%; */
@@ -876,55 +870,54 @@ width: 50%;
     margin: 0;
   }
 
-  .aboutHeader{
+  .aboutHeader {
     /* font-size: 2rem; */
   }
 
-  .aboutUs{
+  .aboutUs {
     /* font-size: 2.8rem; */
     text-align: center;
     width: 80%;
-}
+  }
 
-  #testimonialSection{
+  #testimonialSection {
     height: fit-content;
   }
 
-  #testimonialBlock{
+  #testimonialBlock {
     gap: 0.5rem;
   }
 
-  #tBlockGrp1{
-min-width: 27%;
+  #tBlockGrp1 {
+    min-width: 27%;
   }
 
-  #meetOurTeam{
+  #meetOurTeam {
     height: fit-content;
-  } 
+  }
 
-#meetOurTeam h3{
-  font-size: 2rem;
-}
+  #meetOurTeam h3 {
+    font-size: 2rem;
+  }
 
   /* our mission section */
-  #mission{
+  #mission {
     gap: 2rem;
     background-image: url(brownearth.jpg);
     background-blend-mode: darken;
     background-color: #000000be;
     background-size: cover;
     height: fit-content;
-  color: #f2f3f7;
-  padding: 3rem 1rem;
-  /* height: 30vh; */
+    color: #f2f3f7;
+    padding: 3rem 1rem;
+    /* height: 30vh; */
   }
 
-  
-  .missionLeft{
+  .missionLeft {
     display: none;
   }
 
-  .missionRight{
+  .missionRight {
     width: 100%;
     background-blend-mode: darken;
     background-size: cover;
@@ -932,20 +925,19 @@ min-width: 27%;
     height: fit-content;
   }
 
-  .missionBody{
+  .missionBody {
     color: #f2f3f7;
-  text-shadow: 1px 1px 0.25rem #000000e8;
+    text-shadow: 1px 1px 0.25rem #000000e8;
     /* font-size: 2.8rem; */
   }
 
-  #mission h3{
+  #mission h3 {
     font-size: 2rem;
   }
 
-  .missionwrap{
+  .missionwrap {
     height: fit-content;
   }
-
 }
 
 @media (max-width: 950px) {
@@ -973,13 +965,13 @@ min-width: 27%;
 
 @media (max-width: 450px) {
   .container {
-   padding-bottom: 4rem;
-   height: fit-content;
+    padding-bottom: 4rem;
+    height: fit-content;
   }
 
-body{
-  height: fit-content;
-}
+  body {
+    height: fit-content;
+  }
 
   #nav-bar {
     height: 15vh;
@@ -1001,7 +993,7 @@ body{
     /* height: fit-content; */
     background-image: url(resBgPhoneSlim.jpg);
     background-size: cover;
-    height: 50vh;
+    /* height: 50vh; */
   }
 
   #remHeroText {
@@ -1062,32 +1054,31 @@ body{
     font-size: 1.2rem;
   }
 
-
   /* making testimonials responsive */
   #testimonialSection {
     height: fit-content;
   }
 
-  #testimonialBlock{
+  #testimonialBlock {
     flex-direction: column;
     align-items: center;
     padding-bottom: 0;
     gap: 0.4rem;
   }
 
-  #tBlockGrp2{
+  #tBlockGrp2 {
     margin-top: 0;
     width: 100%;
     /* display: flex; */
     /* justify-content: center; */
   }
 
-  #tBlockGrp2 h3{
+  #tBlockGrp2 h3 {
     /* width: 80%; */
     text-align: center;
   }
 
-  #tBlockGrp2 h4{
+  #tBlockGrp2 h4 {
     font-size: 1.25rem;
     margin: 0 auto;
     text-align: center;
@@ -1099,104 +1090,101 @@ body{
 
   /* making meet our team in homepage responsive */
 
-#meetOurTeam{
-  height: fit-content;
-  gap: 2rem;
-  margin-bottom: 0;
+  #meetOurTeam {
+    height: fit-content;
+    gap: 2rem;
+    margin-bottom: 0;
+  }
 
-}
+  #meetOurTeam h3 {
+    font-size: 1.2rem;
+  }
 
-#meetOurTeam h3{
-  font-size: 1.2rem;
-}
-
-  .meetOurTeamLayer{
+  .meetOurTeamLayer {
     flex-direction: column;
     /* position: relative; */
     gap: 2rem;
   }
 
-  .meetOurTeamFigure{
+  .meetOurTeamFigure {
     min-width: 100%;
     /* position: absolute; */
   }
 
   /* our mission section */
-  #mission{
+  #mission {
     gap: 2rem;
     background-image: url(brownearth.jpg);
     background-blend-mode: darken;
     background-color: #000000be;
     background-size: cover;
     height: fit-content;
-  color: #f2f3f7;
-  padding: 3rem 1rem;
-  height: 45vh;
+    color: #f2f3f7;
+    padding: 3rem 1rem;
+    height: 45vh;
   }
 
-/* styling missions header */
+  /* styling missions header */
 
-#mission h3{
-  text-align: left;
-}
+  #mission h3 {
+    text-align: left;
+  }
 
-  .missionLeft{
+  .missionLeft {
     display: none;
   }
 
-  .missionRight{
+  .missionRight {
     width: 100%;
     background-blend-mode: darken;
     background-size: cover;
   }
 
-  .missionBody{
+  .missionBody {
     color: #f2f3f7;
-  text-shadow: 1px 1px 0.25rem #000000e8;
+    text-shadow: 1px 1px 0.25rem #000000e8;
   }
 
   /* footer responsive */
-.footer{
-  display: flex;
-  justify-content: center;
-}
-  
-  .footerWrap{
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footerWrap {
     flex-direction: column-reverse;
     padding: 0 0;
     width: 80%;
   }
 
-  .midFoot{
+  .midFoot {
     flex-direction: column;
     max-width: 100%;
   }
 
-#soarAddress{
-  line-height: 1.4;
-}
+  #soarAddress {
+    line-height: 1.4;
+  }
 
-  #footerImage{
+  #footerImage {
     flex-direction: row;
   }
 
-#footerImg{
-  margin-bottom: 4rem;
-}
+  #footerImg {
+    margin-bottom: 4rem;
+  }
 
-  .footX h2{
+  .footX h2 {
     font-size: 1.7rem;
   }
 
-  #eLibraryBtnSection{
-    margin-bottom:7rem;
+  #eLibraryBtnSection {
+    margin-bottom: 7rem;
   }
 
-  #eLibraryBtnSection button{
+  #eLibraryBtnSection button {
     font-size: 1rem;
   }
-
-
 }
 
 @media (max-width: 415px) {
