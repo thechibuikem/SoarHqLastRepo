@@ -438,8 +438,7 @@ html {
   position: relative;
 }
 
-
-.testButton{
+.testButton {
   width: 4rem;
   aspect-ratio: 1/1;
   height: 4rem;
@@ -451,20 +450,18 @@ html {
   cursor: pointer;
 }
 
-#left{
+#left {
   position: absolute;
   left: 2rem;
   top: 50%;
-transform: translateY(-50%);
-
+  transform: translateY(-50%);
 }
 
-
-#right{
+#right {
   position: absolute;
   right: 2rem;
   top: 50%;
-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* coping the immersce testimonial */
@@ -480,7 +477,7 @@ transform: translateY(-50%);
   border-radius: 0.5rem;
   position: absolute;
   overflow: hidden;
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
 .arrange {
@@ -597,7 +594,7 @@ transform: translateY(-50%);
 
 .meetOurTeamWrap {
   height: 100%;
-/* height: fit-content; */
+  /* height: fit-content; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1136,10 +1133,44 @@ transform: translateY(-50%);
     font-size: 1.2rem;
   }
 
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    10% {
+      transform: translateX(-25%);
+    }
+    20% {
+      transform: translateX(-50%);
+    }
+    30% {
+      transform: translateX(-75%);
+    }
+    40% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+   60% {
+      transform: translateX(80%);
+    }
+    80% {
+      transform: translateX(60%);
+    }
+    90% {
+      transform: translateX(40%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+
+  }
+
   .meetOurTeamLayer {
-    flex-direction: column;
-    /* position: relative; */
+    /* flex-direction: column; */
     gap: 2rem;
+    animation: scroll 10s linear 2s infinite;
   }
 
   .meetOurTeamFigure {

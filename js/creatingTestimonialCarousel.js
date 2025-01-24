@@ -26,12 +26,12 @@ rButton = document.querySelector("#right");
 // function to hide every single element in the array
 function hideall() {
   for (i = 0; i < slideList.length; i++) {
-    slideList[i].style.opacity = "0";
+    slideList[i].style.display = "none";
   }
 }
 // function to display just one element in the array
 let showOne = () => {
-    slideList[clickCount].style.opacity = "1";
+    slideList[clickCount].style.display = "flex";
   }
 
 hideall()
