@@ -1,50 +1,67 @@
 let TestCardWrap = document.querySelector(".figureWrap");
 let TestCard1 = document.querySelector("#testimonialBlock");
 
-for(let i = 0; i < 3; i++){
- let TestCardClone = TestCard1.cloneNode(true);
- TestCardClone.classList.add(`TestCard${i}`, `testcard`)
- TestCardWrap.appendChild(TestCardClone)
+for (let i = 0; i < 3; i++) {
+  let TestCardClone = TestCard1.cloneNode(true);
+  TestCardClone.classList.add(`TestCard${i}`, `testcard`);
+  TestCardWrap.appendChild(TestCardClone);
 }
 
 // declaration of the essentials
-let slideCon = document.getElementsByClassName("arrange");
-let n = 0//n is representing the index of the first element in the array
-let clickCount = 0;
-lButton = document.getElementById("left");
-rButton = document.getElementById("right");
-
+let slideCon = document.querySelectorAll(".invi");
 // getting array of slides from html collection
 let slideList = Array.from(slideCon);
+let clickCount = 0;
 
+
+slideList[1].style.backgroundColor = "red"
+slideList[3].style.backgroundColor = "yellow"
+slideList[2].style.backgroundColor = "orange"
+
+
+
+lButton = document.querySelector("#left");
+rButton = document.querySelector("#right");
 
 // function to hide every single element in the array
-function hideall(){
-for(i=0; i<slideList.length; i++)
-  
-  { slideList[i].style.display="none"}
-};
-
-
-
-function showOne(n)
-{
-
-
-  for (i=0; i< slideList.length; i++) {
-    slideList[n].style.display = "block"
+function hideall() {
+  for (i = 0; i < slideList.length; i++) {
+    slideList[i].style.opacity = "0";
   }
+}
+// function to display just one element in the array
+let showOne = () => {
+    slideList[clickCount].style.opacity = "1";
+  }
+
+hideall()
+showOne()
+
+let leftClick = () => {
+hideall()
+
+clickCount--;
+if (clickCount < 0){
+  clickCount = slideList.length - 1};
+showOne();
 
 }
 
-rButton.addEventListener("click", function (n) {
-  return n++;
-});
 
-
+let rightClick = () => {
+hideall();
+  clickCount++;
+  if (clickCount > slideList.length - 1
+  )
+  {clickCount = 0};
 showOne()
-hideall()
+  }
 
 
 
 
+
+  lButton.addEventListener("click",leftClick)
+rButton.addEventListener("click",rightClick)
+
+// hideall();
