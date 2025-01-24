@@ -9,7 +9,7 @@
 
 html {
   width: 100vw;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 body {
@@ -604,6 +604,13 @@ html {
   padding: 0 2.5rem;
 }
 
+@keyframes growContinous {
+
+50%{
+  transform: scale(0.9);
+}
+
+}
 .meetOurTeamLayer {
   height: 50%;
   width: 100%;
@@ -612,14 +619,16 @@ html {
   justify-content: center;
   gap: 4rem;
   align-items: center;
-  /* padding: 0 2.5rem; */
+animation: growContinous  5s linear infinite;
 }
+
+
 /* blocks in meet our team */
 .meetOurTeamFigure {
   display: flex;
   flex-direction: column;
-  width: 25%;
-  height: 55vh;
+  min-width: 27vw;
+  height: 60vh;
   /* max-height: 90%; */
   background-color: #d4af35;
   border-radius: 0.5rem;
@@ -1167,10 +1176,16 @@ html {
 
   }
 
+  /* @keyframes scrollContinuous {
+    to{
+      transform: translateX(-100%);
+    }
+  } */
+
   .meetOurTeamLayer {
     /* flex-direction: column; */
     gap: 2rem;
-    animation: scroll 10s linear 2s infinite;
+    /* animation: scrollContinuous 5s linear 2s infinite; */
   }
 
   .meetOurTeamFigure {
