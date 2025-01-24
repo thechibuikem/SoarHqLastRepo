@@ -449,7 +449,7 @@ color: #2c2b2b;
  }
  
    #nav-bar {
-     height: 15vh;
+     height: 8vh;
      width: 100%;
      display: flex;
      justify-content: center;
@@ -467,14 +467,32 @@ color: #2c2b2b;
     min-height: 40vh;
     height: 68vh;
   margin-top: 2rem; 
-
   }
+
+.remNav ::-webkit-scrollbar{
+  display: none;
+}
+
  .remNavFigure{
   margin-bottom: 0;
-  min-height: 40vh;
-  max-height: 40vh;
+  min-height: 42vh;
+  max-height: 42vh;
   overflow-y: scroll;
  }
+
+ #remNavFigureDown{
+  opacity: 0.7;
+ }
+
+#remNavFigureUp{
+  font-size: 1.5rem;
+}
+
+
+.spanLeft{
+  width: 90%;
+}
+
 
  .spanRight{
   display: none;
@@ -509,8 +527,14 @@ row-gap: 2rem;
     aspect-ratio: 1/1;
     /* width: 30%; */
   }
+
+.textPart{
+  padding-top: 0;
+}
+
   .textPart h3{
     font-size: 1.2rem;
+    line-height: 1.6;
   }
   
   .textPart h4{
