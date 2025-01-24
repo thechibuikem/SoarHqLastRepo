@@ -306,7 +306,7 @@ text-transform: capitalize;
   border: 1px solid #55545425;
   aspect-ratio: 1/1;
   color: #2c2b2b;
-  border: 1px solid #d4af37ab;
+  border: 1px solid #d4af3741;
 }
 
 .textPartLast h5{
@@ -512,7 +512,7 @@ row-gap: 2rem;
   height: fit-content;
   padding: 1rem 1rem;
   gap: 1rem;
-  background-color: #2c2b2b28;
+  background-color: #2c2b2b0f;
   align-items: center;
 
   }
