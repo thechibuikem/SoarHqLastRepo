@@ -3,20 +3,38 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  /* color: #f2f3f7; */
-  /* color: #2c2b2b; */
 }
 
-html {
-  width: 100vw;
-  overflow-x: hidden;
-}
 
-body {
-  width: 100vw;
-}
+/* animations for growing */
+  @keyframes growContinous {
+  50%{
+    transform: scale(0.9);
+  }}
 
-/* animation for spin */
+  /* animations for scrolling */
+
+  @keyframes scrollContinous {
+    to{
+      transform: translateX(-100%);
+    }}
+    
+    
+  @keyframes scrollContinousMobile {
+    /* to{
+      transform: translateX(-200%);
+    } */
+
+    0%{transform: translateX(100%);}
+    20%{transform: translateX(60%);}
+    40%{transform: translateX(20%);}
+    60%{transform: translateX(-20%);}
+    80%{transform: translateX(-60%);}
+    100%{transform: translateX(-100%);}
+  }
+
+  
+  /* animation for spin */
 @keyframes rotate {
   50% {
     transform: rotate(360deg);
@@ -71,6 +89,12 @@ body {
 }
 
 html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
 }
 /* main container */
 
@@ -604,13 +628,6 @@ html {
   padding: 0 2.5rem;
 }
 
-@keyframes growContinous {
-
-50%{
-  transform: scale(0.9);
-}
-
-}
 .meetOurTeamLayer {
   height: 50%;
   width: 100%;
@@ -619,7 +636,6 @@ html {
   justify-content: center;
   gap: 4rem;
   align-items: center;
-animation: growContinous  5s linear infinite;
 }
 
 
@@ -855,6 +871,14 @@ animation: growContinous  5s linear infinite;
   }
 }
 
+@media (min-width:1024px) {
+
+  .meetOurTeamLayer{
+animation: growContinous  5s linear infinite;
+  }
+  
+}
+
 /* screens closest to the base screen I used to build (1440px)*/
 
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -995,6 +1019,10 @@ animation: growContinous  5s linear infinite;
     /* font-size: 3.7rem; */
     width: 99%;
   }
+
+  .meetOurTeamLayer{
+    animation: scrollContinous 10s 2s  infinite;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1132,6 +1160,10 @@ animation: growContinous  5s linear infinite;
 
   /* making meet our team in homepage responsive */
 
+  .meetOurTeamFigure{
+    min-width: 40vw;
+  }
+
   #meetOurTeam {
     height: fit-content;
     gap: 2rem;
@@ -1142,50 +1174,10 @@ animation: growContinous  5s linear infinite;
     font-size: 1.2rem;
   }
 
-  @keyframes scroll {
-    0% {
-      transform: translateX(0%);
-    }
-    10% {
-      transform: translateX(-25%);
-    }
-    20% {
-      transform: translateX(-50%);
-    }
-    30% {
-      transform: translateX(-75%);
-    }
-    40% {
-      transform: translateX(-100%);
-    }
-    50% {
-      transform: translateX(100%);
-    }
-   60% {
-      transform: translateX(80%);
-    }
-    80% {
-      transform: translateX(60%);
-    }
-    90% {
-      transform: translateX(40%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-
-  }
-
-  /* @keyframes scrollContinuous {
-    to{
-      transform: translateX(-100%);
-    }
-  } */
 
   .meetOurTeamLayer {
-    /* flex-direction: column; */
     gap: 2rem;
-    /* animation: scrollContinuous 5s linear 2s infinite; */
+    animation: scrollContinousMobile 10s linear infinite;
   }
 
   .meetOurTeamFigure {
