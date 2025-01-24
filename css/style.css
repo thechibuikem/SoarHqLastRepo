@@ -88,6 +88,7 @@
   src: url("Publicity\ Brush.otf");
 }
 
+
 html {
   width: 100vw;
   overflow-x: hidden;
@@ -96,6 +97,7 @@ html {
 body {
   width: 100vw;
 }
+
 /* main container */
 
 .container {
@@ -389,6 +391,7 @@ body {
   height: 50vh;
   gap: 2rem;
   width: 100%;
+
 }
 
 /*vision statement  */
@@ -419,6 +422,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 9rem;
+
   /* overflow: hidden; */
 }
 
@@ -876,7 +880,51 @@ body {
   .meetOurTeamLayer{
 animation: growContinous  5s linear infinite;
   }
+
+  #moreAboutSection{
+    opacity: 0.1;
+    transition: 1s ease;
+  }
+
+  #moreAboutSection:hover{
+    opacity: 1;
+  }
+
+  #testimonialSection{
+    opacity: 0.1;
+    transition: 1s ease;
+  }
   
+ #testimonialSection:hover{
+    opacity: 1;
+  }
+
+#meetOurTeam{
+  opacity: 0.1;
+  transition: 1s ease;
+}
+
+#meetOurTeam:hover{
+  opacity: 1;
+}
+
+#mission{
+  opacity: 0.1;
+  transition: 1s ease;
+}
+
+#mission:hover{
+  opacity: 1;
+}
+
+.footer{
+  opacity: 0.1;
+  transition: 1s ease;
+}
+
+.footer:hover{
+  opacity: 1;
+}
 }
 
 /* screens closest to the base screen I used to build (1440px)*/
@@ -1259,6 +1307,60 @@ animation: growContinous  5s linear infinite;
   #eLibraryBtnSection button {
     font-size: 1rem;
   }
+
+
+
+ /* animate on scroll starts */
+    
+      #moreAboutSection{
+        opacity: 0.1;
+        transition: 1s ease;
+      }
+    
+      #moreAboutSection:hover{
+        opacity: 1;
+      }
+    
+      #testimonialSection{
+        opacity: 0.1;
+        transition: 1s ease;
+      }
+      
+     #testimonialSection:hover{
+        opacity: 1;
+      }
+    
+    #meetOurTeam{
+      opacity: 0.1;
+      transition: 1s ease;
+    }
+    
+    #meetOurTeam:hover{
+      opacity: 1;
+    }
+    
+    #mission{
+      opacity: 0.1;
+      transition: 1s ease;
+    }
+    
+    #mission:hover{
+      opacity: 1;
+    }
+    
+    .footer{
+      opacity: 0.1;
+      transition: 1s ease;
+    }
+    
+    .footer:hover{
+      opacity: 1;
+    }
+    }
+
+
+
+
 }
 
 @media (max-width: 415px) {
