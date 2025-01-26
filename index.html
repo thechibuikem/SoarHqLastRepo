@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- cdn source for the aos js-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- for faviicon -->
     <link
       rel="shortcut icon"
@@ -54,31 +58,7 @@
 
               <!-- coaching plans -->
               <li>
-                <a href="" id="g2-3" class="grp2-member">Coaching plans</a>
-
-                <a href="" style="display: none">
-                  <svg
-                    id="firstDown"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32px"
-                    class="down"
-                    height="32px"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="none"
-                      stroke="#2c2b2b"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.75"
-                      d="m6 9l6 6l6-6"
-                    />
-                  </svg>
-                </a>
-
-                <div id="firstDownShow">
-                  <h1>coming soon</h1>
-                </div>
+                <a href="" id="g2-3" class="grp2-member">discipleship plans</a>
               </li>
 
               <!-- elibrary -->
@@ -87,6 +67,13 @@
                   >Digital Library</a
                 >
               </li>
+
+                            <!-- Light Podcast -->
+                            <li>
+                              <a href="elibrary.html" id="g2-4" class="grp2-member"
+                                >Light Podcast</a
+                              >
+                            </li>
             </ul>
           </div>
 
@@ -180,25 +167,28 @@
         </div>
       </section>
 
+      
+
       <!-- falling nav scripts -->
       <script src="js/falligNav.js"></script>
 
       <!-- about us section starts-->
       <section id="moreAboutSection">
-        <div class="aboutHeader">Vision Statement</div>
-        <div class="aboutUs">
+        <div class="aboutHeader"  data-aos="fade-up">Vision Statement</div>
+        <div class="aboutUs"  data-aos="fade-up">
           To be sculpted into living lives of purpose, as originally designed by
           God
         </div>
       </section>
+      
 
-      <!-- testimonial section starts -->
+      <!-- testimonial section starts --> 
       <section id="testimonialSection">
-        <div class="missionHeader">
+        <div class="missionHeader" data-aos="fade-up">
           <h3>who do men say we are?</h3>
         </div>
 
-        <section class="figureWrap">
+        <section class="figureWrap" data-aos="fade-up">
           <button id="left" class="testButton">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +227,7 @@
             </svg>
           </button>
 
-          <figure class="invi" id="testimonialBlock" class="arrange">
+          <figure class="invi" id="testimonialBlock" class="arrange" data-aos="fade-up">
             <div id="tBlockGrp1">
               <img src="images/girl.svg" alt="" />
             </div>
@@ -265,11 +255,11 @@
 
       <!-- meet our team section starts -->
       <section id="meetOurTeam">
-        <div class="meetHeader">
-          <h3>a few of our faithful stewards</h3>
+        <div class="meetHeader" data-aos="fade-up">
+          <h3>The WorkForce</h3>
         </div>
         <div class="meetOurTeamWrap">
-          <div class="meetOurTeamLayer">
+          <div class="meetOurTeamLayer" data-aos="fade-up">
 
 
             <figure class="meetOurTeamFigure">
@@ -330,15 +320,15 @@
 
       <!-- mission section starts -->
       <section id="mission">
-        <div class="missionHeader">
+        <div class="missionHeader" data-aos="fade-up">
           <h3>our mission</h3>
         </div>
         <div class="missionwrap">
-          <div class="missionLeft">
+          <div class="missionLeft" data-aos="fade-right">
             <img src="images/brownearth.jpg" alt="" />
           </div>
           <div class="missionRight">
-            <div class="missionBody">
+            <div class="missionBody" data-aos="fade-left"  data-aos-delay="5s">
               A discipleship nation of women empowered through coaching and
               intentional commitments to lead excellent lives and walk in
               dominion on Earth.
@@ -348,7 +338,7 @@
       </section>
 
       <!-- footer section starts -->
-      <footer class="footer">
+      <footer class="footer" data-aos="fade-up">
         <!-- main foot wrap -->
         <div class="footerWrap">
           <!-- 1st column -->
@@ -407,4 +397,13 @@
 
   <!-- making the meet our team scroll around -->
   <script src="js/makeTeamOnHomeScroll.js"></script>
+
+
+  <!-- cdn source for aos library js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- initializing js -->
+  <script>
+    AOS.init();
+  </script>
 </html>

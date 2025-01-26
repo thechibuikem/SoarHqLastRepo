@@ -95,7 +95,9 @@ html {
 }
 
 body {
-  width: 100vw;
+  max-width:100vw;
+  min-width:100vw;
+  overflow-x: hidden;
 }
 
 /* main container */
@@ -132,11 +134,11 @@ body {
 #nav-bar .grp2 ul {
   display: flex;
   list-style: none;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 #nav-bar .grp2-member {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   text-decoration: none;
   text-transform: capitalize;
   color: #2c2b2b;
@@ -376,7 +378,6 @@ body {
 
 .learnMoreIcon:hover {
   stroke: #d4af37;
-  /* background-color: #d1b970; */
 }
 
 /* the section having the about statement   */
@@ -877,7 +878,7 @@ body {
 
 @media (min-width:1024px) {
 
-  .meetOurTeamLayer{
+  /* .meetOurTeamLayer{
 animation: growContinous  5s linear infinite;
   }
 
@@ -924,7 +925,7 @@ animation: growContinous  5s linear infinite;
 
 .footer:hover{
   opacity: 1;
-}
+} */
 }
 
 /* screens closest to the base screen I used to build (1440px)*/
@@ -1308,11 +1309,9 @@ animation: growContinous  5s linear infinite;
     font-size: 1rem;
   }
 
-
-
  /* animate on scroll starts */
     
-      #moreAboutSection{
+      /* #moreAboutSection{
         opacity: 0.1;
         transition: 1s ease;
       }
@@ -1355,13 +1354,8 @@ animation: growContinous  5s linear infinite;
     
     .footer:hover{
       opacity: 1;
+    } */
     }
-    }
-
-
-
-
-}
 
 @media (max-width: 415px) {
   #remHeroText {
