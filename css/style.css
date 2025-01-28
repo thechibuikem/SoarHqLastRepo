@@ -562,14 +562,14 @@ color: #cfcfcf;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem;
   justify-content: center;
   align-items: center;
   margin-bottom: 8rem;
   padding-top: 2rem;
 }
 .meetHeader h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -604,11 +604,11 @@ color: #cfcfcf;
   flex-direction: column;
   min-width: 24vw;
   max-width: 24vw;
-  height: 60vh;
-  background-color: #d4af35;
+  height: 70vh;
+  /* background-color: #d4af35; */
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.081) 0px 3px 6px, rgba(0, 0, 0, 0.081) 0px 3px 6px;
-  border: 1px solid rgb(136, 136, 136);
+  border: 1px solid rgba(40, 40, 40, 0.415);
 }
 
 .figureGrp1 {
@@ -629,6 +629,7 @@ color: #cfcfcf;
 .figureGrp2 {
   display: flex;
   height: 25%;
+  background-color: #d4af35;
   flex-direction: column;
   gap: 0.5rem;
   justify-content: center;
@@ -825,6 +826,12 @@ color: #cfcfcf;
 
 @media (min-width:1024px) {
   
+
+  /* making meet responsive */
+  .meetHeader h3{
+  font-size: 3rem;
+  }
+
   .meetOurTeamLayer{
     animation: growContinous  5s linear infinite;
     }
