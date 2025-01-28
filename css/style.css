@@ -426,8 +426,8 @@ body::-webkit-scrollbar{
   /* height: 100vh; */
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  row-gap: 1rem;
-  column-gap: 1rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -1015,6 +1015,17 @@ color: #cfcfcf;
   }
 }
 
+@media (max-width: 1100px) {
+      /* making testimonials responsive */
+
+      .figureWrap {
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+      }
+    
+}
+
 @media (max-width: 950px) {
   #inviNav {
     display: block;
@@ -1037,6 +1048,7 @@ color: #cfcfcf;
   .meetOurTeamLayer{
     animation: scrollContinous 10s 2s  infinite;
   }
+
 }
 
 @media (max-width: 600px) {
