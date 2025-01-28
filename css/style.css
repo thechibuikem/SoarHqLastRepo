@@ -16,21 +16,21 @@
 
   @keyframes scrollContinous {
     to{
-      transform: translateX(-100%);
+      transform: translateX(-300%);
     }}
     
     
   @keyframes scrollContinousMobile {
-    /* to{
-      transform: translateX(-200%);
-    } */
-
+    to{
+      transform: translateX(-800%);
+    }
+/* 
     0%{transform: translateX(100%);}
     20%{transform: translateX(60%);}
     40%{transform: translateX(20%);}
-    60%{transform: translateX(-20%);}
-    80%{transform: translateX(-60%);}
-    100%{transform: translateX(-100%);}
+    80%{transform: translateX(-20%);}
+    80%{transform: translateX(-60%);} */
+    /* 100%{transform: translateX(-100%);} */
   }
 
   
@@ -106,6 +106,7 @@ body {
   display: flex;
   flex-direction: column;
   height: fit-content;
+  background-color: #fcfbfa;
 }
 
 /* navigation bar */
@@ -114,7 +115,6 @@ body {
   position: relative;
   width: 100%;
   height: 16vh;
-  background-color: #f2f3f7;
   background-color: #fcfbfa;
   display: flex;
   align-items: center;
@@ -602,7 +602,6 @@ body {
 
 /* meet our team section */
 #meetOurTeam {
-  /* height: 120vh; */
   height: fit-content;
   width: 100%;
   display: flex;
@@ -610,7 +609,6 @@ body {
   gap: 2.5rem;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
   margin-bottom: 8rem;
   padding-top: 2rem;
 }
@@ -623,11 +621,10 @@ body {
 
 .meetOurTeamWrap {
   height: 100%;
-  /* height: fit-content; */
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* gap: 4rem; */
+  gap: 4rem;
   justify-content: space-around;
   align-items: center;
   padding: 0 2.5rem;
@@ -635,12 +632,22 @@ body {
 
 .meetOurTeamLayer {
   height: 50%;
-  width: 100%;
-  display: flex;
-  /* justify-content: space-around; */
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
   justify-content: center;
   gap: 4rem;
   align-items: center;
+}
+
+#meetFigure4{
+
+  transform: translateX(50%);
+}
+
+#meetFigure5{
+  transform: translateX(50%);
 }
 
 
@@ -648,19 +655,18 @@ body {
 .meetOurTeamFigure {
   display: flex;
   flex-direction: column;
-  min-width: 27vw;
+  min-width: 24vw;
+  max-width: 24vw;
   height: 60vh;
-  /* max-height: 90%; */
   background-color: #d4af35;
   border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.081) 0px 3px 6px, rgba(0, 0, 0, 0.081) 0px 3px 6px;
   border: 1px solid rgb(136, 136, 136);
 }
 
 .figureGrp1 {
   width: 100%;
   height: 75%;
-  /* height: fit-content; */
 }
 
 .meetImg {
@@ -669,10 +675,8 @@ body {
   height: 100%;
   max-height: 100%;
   background-color: #2c2b2b;
-  /* height: 0%; */
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
-  /* border-radius: 0.5rem; */
 }
 
 .figureGrp2 {
@@ -680,11 +684,8 @@ body {
   height: 25%;
   flex-direction: column;
   gap: 0.5rem;
-  /* padding-left: 2rem; */
-  /* padding-top: 0.75rem; */
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   border-top: 1px solid rgba(136, 136, 136, 0.425);
@@ -715,7 +716,6 @@ body {
 .footerWrap {
   display: flex;
   justify-content: space-around;
-  /* gap: 3rem; */
   max-width: 100%;
   width: 100%;
   height: 80vh;
@@ -778,7 +778,7 @@ body {
 /* soarHq logo in the footer */
 #footerImg {
   max-width: 12rem;
-  background-color: #f2f3f7;
+  background-color: #fcfbfa;
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
   box-shadow: 2px 2px 0.25rem #30010163;
@@ -877,11 +877,13 @@ body {
 }
 
 @media (min-width:1024px) {
+  
+  .meetOurTeamLayer{
+    animation: growContinous  5s linear infinite;
+    }
+  
 
-  /* .meetOurTeamLayer{
-animation: growContinous  5s linear infinite;
-  }
-
+  /*
   #moreAboutSection{
     opacity: 0.1;
     transition: 1s ease;
@@ -1069,6 +1071,11 @@ animation: growContinous  5s linear infinite;
     width: 99%;
   }
 
+  .meetOurTeamWrap{
+    flex-direction: row;
+    width: fit-content;
+  }
+
   .meetOurTeamLayer{
     animation: scrollContinous 10s 2s  infinite;
   }
@@ -1225,13 +1232,17 @@ animation: growContinous  5s linear infinite;
 
 
   .meetOurTeamLayer {
-    gap: 2rem;
+ display: flex;
+    /* gap: 2rem; */
     animation: scrollContinousMobile 10s linear infinite;
+  }
+
+  .meetOurTeamLayer:hover{
+animation-play-state: paused;
   }
 
   .meetOurTeamFigure {
     min-width: 100%;
-    /* position: absolute; */
   }
 
   /* our mission section */
