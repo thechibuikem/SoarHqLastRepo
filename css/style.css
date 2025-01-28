@@ -1188,6 +1188,7 @@ color: #cfcfcf;
  display: flex;
     /* gap: 2rem; */
     animation: scrollContinousMobile 8s linear infinite;
+    animation-play-state: running;
   }
 
   .meetOurTeamLayer:hover{
@@ -1208,7 +1209,7 @@ animation-play-state: paused;
     height: fit-content;
     color: #f2f3f7;
     padding: 3rem 1rem;
-    height: 65vh;
+    height: 67vh;
   }
 
   /* styling missions header */
