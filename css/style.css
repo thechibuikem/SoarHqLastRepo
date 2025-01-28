@@ -21,8 +21,12 @@
     
     
   @keyframes scrollContinousMobile {
-    to{
-      transform: translateX(-800%);
+    0%{
+      transform: translateX(250%);
+    }
+
+    100%{
+      transform: translateX(-250%);
     }
 /* 
     0%{transform: translateX(100%);}
@@ -641,15 +645,6 @@ body {
   align-items: center;
 }
 
-#meetFigure4{
-
-  transform: translateX(50%);
-}
-
-#meetFigure5{
-  transform: translateX(50%);
-}
-
 
 /* blocks in meet our team */
 .meetOurTeamFigure {
@@ -881,6 +876,17 @@ body {
   .meetOurTeamLayer{
     animation: growContinous  5s linear infinite;
     }
+
+    
+#meetFigure4{
+
+  transform: translateX(50%);
+}
+
+#meetFigure5{
+  transform: translateX(50%);
+}
+
   
 
   /*
@@ -1234,7 +1240,7 @@ body {
   .meetOurTeamLayer {
  display: flex;
     /* gap: 2rem; */
-    animation: scrollContinousMobile 10s linear infinite;
+    animation: scrollContinousMobile 6s linear infinite;
   }
 
   .meetOurTeamLayer:hover{
