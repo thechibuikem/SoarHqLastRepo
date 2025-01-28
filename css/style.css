@@ -594,6 +594,7 @@ body {
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .missionBody {
@@ -1240,7 +1241,7 @@ body {
   .meetOurTeamLayer {
  display: flex;
     /* gap: 2rem; */
-    animation: scrollContinousMobile 6s linear infinite;
+    animation: scrollContinousMobile 8s linear infinite;
   }
 
   .meetOurTeamLayer:hover{
@@ -1261,7 +1262,7 @@ animation-play-state: paused;
     height: fit-content;
     color: #f2f3f7;
     padding: 3rem 1rem;
-    height: 45vh;
+    height: 65vh;
   }
 
   /* styling missions header */
