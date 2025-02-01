@@ -58,7 +58,6 @@
   80% {
     opacity: 0.9;
   }
-
 }
 
 html {
@@ -132,15 +131,15 @@ body::-webkit-scrollbar {
   animation: rotate 1s ease-in-out;
 }
 
-#nav-bar .grp2 ul li:last-child{
+#nav-bar .grp2 ul li:last-child {
   position: relative;
 }
 
-.navExtraWrap{
+.navExtraWrap {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-  width:12vw;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 12vw;
   gap: 0.5rem;
   padding: 1rem 1rem;
   /* height: 10vh; */
@@ -155,18 +154,18 @@ align-items: flex-start;
   border-radius: 0.25rem;
   opacity: 0;
   visibility: hidden;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.down:hover + .navExtraWrap{
+.down:hover + .navExtraWrap {
   visibility: visible;
   opacity: 1;
 }
 
-.navExtraWrap:hover{
+.navExtraWrap:hover {
   visibility: visible;
-  opacity: 1; 
-  transition: .5s ease;
+  opacity: 1;
+  transition: 0.5s ease;
 }
 
 /* button that shows the right nav bar */
@@ -178,7 +177,7 @@ align-items: flex-start;
   position: relative;
 }
 
-.rightNavBarGrp3{
+.rightNavBarGrp3 {
   position: absolute;
   top: 1rem;
   right: 0rem;
@@ -458,7 +457,7 @@ align-items: flex-start;
 
 .testimonialcard h4 {
   overflow-y: scroll;
-  max-height:30vh;
+  max-height: 30vh;
   font-weight: 200;
   line-height: 1.4;
   width: 100%;
@@ -468,7 +467,7 @@ align-items: flex-start;
   text-align: center;
 }
 
-.testimonialcard h4::-webkit-scrollbar{
+.testimonialcard h4::-webkit-scrollbar {
   visibility: hidden;
 }
 
@@ -544,7 +543,7 @@ align-items: flex-start;
   width: 100%;
   /* height: 80%; */
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 300;
 }
 
@@ -997,25 +996,36 @@ align-items: flex-start;
   }
 
   /* making team responsive */
-  .meetOurTeamLayer{
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(1,1fr);
+  .meetOurTeamLayer {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     animation: scrollContinousTablet 5s linear infinite;
   }
 
-  .meetOurTeamFigure{
+  .meetOurTeamFigure {
     max-width: 70vw;
-    width: 60vw;
+    width: 30rem;
   }
 
-  .figureGrp2 h4{
+  .figureGrp2 h4 {
     font-size: 1.75rem;
   }
 
-  #meetOurTeam h3{
-    font-size: 3rem;
-    width: 100%;
+  #role {
+    font-size: 1.75rem;
+  }
 
+  /* making testimonials responsive */
+  .testimonialcard {
+    display: flex;
+    height: 35vh;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonialcard h4 {
+    height: 20vh;
   }
 }
 
