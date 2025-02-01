@@ -92,6 +92,13 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  position: relative;
+}
+
+.rightNavBarGrp3{
+  position: absolute;
+  top: 1rem;
+  right: 0rem;
 }
 
 /* rightnavbar styling */
