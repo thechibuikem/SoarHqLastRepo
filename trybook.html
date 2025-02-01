@@ -16,7 +16,7 @@
 
           $('#container').flipBook({
               pdfUrl:"books/SEXUALPURITYSOARHQ.pdf",
-              viewMode: '2d',
+              viewMode: 'webgl',
               layout: 2,
               menu2Transparent: false,
               menu2OverBook: false,
@@ -35,6 +35,17 @@
               btnDownloadPages: { vAlign: 'top' },
               btnDownloadPdf: { vAlign: 'top' },
               btnSelect: { vAlign: 'top' },
+              btnDownloadPages:{
+                enabled: false,
+              },
+              btnDownloadPdf:{
+                enabled:false,
+              },
+              btnPrint:{
+                enabled: false,
+              },
+              pdfBrowserViewerIfMobile:true,
+              // responsiveView: true,  
           });
       });
     </script>
