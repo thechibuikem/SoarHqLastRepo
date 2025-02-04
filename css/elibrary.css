@@ -436,6 +436,43 @@ color: #2c2b2b;
 
 /* responsiveness */
 
+@media (max-width:900px) {
+
+
+/* responsive story wrap */
+.ElibraryBlockOfBlocksColumn{
+grid-template-columns: repeat(2,1fr);
+row-gap: 0;}
+
+.ElibraryPostFigure{
+  height: 40vh;
+  width: 20rem;
+}
+
+/* responsive footers */
+.footerWrap {
+  flex-direction: column-reverse;
+  gap: 4rem;
+  align-items: first baseline;
+}
+
+.midFoot {
+  flex-direction: column;
+}
+
+#eLibraryBtnSection {
+  align-self: center;
+}
+
+.footX {
+  align-self: flex-start;
+}
+
+
+
+
+}
+
 @media (max-width: 950px) {
   #inviNav {
     display: block;
@@ -564,50 +601,46 @@ row-gap: 2rem;
 
   
   /* footer responsive */
-  .footX{
-margin-bottom: 5rem;
+
+  /* footer responsive */
+  .footer {
+    display: flex;
+    justify-content: center;
   }
 
-
-.footer{
-  display: flex;
-  justify-content: center;
-}
-  
-  .footerWrap{
+  .footerWrap {
     flex-direction: column-reverse;
     padding: 0 0;
     width: 80%;
   }
 
-  .midFoot{
+  .midFoot {
     flex-direction: column;
     max-width: 100%;
   }
 
-#soarAddress{
-  line-height: 1.4;
-}
+  #soarAddress {
+    line-height: 1.4;
+  }
 
-  #footerImage{
+  #footerImage {
     flex-direction: row;
   }
 
-#footerImg{
-  margin-bottom: 4rem;
-}
+  #footerImg {
+    margin-bottom: 4rem;
+  }
 
-  .footX h2{
+  .footX h2 {
     font-size: 1.7rem;
   }
 
-  #eLibraryBtnSection{
-    margin-bottom:7rem;
+  #eLibraryBtnSection {
+    margin-bottom: 7rem;
   }
 
-  #eLibraryBtnSection button{
+  #eLibraryBtnSection button {
     font-size: 1rem;
   }
-
    }
   

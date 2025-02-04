@@ -142,12 +142,8 @@ body::-webkit-scrollbar {
   width: 12vw;
   gap: 0.5rem;
   padding: 1rem 1rem;
-  /* height: 10vh; */
   position: absolute;
   transform: translateY(20%);
-  /* left: 0; */
-  /* bottom: 0; */
-  /* transform: ; */
   z-index: 5;
   background-color: #fcfbfa;
   box-shadow: rgba(0, 0, 0, 0.081) 0px 3px 6px, rgba(0, 0, 0, 0.081) 0px 3px 6px;
@@ -189,7 +185,6 @@ body::-webkit-scrollbar {
   height: 100vh;
   position: fixed;
   right: 0;
-  /* left:0; */
   top: 0;
   display: flex;
   flex-direction: column;
@@ -200,7 +195,6 @@ body::-webkit-scrollbar {
   gap: 2rem;
   transition: 2s ease;
   display: none;
-  /* border-left: 1px solid #fffffffd; */
   box-shadow: -1px 0 0.25rem #8f8f8f4f;
   z-index: 4;
 }
@@ -251,9 +245,8 @@ body::-webkit-scrollbar {
 /* the hero section */
 #heroSection {
   width: 100%;
-  height: 120vh;
+  min-height: 100vh;
   height: fit-content;
-  /* background-image: url(hero.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: darken;
@@ -261,13 +254,13 @@ body::-webkit-scrollbar {
 /* the rest of the hero section, the most populus part */
 .remHero {
   width: 100%;
-  min-height: 68vh;
+  min-height: 100vh;
   height: fit-content;
-  background-image: url(bgland.webp);
+  background-image: url(soarfinalbackground.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: darken;
-  background-color: #000000be;
+  background-color: #0000008f;
   font-size: 5.6rem;
   font-weight: 200;
   font-weight: 400;
@@ -282,7 +275,7 @@ body::-webkit-scrollbar {
 #remHeroText {
   width: 90%;
   text-align: center;
-  padding-top: 9rem;
+  padding-top: 8rem;
   display: flex;
   flex-direction: column;
 }
@@ -319,12 +312,12 @@ body::-webkit-scrollbar {
   text-transform: uppercase;
   border-radius: 4px;
   color: #f2f3f7;
-  /* background-color: #f0f8ff15; */
   background-color: #d4af35;
   border: 2px solid #f2f3f7;
   border: 2px solid #f2f3f750;
   transition: 0.5s ease-in;
   cursor: pointer;
+  margin-bottom: 4rem;
 }
 
 #discover:hover {
@@ -438,7 +431,7 @@ body::-webkit-scrollbar {
 
 .testimonialCardContentsWrapper {
   width: 80%;
-  height: fit-content;
+  max-height: 50%;
   display: flex;
   flex-direction: column;
   transition: 1s ease;
@@ -509,7 +502,6 @@ body::-webkit-scrollbar {
 .missionwrap {
   width: 90%;
   height: 60vh;
-
   display: flex;
   gap: 1.6rem;
 }
@@ -761,6 +753,10 @@ body::-webkit-scrollbar {
 
 @media (min-width: 2496px) {
   /* hero media queries */
+#heroSection{
+
+}
+
   .remhero {
     height: 100vh;
   }
@@ -926,8 +922,16 @@ body::-webkit-scrollbar {
   }
 
   #meetOurTeam h3 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
+
+
+  #meetFigure4 {
+    transform: translateX(0);
+  }
+
+  #meetFigure5 {
+    transform: translateX(0%)};
 
   /* our mission section */
   #mission {
@@ -999,33 +1003,39 @@ body::-webkit-scrollbar {
   .meetOurTeamLayer {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    animation: scrollContinousTablet 5s linear infinite;
+    height: fit-content;
+    /* grid-template-rows: repeat(1, 1fr); */
+    animation: scrollContinousTablet 10s linear    infinite;
   }
 
   .meetOurTeamFigure {
     max-width: 70vw;
-    width: 30rem;
+    width: 17rem;
   }
 
   .figureGrp2 h4 {
-    font-size: 1.75rem;
+    font-size: 1rem;
   }
 
   #role {
-    font-size: 1.75rem;
+    font-size: 1rem;
   }
 
   /* making testimonials responsive */
   .testimonialcard {
     display: flex;
-    height: 35vh;
-    aspect-ratio: 1/1;
+    height: 45vh;
+    /* aspect-ratio: 1/1; */
     justify-content: center;
     align-items: center;
   }
 
   .testimonialcard h4 {
     height: 20vh;
+  }
+
+  .testimonialCardContentsWrapper{
+    margin-bottom: 1rem;
   }
 }
 
@@ -1049,13 +1059,52 @@ body::-webkit-scrollbar {
   }
 
   .meetOurTeamLayer {
-    animation: scrollContinous 10s 2s infinite;
+    /* animation: scrollContinous 10s 2s infinite; */
   }
 }
 
+
+@media (max-width:750px) {
+  .testimonialcard{}
+    .testimonialcard h3{
+      font-size:1.5rem
+    }
+
+    .testimonialcard h4 {
+      height: 25vh;
+    }
+  
+}
+
+@media (max-width:650px) {
+  #testimonialSection .figureWrap{
+    grid-template-columns: repeat(1,1fr);
+
+  }
+
+  .testimonialcard{
+    width: 60vw;
+    height: 60vh;
+    justify-self: center;
+  }
+}
+
+/* large screen mobile phones or small tablets */
 @media (max-width: 600px) {
   .navBarRightStyle {
     width: 70%;
+  }
+}
+
+
+/* entering the world of mobile phones */
+@media (max-width:460px) {
+
+  .testimonialcard{
+    width: 70vw;
+    height: 60vh;
+    aspect-ratio: 1/1;
+    justify-self: center;
   }
 }
 
@@ -1088,28 +1137,29 @@ body::-webkit-scrollbar {
 
   .remHero {
     /* max-height: 60vh; */
-    /* height: fit-content; */
-    background-image: url(resBgPhoneSlim.jpg);
+    height:88vh;
+    background-image: url(soarfinalbackground.webp);
     background-size: cover;
-    /* height: 50vh; */
+background-position: center;
   }
 
   #remHeroText {
-    width: 80%;
+    width: 60%;
     max-width: 80%;
-    padding-top: 6rem;
+    padding-top: 10rem;
     font-size: 3.8rem;
     letter-spacing: 2px;
+    line-height: 1.6;
   }
 
   .remHeroText1 {
-    line-height: 1.2;
-    letter-spacing: 1px;
+    line-height: 1.4;
+    letter-spacing: 1.4px;
   }
 
   .remHeroText2 {
     letter-spacing: 1px;
-    line-height: 1.2;
+    line-height: 1.4;
   }
 
   #discover {
@@ -1120,12 +1170,10 @@ body::-webkit-scrollbar {
     max-width: 80%;
     width: 80%;
     line-height: 1.4;
-    /* background-color: transparent; */
-    /* border: 2px solid #f2f3f7; */
   }
 
   #discoverXlearnmore {
-    padding-top: 4rem;
+    padding-top: 6rem;
   }
 
   .learnMore {
@@ -1165,6 +1213,7 @@ body::-webkit-scrollbar {
 
   .testimonialcard {
     height: 60vh;
+    width: 80vw;
   }
 
   /* making meet our team in homepage responsive */
@@ -1273,52 +1322,6 @@ body::-webkit-scrollbar {
     font-size: 1rem;
   }
 
-  /* animate on scroll starts */
-
-  /* #moreAboutSection{
-        opacity: 0.1;
-        transition: 1s ease;
-      }
-    
-      #moreAboutSection:hover{
-        opacity: 1;
-      }
-    
-      #testimonialSection{
-        opacity: 0.1;
-        transition: 1s ease;
-      }
-      
-     #testimonialSection:hover{
-        opacity: 1;
-      }
-    
-    #meetOurTeam{
-      opacity: 0.1;
-      transition: 1s ease;
-    }
-    
-    #meetOurTeam:hover{
-      opacity: 1;
-    }
-    
-    #mission{
-      opacity: 0.1;
-      transition: 1s ease;
-    }
-    
-    #mission:hover{
-      opacity: 1;
-    }
-    
-    .footer{
-      opacity: 0.1;
-      transition: 1s ease;
-    }
-    
-    .footer:hover{
-      opacity: 1;
-    } */
 }
 
 @media (max-width: 415px) {
@@ -1328,12 +1331,24 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 400px) {
+
+  .testimonialcard h4 {
+    height: 20vh;
+  }
+
+  
+  .testimonialcard h3 {
+font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 360px) {
   #remHeroText {
     font-size: 2.7rem;
+    padding-top: 8rem;
   }
+
+#discover
 
   #discover {
     padding: 1rem 0.9rem;
