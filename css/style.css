@@ -127,8 +127,6 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 
-
-
 .down:hover {
   animation: rotate 1s ease-in-out;
   cursor: pointer;
@@ -399,7 +397,7 @@ body::-webkit-scrollbar {
   margin-bottom: 9rem;
 }
 
-.testButton{
+.testButton {
   width: 4rem;
   aspect-ratio: 1/1;
   height: 4rem;
@@ -413,20 +411,19 @@ body::-webkit-scrollbar {
   z-index: 1;
 }
 
-#left{
+#left {
   position: absolute;
   left: 2rem;
   top: 50%;
-transform: translateY(-40%);
+  transform: translateY(-40%);
 }
 
-#right{
+#right {
   position: absolute;
   right: 2rem;
   top: 50%;
-transform: translateY(-40%);
+  transform: translateY(-40%);
 }
-
 
 /* wrapper that houses the cards */
 .figureWrap {
@@ -456,7 +453,7 @@ transform: translateY(-40%);
   border-radius: 0.5rem;
   position: absolute;
   overflow: hidden;
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
 #testimonialSection img {
@@ -464,60 +461,60 @@ transform: translateY(-40%);
   border: 1px solid #d4af37c5;
   aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius: 50%;}
+  border-radius: 50%;
+}
 
-  .testFigure .grp2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    /* margin-bottom: -2rem  ; */
-  }
-  
-  .grp2 h2 {
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 1rem;
-  }
+.testFigure .grp2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  /* margin-bottom: -2rem  ; */
+}
 
-  .testCard {
-    opacity: 0;
-    position: absolute;
-  }
-  
-  #tBlockGrp1 {
-    min-width: 25%;
-  }
-  
-  #tBlockGrp1 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
-  }
-  
-  #tBlockGrp2 {
-    margin-top: 3rem;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  #tBlockGrp2 h3 {
-    font-size: 1.75rem;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
-  
-  #tBlockGrp2 h4 {
-    font-size: 1.25rem;
-    font-weight: 200;
-    line-height: 1.6;
-    width: 90%;
-  }
+.grp2 h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
 
+.testCard {
+  opacity: 0;
+  position: absolute;
+}
+
+#tBlockGrp1 {
+  min-width: 25%;
+}
+
+#tBlockGrp1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+#tBlockGrp2 {
+  margin-top: 3rem;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#tBlockGrp2 h3 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#tBlockGrp2 h4 {
+  font-size: 1.25rem;
+  font-weight: 200;
+  line-height: 1.6;
+  width: 90%;
+}
 
 .arrange {
 }
@@ -788,9 +785,8 @@ transform: translateY(-40%);
 
 @media (min-width: 2496px) {
   /* hero media queries */
-#heroSection{
-
-}
+  #heroSection {
+  }
 
   .remhero {
     height: 100vh;
@@ -960,13 +956,13 @@ transform: translateY(-40%);
     /* font-size: 2rem; */
   }
 
-
   #meetFigure4 {
     transform: translateX(0);
   }
 
   #meetFigure5 {
-    transform: translateX(0%)};
+    transform: translateX(0%);
+  }
 
   /* our mission section */
   #mission {
@@ -1040,7 +1036,7 @@ transform: translateY(-40%);
     grid-template-rows: repeat(1, 1fr);
     height: fit-content;
     /* grid-template-rows: repeat(1, 1fr); */
-    animation: scrollContinousTablet 10s linear    infinite;
+    animation: scrollContinousTablet 10s linear infinite;
   }
 
   .meetOurTeamFigure {
@@ -1069,7 +1065,7 @@ transform: translateY(-40%);
     height: 20vh;
   }
 
-  .testimonialCardContentsWrapper{
+  .testimonialCardContentsWrapper {
     margin-bottom: 1rem;
   }
 }
@@ -1096,28 +1092,31 @@ transform: translateY(-40%);
   .meetOurTeamLayer {
     /* animation: scrollContinous 10s 2s infinite; */
   }
+
+  /* styling mission section */
+  #mission h3 #mission {
+    background-image: url(brownearth.jpg);
+    background-size: cover;
+    height: 30vh;
+  }
 }
 
-
-@media (max-width:750px) {
-  .testimonialcard{}
-    .testimonialcard h3{
-      font-size:1.5rem
-    }
-
-    .testimonialcard h4 {
-      height: 25vh;
-    }
-  
-}
-
-@media (max-width:650px) {
-  #testimonialSection .figureWrap{
-    grid-template-columns: repeat(1,1fr);
-
+@media (max-width: 750px) {
+  .testimonialcard h3 {
+    font-size: 1.5rem;
   }
 
-  .testimonialcard{
+  .testimonialcard h4 {
+    height: 25vh;
+  }
+}
+
+@media (max-width: 650px) {
+  #testimonialSection .figureWrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .testimonialcard {
     width: 60vw;
     height: 60vh;
     justify-self: center;
@@ -1131,11 +1130,9 @@ transform: translateY(-40%);
   }
 }
 
-
 /* entering the world of mobile phones */
-@media (max-width:460px) {
-
-  .testimonialcard{
+@media (max-width: 460px) {
+  .testimonialcard {
     width: 70vw;
     height: 60vh;
     aspect-ratio: 1/1;
@@ -1172,10 +1169,10 @@ transform: translateY(-40%);
 
   .remHero {
     /* max-height: 60vh; */
-    height:88vh;
+    height: 88vh;
     background-image: url(soarfinalbackground.webp);
     background-size: cover;
-background-position: center;
+    background-position: center;
   }
 
   #remHeroText {
@@ -1390,7 +1387,6 @@ background-position: center;
   #eLibraryBtnSection button {
     font-size: 1rem;
   }
-
 }
 
 @media (max-width: 415px) {
@@ -1400,14 +1396,12 @@ background-position: center;
 }
 
 @media (max-width: 400px) {
-
   .testimonialcard h4 {
     height: 20vh;
   }
 
-  
   .testimonialcard h3 {
-font-size: 1.3rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -1417,9 +1411,7 @@ font-size: 1.3rem;
     padding-top: 8rem;
   }
 
-#discover
-
-  #discover {
+  #discover #discover {
     padding: 1rem 0.9rem;
     font-size: 1rem;
     letter-spacing: 1px;
