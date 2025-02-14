@@ -1,0 +1,275 @@
+[33mcommit 265b0668a136cb2ed9286ce44febeba39ea35e77[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Tue Feb 4 20:24:14 2025 +0100
+
+    working on res
+
+[33mcommit b08dc069507d47500d7cf06273a1fcb46a0dd0b2[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Sat Feb 1 18:05:27 2025 +0100
+
+    fix
+
+[33mcommit 534a52ad5e2144e9f7fb9e22f1ef801312fedfb6[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Sat Feb 1 10:04:41 2025 +0100
+
+    f
+
+[33mcommit da48f941b77d9fdf67e74a5f8f48ca2784730499[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Sat Feb 1 09:43:07 2025 +0100
+
+    root
+
+[33mcommit b06a5a7803d473c6557241a49fdb53d72a445c8c[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Sat Feb 1 09:40:47 2025 +0100
+
+    back
+
+[33mcommit 35690ab3d020956371e4c00853f8cd2f909fbbd5[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Sat Feb 1 09:39:23 2025 +0100
+
+    fix mobile book
+
+[33mcommit 25afa6eade012a3ef5e626e77e4355309c956656[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Sat Feb 1 08:24:13 2025 +0100
+
+    trybook3
+
+[33mcommit afede38e777fcc0341d2e730d2657350b9c8fffa[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Sat Feb 1 08:19:03 2025 +0100
+
+    trybook2
+
+[33mcommit bbe49329b780b43913fb97cef956429a2e10f0d5[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Sat Feb 1 08:14:23 2025 +0100
+
+    trybook
+
+[33mcommit fd771d11203f9ec70514dffb3d2fcc0ab3db7da9[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Sat Feb 1 07:59:48 2025 +0100
+
+    trying cors
+
+[33mcommit f51419ab4e504ccd78bd2f4ab72dd41edd5a546e[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Sat Feb 1 04:08:12 2025 +0100
+
+    worked on tablet theme
+
+[33mcommit 92ac2aa32677be05d72030e0d4a40435ceef57a8[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Thu Jan 30 03:31:21 2025 +0100
+
+    cancel fix
+
+[33mcommit 58be76f278c7f5aee4126e1aef7861c584ab8ec1[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Thu Jan 30 03:20:04 2025 +0100
+
+    worked nav mobile
+
+[33mcommit 2dc1e5043e1e68028a513a8e89ef1316f194a0e6[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Thu Jan 30 03:16:48 2025 +0100
+
+    fixed nav desktop
+
+[33mcommit 8190aafc5a6e81e995cd9a302a4b883b5ee35efd[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Tue Jan 28 22:02:57 2025 +0100
+
+    team
+
+[33mcommit 1cdf4ecedcd11a89a893a4a504a996e33e3bff9d[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Tue Jan 28 21:22:18 2025 +0100
+
+    mission
+
+[33mcommit f5f152dd7876a042c3915f98b75ba300bcddc68c[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Tue Jan 28 21:19:39 2025 +0100
+
+    remove foot aos
+
+[33mcommit 18073f3b550a5e432d00ddd0fbfca25c2935165e[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Tue Jan 28 21:17:24 2025 +0100
+
+    mision
+
+[33mcommit 24655a37be68590ef6beb0666c7efe4835e0f4e8[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Tue Jan 28 21:13:29 2025 +0100
+
+    fix test
+
+[33mcommit d7166b6d05594f5c8df66b7f43d766ddf9741835[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Tue Jan 28 20:58:14 2025 +0100
+
+    visionary test + scrollbar
+
+[33mcommit 9905fd8fad5d7b1195b352700bc79c3f3d16ed03[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Tue Jan 28 02:54:01 2025 +0100
+
+    more work on team animation
+
+[33mcommit 87113c097d65bef0e727e46f6e8fdffa45c0f2b1[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Tue Jan 28 02:41:54 2025 +0100
+
+    fixed phone slide team
+
+[33mcommit ad70b94d2473ceb7209a4edb7972a237f2252946[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Tue Jan 28 02:30:48 2025 +0100
+
+    checking slide
+
+[33mcommit fc6641db845cb19f82d40ab0790e46280d2798a8[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Sun Jan 26 06:19:25 2025 +0100
+
+    aos
+
+[33mcommit 7435d4e50886959c99747bc70b5541d9c24c1307[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Fri Jan 24 23:11:39 2025 +0100
+
+    animate on scroll
+
+[33mcommit 596e35593f19a4ecbe3ea3fddd943eb79863feaa[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Fri Jan 24 22:47:03 2025 +0100
+
+    made animation changes
+
+[33mcommit 0392bbede56384155949426d0d6e7c3b6364a683[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Fri Jan 24 19:14:50 2025 +0100
+
+    made some changes
+
+[33mcommit 5073dafda644eec4c29ffa9a6ad62f380a0031f3[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Fri Jan 24 15:50:58 2025 +0100
+
+    final res
+
+[33mcommit b70cbcfed592f48c11964b1969a499af72317a0b[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Fri Jan 24 15:41:47 2025 +0100
+
+    final UI 1
+
+[33mcommit 05f78353ddbda7b6a2b34960fdc7c42b7ac5bbb4[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Fri Jan 24 11:55:26 2025 +0100
+
+    added first animation
+
+[33mcommit 42cc296ac281080afa7547e03bd7402507482990[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Fri Jan 24 04:08:04 2025 +0100
+
+    fixed testimonial
+
+[33mcommit b92124ae2b6a9560faccd791dbb400cc261aae4f[m
+Merge: 14ad619 7458f2f
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Wed Jan 22 13:36:16 2025 +0100
+
+    Made some changes
+
+[33mcommit 14ad6197ca58a44834c4424337f910a2617ffb39[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Wed Jan 22 05:30:32 2025 +0100
+
+    fixing book
+
+[33mcommit 7458f2fd967b84e9e88372ed230e23a0fa9345a8[m
+Author: Chukwuemeka David <136800623+thechibuikem@users.noreply.github.com>
+Date:   Wed Jan 22 03:38:08 2025 +0100
+
+    Add files via upload
+
+[33mcommit af9ba94457392f4103f8b210039c5ea2f0e7f89e[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Tue Jan 21 02:01:30 2025 +0100
+
+    trying book cloudinary
+
+[33mcommit 81d4cfcc08d2a8b86a0d6649b837a2837b3c2941[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Wed Jan 15 11:51:42 2025 +0100
+
+    elibrary res
+
+[33mcommit 70fe6f8a6bff5b67c3db82fc9d1f99f752423a7f[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Tue Jan 14 18:45:06 2025 +0100
+
+    fixed tablet res 50%
+
+[33mcommit 37db7614ea1668ef98c5478f7f44e3a1f36b3602[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Mon Jan 13 23:19:37 2025 +0100
+
+    phone fixed
+
+[33mcommit c835ec5560b32d257c2a8886590b3b2ebbab0c26[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Mon Jan 13 23:11:04 2025 +0100
+
+    started tablet responsiveness
+
+[33mcommit 1352de7cc4a4c342d9a4b317f6bde3a021d9237c[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Sat Jan 11 15:17:12 2025 +0100
+
+    wrapped up phone page 1 res
+
+[33mcommit 3bbbe683a252cec17b9ef2a98369c861db7bf149[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Fri Jan 10 20:45:10 2025 +0100
+
+    base responsive 1
+
+[33mcommit be47d0dc3f11412c2a00cabe88d73b2038548fdc[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Fri Jan 10 19:22:25 2025 +0100
+
+    remained footer to be made responsive
+
+[33mcommit 4c4536febc3dcb7e7d4675fb2ed1236e56c6d403[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Fri Jan 10 16:18:50 2025 +0100
+
+    fixed overflow
+
+[33mcommit c9c6dd5d6b0bfc92c56e51a8cbfc020c102b6229[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Fri Jan 10 15:35:12 2025 +0100
+
+    touched button again
+
+[33mcommit fd110a0fcbdf28ca609f61da1480920204a5c659[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Fri Jan 10 15:10:12 2025 +0100
+
+    touched button on landing page
+
+[33mcommit 0c9dd5d5a8d4e8985763596ddc1312596ef78c33[m
+Author: Chukwuemeka David <chukwuemekadavid2007@gmail.com>
+Date:   Fri Jan 10 12:50:37 2025 +0100
+
