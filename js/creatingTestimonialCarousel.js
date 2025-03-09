@@ -1,4 +1,37 @@
+const filler = [
+  {
+    id:1,
+    image:"images/girl.svg",
+    name:"fransisca",
+    testimonial:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus eveniet nulla ea nihil animi saepe alias illum nobis quidem sit."
+  },
+  {
+    id:2,
+    image:"images/girl.svg",
+    name:"fransisca",
+    testimonial:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus eveniet nulla ea nihil animi saepe alias illum nobis quidem sit."
+  } ,
+   {
+    id:3,
+    image:"images/girl.svg",
+    name:"fransisca",
+    testimonial:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus eveniet nulla ea nihil animi saepe alias illum nobis quidem sit."
+  },
+  {
+    id:4,
+    image:"images/girl.svg",
+    name:"fransisca",
+    testimonial:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus eveniet nulla ea nihil animi saepe alias illum nobis quidem sit."
+  }
+]
+;
+filler.forEach(item => {
+  slideList[0]
+})
+
+
 let TestCardWrap = document.querySelector(".figureWrap");
+// card 1 declaration
 let TestCard1 = document.querySelector("#testimonialBlock");
 
 for (let i = 0; i < 3; i++) {
@@ -15,8 +48,8 @@ let clickCount = 0;
 
 
 slideList[1].style.backgroundColor = "red"
-slideList[3].style.backgroundColor = "yellow"
 slideList[2].style.backgroundColor = "orange"
+slideList[3].style.backgroundColor = "yellow"
 
 
 
