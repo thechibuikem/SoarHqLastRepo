@@ -451,7 +451,7 @@ body::-webkit-scrollbar {
   box-shadow: rgba(0, 0, 0, 0.078) 0px 3px 6px, rgba(0, 0, 0, 0.086) 0px 3px 6px;
   border-radius: 0.5rem;
   position: absolute;
-  overflow: hidden;
+  overflow: scroll;
   transition: 0.2s ease;
 }
 
