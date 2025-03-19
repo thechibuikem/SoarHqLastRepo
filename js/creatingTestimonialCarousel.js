@@ -2,7 +2,7 @@
 const slideListFiller = [
   {
     id: 1,
-    image: "images/girl.svg",
+    image:" images\ testimonialImages\ ugochiOguike.webp ",
     name: "Success Nwankpa",
     testimony: `Good evening, Excellencies! I am Excellent Success, Success Nwankpa.I just concluded my discipleship call with the steward, @Excellent Nancy, and it was truly transformative.I used the word "transformative" because just a few minutes before the call, I was feeling down, there is a power outage, it left my laptop unusable. I have important tasks to complete to meet upcoming timelines, and I was also troubled by some family issues. However, joining the call opened my eyes to hope and strengthened me by the grace of God.During our conversation, Excellent Nancy shared some of her undergraduate experiences, which resonated deeply with me. I left the call feeling uplifted and strengthened in God's word; I even received insights to share with my twin sister.I am continually grateful for this community of Godliness and excellence.God bless you, @Excellent Nancy; may you receive more of God's grace ma.God bless us all!`,
   },
@@ -66,7 +66,7 @@ const slideListFiller = [
     id: 6,
     image: "images/girl.svg",
     name: "Faith Ndubuisi N.",
-    testimony:`
+    testimony: `
     Good day Excellencies,
     I am Excellent Faith.
     The Call I had with @Excellent Nancy was more of a re-assurance!
@@ -82,7 +82,7 @@ const slideListFiller = [
     id: 7,
     image: "images/girl.svg",
     name: "Chinaza Martha",
-    testimony:`
+    testimony: `
     As far as my eyes can see."
     This statement keeps ringing in my mind everytime I feel confused.
     Good evening Excellencies
@@ -93,14 +93,13 @@ const slideListFiller = [
     And for anything out there, serving as obstacle or limitation or pressure, I'll pave my way through Him who strengthens me. Taking them out one after another.
     That beautiful statement she said to me from the Bible, "As far as my eyes can see." Out there to get as much as my eyes can see, farther and farther... Amen
     Alot to say but I'll stop here.
-    `
+    `,
   },
   {
     id: 8,
     image: "images/girl.svg",
     name: "Jane Daniel",
-    testimony:
-    `Hello Excellencies,
+    testimony: `Hello Excellencies,
     I am Excellent Jane.
     I just had a discipleship call with the steward @Excellent Nancy. This call was like a relief to me, I had so much burden on my heart but it’s alright because I’m God’s light and God’s light shines the brightest.
     We looked into a bible verse Hebrews 4:16 which says “Let us therefore come boldly to the throne of grace, that we may obtain mercy and find grace to help in time of need". We should not ask for mercy or for the grace of God but we should receive it with confidence.
@@ -113,8 +112,7 @@ const slideListFiller = [
     id: 9,
     image: "images/girl.svg",
     name: "Jayeola Oluwatoyin Eunice",
-    testimony:
-    `Hello Excellencies,
+    testimony: `Hello Excellencies,
     I am Excellent Eunice.
     A week tomorrow I had my discipleship call with the steward @Excellent Nancy, I must say the call was needed and it’s nice to have to talk to someone who sees from your perspective or has been at the stage where you’re at at the moment. 
     I remember we spoke about building a relationship with the Holy Spirit and it made me realize what I’ve been doing wrong instead of trying to emotionalize my relationship with God than building it by constantly being in his presence instead of basing his presence on feeling.
@@ -123,7 +121,6 @@ const slideListFiller = [
     God bless you all. ♥️
     `,
   },
-
 ];
 
 let TestCardWrap = document.querySelector(".figureWrap");
@@ -151,15 +148,12 @@ let slideList = Array.from(document.querySelectorAll(".invi"));
 slideList.forEach((element, index) => {
   let name = element.querySelector("#tBlockGrp2 h3");
   let testimony = element.querySelector("#tBlockGrp2 h4");
+  let image = element.querySelector("#tBlockGrp1 img")
 
   if (name) name.textContent = slideListFiller[index].name;
   if (testimony) testimony.textContent = slideListFiller[index].testimony;
+  if (image) image.src = slideListFiller[index].image
 });
-
-// testing if my arrays are in check
-// clonedTestCardArray[0].style.backgroundColor = "blue";
-// clonedTestCardArray[1].style.backgroundColor = "navy";
-// clonedTestCardArray[2].style.backgroundColor = "indigo";
 
 // what makes the slider work
 let clickCount = 0;

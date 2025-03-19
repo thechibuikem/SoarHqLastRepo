@@ -202,8 +202,6 @@ body::-webkit-scrollbar {
 
 /* declaring classes that would hide  and remove sidenav */
 .showsideNav {
-  /* position: fixed; */
-  /* background-color: red; */
   display: flex;
 }
 
@@ -619,7 +617,7 @@ body::-webkit-scrollbar {
     transform: translateX(-100%);
   }
 }
-
+  
 .meetOurTeamLayer {
   height: 70vh;
   width: 100vw;

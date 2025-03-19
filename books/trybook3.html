@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D PDF Flipbook</title>
+
+    <!-- Include jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Include Turn.js for Flipbook Effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4/turn.min.js"></script>
+
+    <!-- Include PDF.js to Render PDF Pages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        #flipbook {
+            width: 45vw;
+            height:100vh;
+        }
+
+@media (max-width:450px) 
+{
+  #flipbook {
+            width: 100vw;
+            height:100vh;
+        }
+}
+
+        .flip-page {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Flipbook Container -->
+    <div id="flipbook"></div>
+
+    <script>
+        const pdfURL = "SEXUALPURITYSOARHQ.pdf"; // Your PDF file
+
+        async function loadPDF(url) {
+            const pdf = await pdfjsLib.getDocument(url).promise;
+            const flipbook = $("#flipbook");
+
+            for (let i = 1; i <= pdf.numPages; i++) {
+                const canvas = document.createElement("canvas");
+                canvas.classList.add("flip-page");
+                
+                const context = canvas.getContext("2d");
+                const page = await pdf.getPage(i);
+                const viewport = page.getViewport({ scale: 2 });
+
+                canvas.width = viewport.width;
+                canvas.height = viewport.height;
+
+                await page.render({ canvasContext: context, viewport }).promise;
+
+                flipbook.append(canvas);
+            }
+
+            // Initialize Turn.js
+            flipbook.turn({
+                width: "80vw",
+                height: "90vh",
+                autoCenter: true
+            });
+        }
+
+        $(document).ready(() => {
+            loadPDF(pdfURL);
+        });
+    </script>
+
+</body>
+</html>
