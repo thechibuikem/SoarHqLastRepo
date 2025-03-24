@@ -198,6 +198,10 @@ margin-top: 1rem;
 } 
 */
 
+.remNavFigure{
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
 #remNavFigureUp{
   font-size: 1.2rem;
   text-transform: capitalize;
@@ -515,11 +519,13 @@ row-gap: 0;}
 }
 
  .remNavFigure{
-  margin-bottom: 0;
-  min-height: 42vh;
-  max-height: 42vh;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  min-height: 40vh;
+  max-height: 40vh;
   overflow-y: scroll;
- }
+/* background-color: red; */
+}
 
  #remNavFigureDown{
   opacity: 0.7;

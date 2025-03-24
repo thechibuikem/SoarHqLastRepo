@@ -1,54 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/assetSoar/build/css/flipbook.min.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.js"
-      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-      crossorigin="anonymous"
-    ></script>
+        <link rel="stylesheet" href="../build/css/flipbook.min.css">
 
-    <script src="/assetSoar/build/js/flipbook.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
+        <script
+            src="https://code.jquery.com/jquery-3.6.3.js"
+            integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+            crossorigin="anonymous"
+        ></script>
 
-          $('#container').flipBook({
-              pdfUrl:"pdf/book.pdf",
-              viewMode: '2d',
-              layout: 2,
-              menu2Transparent: false,
-              menu2OverBook: false,
-              currentPage: { vAlign: 'top', hAlign: 'center' },
-              // btnAutoplay: { vAlign: 'top' },
-              // btnSound: { vAlign: 'top' },
-              btnExpand: { vAlign: 'top' },
-              btnZoomIn: { vAlign: 'top' },
-              btnZoomOut: { vAlign: 'top' },
-              btnSearch: { vAlign: 'top' },
-              btnBookmark: { vAlign: 'top' },
-              btnToc: { vAlign: 'top' },
-              btnThumbs: { vAlign: 'top' },
-              btnShare: { vAlign: 'top' },
-              btnSelect: { vAlign: 'top' },
-              btnDownloadPages:{
-                enabled: false,
-              },
-              btnDownloadPdf:{
-                enabled:false,
-              },
-              // pdfBrowserViewerIfMobile:true,
-              // responsiveView: true,  
-          });
-      });
-    </script>
-  </head>
+        <script src="../build/js/flipbook.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#container').flipBook({
+                    pdfUrl: 'pdf/book.pdf',
+                    textLayer: true,
+                });
+            });
+        </script>
+    </head>
 
-  <body>
-    <h3>hello world</h3>
-    <div class="containerWrap" style="height: 100vh; width: 100vw">
-      <div id="container"></div>
-    </div>
-  </body>
+    <body>
+        <div id="container"></div>
+    </body>
 </html>
