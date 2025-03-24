@@ -947,9 +947,6 @@ filter: grayscale(1);
   }
 
   #moreAboutSection {
-    /* margin: 0; */
-    /* height: 50vh; */
-    /* width: 80%; */
     align-self: center;
     margin: 0;
   }
@@ -1241,8 +1238,9 @@ filter: grayscale(1);
   }
 
   #moreAboutSection {
-    margin: 0;
+    margin: 6rem 0;
     width: 80%;
+    height: fit-content;
     align-self: center;
     text-align: center;
     gap: 0.5rem;
@@ -1276,6 +1274,7 @@ filter: grayscale(1);
   #tBlockGrp2 {
     margin-top: 0;
     width: 100%;
+    padding-left: 0.5rem;
     /* display: flex; */
     /* justify-content: center; */
   }
@@ -1295,10 +1294,27 @@ filter: grayscale(1);
     /* text-align:center; */
   }
 
+/*moregenerically targetting the buttons  */
+  .testButton path{
+    /* stroke:#d4af37; */
+    fill:#e0c97e;
+  }
+
+/* right button in the testimonial */
+#right{
+right: -1rem;
+}
+
+/* left button in the testimonial */
+#left{
+  left: -1rem;
+}
+
   .figureWrap {
     grid-template-columns: repeat(1, 1fr);
     column-gap: 0rem;
     row-gap: 3rem;
+    height: 75vh;
   }
 
   .testimonialcard {
