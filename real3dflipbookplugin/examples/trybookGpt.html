@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipbook Viewer</title>
+
+    <link rel="stylesheet" href="../build/css/flipbook.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="../build/js/flipbook.min.js"></script>
+
+    <style>
+        #container {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let pdfPath = './pdf/SEXUALPURITYSOARHQ.pdf';
+
+            // Check if the PDF can be loaded
+            fetch(pdfPath)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`PDF not found! (Status: ${response.status})`);
+                    }
+                    console.log("✅ PDF found:", pdfPath);
+
+                    setTimeout(() => {
+                        try {
+                            $('#container').flipBook({
+                                pdfUrl: pdfPath,
+                                pdfBrowserViewerFullscreen: true, // Enables fullscreen viewing
+                                pdfBrowserViewerFullscreenTarget: "_self", // Opens in the same tab
+                                textLayer: true, // Ensures text is displayed
+                                sound: true, // Enables sound effects
+                                backgroundColor: "rgb(81, 85, 88)", // Background color
+                                thumbSize: 150, // Thumbnail size
+                                autoplayOnStart: false, // Disables autoplay
+                                debug: true, // Enables debugging mode
+                            });
+
+                            console.log("✅ Flipbook initialized successfully.");
+                        } catch (error) {
+                            console.error("❌ Flipbook failed to initialize:", error);
+                        }
+                    }, 100);
+                })
+                .catch(error => console.error('❌ Error loading PDF:', error));
+        });
+
+        // Capture ResizeObserver errors and suppress them
+        window.addEventListener('error', (e) => {
+            if (e.message.includes("ResizeObserver")) {
+                e.stopImmediatePropagation();
+            }
+        }, true);
+    </script>
+</head>
+
+<body>
+    <div id="container"></div>
+</body>
+</html>
