@@ -132,7 +132,9 @@ var FLIPBOOK = FLIPBOOK || {};
           color: "",
           background: "",
         },
-        search: { enabled: !1 },
+        search: {
+          enabled: !1,
+        },
         btnFirst: {
           enabled: !1,
           title: "First page",
@@ -145,25 +147,68 @@ var FLIPBOOK = FLIPBOOK || {};
           svg: "next",
           iconReverse: !0,
         },
-        btnNext: { enabled: !0, title: "Next page" },
-        btnLast: { enabled: !1, title: "Last page" },
-        btnZoomIn: { enabled: !0, title: "Zoom in", svg: "plus" },
-        btnZoomOut: { enabled: !0, title: "Zoom out", svg: "minus" },
-        btnRotateLeft: { enabled: !1, title: "Rotate left" },
-        btnRotateRight: { enabled: !1, title: "Rotate right" },
+        btnNext: {
+          enabled: !0,
+          title: "Next page",
+        },
+        btnLast: {
+          enabled: !1,
+          title: "Last page",
+        },
+        btnZoomIn: {
+          enabled: !0,
+          title: "Zoom in",
+          svg: "plus",
+        },
+        btnZoomOut: {
+          enabled: !0,
+          title: "Zoom out",
+          svg: "minus",
+        },
+        btnRotateLeft: {
+          enabled: !1,
+          title: "Rotate left",
+        },
+        btnRotateRight: {
+          enabled: !1,
+          title: "Rotate right",
+        },
         btnAutoplay: {
           enabled: !0,
           title: "Autoplay",
           svg: "play",
           svgAlt: "pause",
         },
-        btnSearch: { enabled: !1, title: "Search" },
-        btnBookmark: { enabled: !0, title: "Bookmarks" },
-        btnNotes: { enabled: !1, title: "Notes" },
-        btnToc: { enabled: !0, title: "Table of Contents", svg: "list" },
-        btnThumbs: { enabled: !0, title: "Pages" },
-        btnShare: { enabled: !0, title: "Share" },
-        btnPrint: { enabled: !0, title: "Print", toolsMenu: !0 },
+        btnSearch: {
+          enabled: !1,
+          title: "Search",
+        },
+        btnBookmark: {
+          enabled: !0,
+          title: "Bookmarks",
+        },
+        btnNotes: {
+          enabled: !1,
+          title: "Notes",
+        },
+        btnToc: {
+          enabled: !0,
+          title: "Table of Contents",
+          svg: "list",
+        },
+        btnThumbs: {
+          enabled: !0,
+          title: "Pages",
+        },
+        btnShare: {
+          enabled: !0,
+          title: "Share",
+        },
+        btnPrint: {
+          enabled: !0,
+          title: "Print",
+          toolsMenu: !0,
+        },
         btnDownloadPages: {
           enabled: !0,
           title: "Download",
@@ -188,27 +233,61 @@ var FLIPBOOK = FLIPBOOK || {};
           svgAlt: "mute",
           toolsMenu: !0,
         },
-        btnTools: { enabled: !0, title: "Tools" },
+        btnTools: {
+          enabled: !0,
+          title: "Tools",
+        },
         btnExpand: {
           enabled: !0,
           title: "Toggle fullscreen",
           svgAlt: "compress",
         },
-        btnClose: { title: "Close", hAlign: "right", vAlign: "top", size: 20 },
+        btnClose: {
+          title: "Close",
+          hAlign: "right",
+          vAlign: "top",
+          size: 20,
+        },
         sideNavigationButtons: !0,
         hideMenu: !1,
         shareUrl: null,
         shareTitle: null,
         shareImage: null,
-        whatsapp: { enabled: !0, title: "WhatsApp" },
-        twitter: { enabled: !0, title: "X (Twitter)" },
-        facebook: { enabled: !0, title: "Facebook" },
-        pinterest: { enabled: !0, title: "Pinterest" },
-        email: { enabled: !0, title: "Email" },
-        linkedin: { enabled: !0, title: "LinkedIn" },
-        digg: { enabled: !1, title: "Digg" },
-        reddit: { enabled: !1, title: "Reddit" },
-        pdf: { annotationLayer: !1 },
+        whatsapp: {
+          enabled: !0,
+          title: "WhatsApp",
+        },
+        twitter: {
+          enabled: !0,
+          title: "X (Twitter)",
+        },
+        facebook: {
+          enabled: !0,
+          title: "Facebook",
+        },
+        pinterest: {
+          enabled: !0,
+          title: "Pinterest",
+        },
+        email: {
+          enabled: !0,
+          title: "Email",
+        },
+        linkedin: {
+          enabled: !0,
+          title: "LinkedIn",
+        },
+        digg: {
+          enabled: !1,
+          title: "Digg",
+        },
+        reddit: {
+          enabled: !1,
+          title: "Reddit",
+        },
+        pdf: {
+          annotationLayer: !1,
+        },
         pageTextureSize: 2048,
         pageTextureSizeSmall: 1500,
         thumbTextureSize: 300,
@@ -320,9 +399,24 @@ var FLIPBOOK = FLIPBOOK || {};
         pageDragDisabled: !1,
         pageClickAreaWdith: "10%",
         noteTypes: [
-          { id: 1, title: "User", color: "green", enabled: !0 },
-          { id: 2, title: "Group", color: "yellow", enabled: !0 },
-          { id: 3, title: "Admin", color: "blue", enabled: !0 },
+          {
+            id: 1,
+            title: "User",
+            color: "green",
+            enabled: !0,
+          },
+          {
+            id: 2,
+            title: "Group",
+            color: "yellow",
+            enabled: !0,
+          },
+          {
+            id: 3,
+            title: "Admin",
+            color: "blue",
+            enabled: !0,
+          },
         ],
         pageRangeStart: null,
         pageRangeEnd: null,
@@ -361,13 +455,27 @@ var FLIPBOOK = FLIPBOOK || {};
         mobile: {
           shadows: !1,
           pageSegmentsW: 5,
-          btnAutoplay: { toolsMenu: !0 },
-          btnBookmark: { toolsMenu: !0 },
-          btnZoomIn: { enabled: !1 },
-          btnZoomOut: { enabled: !1 },
-          btnFirst: { enabled: !1 },
-          btnLast: { enabled: !1 },
-          currentPage: { enabled: !1 },
+          btnAutoplay: {
+            toolsMenu: !0,
+          },
+          btnBookmark: {
+            toolsMenu: !0,
+          },
+          btnZoomIn: {
+            enabled: !1,
+          },
+          btnZoomOut: {
+            enabled: !1,
+          },
+          btnFirst: {
+            enabled: !1,
+          },
+          btnLast: {
+            enabled: !1,
+          },
+          currentPage: {
+            enabled: !1,
+          },
         },
       }),
       (FLIPBOOK.Main = function (t, n) {
@@ -422,19 +530,58 @@ var FLIPBOOK = FLIPBOOK || {};
           (this.fullscreenActive = !1);
         var c = {
             2: {
-              currentPage: { vAlign: "bottom", hAlign: "center" },
-              btnAutoplay: { hAlign: "right", vAlign: "top" },
-              btnSound: { hAlign: "left", vAlign: "top" },
-              btnExpand: { hAlign: "right", vAlign: "top" },
-              btnSearch: { hAlign: "left", vAlign: "top" },
-              btnBookmark: { hAlign: "left", vAlign: "top" },
-              btnToc: { hAlign: "left", vAlign: "top" },
-              btnThumbs: { hAlign: "left", vAlign: "top" },
-              btnShare: { hAlign: "right", vAlign: "top" },
-              btnPrint: { hAlign: "right", vAlign: "top" },
-              btnDownloadPages: { hAlign: "right", vAlign: "top" },
-              btnDownloadPdf: { hAlign: "right", vAlign: "top" },
-              btnTools: { hAlign: "right", vAlign: "top" },
+              currentPage: {
+                vAlign: "bottom",
+                hAlign: "center",
+              },
+              btnAutoplay: {
+                hAlign: "right",
+                vAlign: "top",
+              },
+              btnSound: {
+                hAlign: "left",
+                vAlign: "top",
+              },
+              btnExpand: {
+                hAlign: "right",
+                vAlign: "top",
+              },
+              btnSearch: {
+                hAlign: "left",
+                vAlign: "top",
+              },
+              btnBookmark: {
+                hAlign: "left",
+                vAlign: "top",
+              },
+              btnToc: {
+                hAlign: "left",
+                vAlign: "top",
+              },
+              btnThumbs: {
+                hAlign: "left",
+                vAlign: "top",
+              },
+              btnShare: {
+                hAlign: "right",
+                vAlign: "top",
+              },
+              btnPrint: {
+                hAlign: "right",
+                vAlign: "top",
+              },
+              btnDownloadPages: {
+                hAlign: "right",
+                vAlign: "top",
+              },
+              btnDownloadPdf: {
+                hAlign: "right",
+                vAlign: "top",
+              },
+              btnTools: {
+                hAlign: "right",
+                vAlign: "top",
+              },
               menuTransparent: !0,
             },
             3: {
@@ -443,42 +590,128 @@ var FLIPBOOK = FLIPBOOK || {};
               menu2OverBook: !1,
               menu2Padding: 5,
               btnMargin: 5,
-              currentPage: { vAlign: "top", hAlign: "center" },
-              btnPrint: { vAlign: "top", hAlign: "right" },
-              btnDownloadPdf: { vAlign: "top", hAlign: "right" },
-              btnDownloadPages: { vAlign: "top", hAlign: "right" },
-              btnThumbs: { vAlign: "top", hAlign: "left" },
-              btnToc: { vAlign: "top", hAlign: "left" },
-              btnBookmark: { vAlign: "top", hAlign: "left" },
-              btnSearch: { vAlign: "top", hAlign: "left" },
-              btnShare: { vAlign: "top", hAlign: "right" },
-              btnAutoplay: { vAlign: "top", hAlign: "right" },
-              btnExpand: { vAlign: "top", hAlign: "right" },
-              btnZoomIn: { hAlign: "right" },
-              btnZoomOut: { hAlign: "right" },
-              btnSound: { vAlign: "top", hAlign: "right" },
-              btnTools: { vAlign: "top", hAlign: "right" },
+              currentPage: {
+                vAlign: "top",
+                hAlign: "center",
+              },
+              btnPrint: {
+                vAlign: "top",
+                hAlign: "right",
+              },
+              btnDownloadPdf: {
+                vAlign: "top",
+                hAlign: "right",
+              },
+              btnDownloadPages: {
+                vAlign: "top",
+                hAlign: "right",
+              },
+              btnThumbs: {
+                vAlign: "top",
+                hAlign: "left",
+              },
+              btnToc: {
+                vAlign: "top",
+                hAlign: "left",
+              },
+              btnBookmark: {
+                vAlign: "top",
+                hAlign: "left",
+              },
+              btnSearch: {
+                vAlign: "top",
+                hAlign: "left",
+              },
+              btnShare: {
+                vAlign: "top",
+                hAlign: "right",
+              },
+              btnAutoplay: {
+                vAlign: "top",
+                hAlign: "right",
+              },
+              btnExpand: {
+                vAlign: "top",
+                hAlign: "right",
+              },
+              btnZoomIn: {
+                hAlign: "right",
+              },
+              btnZoomOut: {
+                hAlign: "right",
+              },
+              btnSound: {
+                vAlign: "top",
+                hAlign: "right",
+              },
+              btnTools: {
+                vAlign: "top",
+                hAlign: "right",
+              },
               menuPadding: 5,
             },
             4: {
               menu2Transparent: !1,
               menu2OverBook: !1,
               sideMenuOverMenu2: !1,
-              currentPage: { vAlign: "top", hAlign: "center" },
-              btnAutoplay: { vAlign: "top", hAlign: "left" },
-              btnSound: { vAlign: "top", hAlign: "left" },
-              btnExpand: { vAlign: "top", hAlign: "right" },
-              btnZoomIn: { vAlign: "top" },
-              btnZoomOut: { vAlign: "top" },
-              btnSearch: { vAlign: "top", hAlign: "left" },
-              btnBookmark: { vAlign: "top", hAlign: "left" },
-              btnToc: { vAlign: "top", hAlign: "left" },
-              btnThumbs: { vAlign: "top", hAlign: "left" },
-              btnShare: { vAlign: "top", hAlign: "right" },
-              btnPrint: { vAlign: "top", hAlign: "right" },
-              btnDownloadPages: { vAlign: "top", hAlign: "right" },
-              btnDownloadPdf: { vAlign: "top", hAlign: "right" },
-              btnTools: { vAlign: "top", hAlign: "right" },
+              currentPage: {
+                vAlign: "top",
+                hAlign: "center",
+              },
+              btnAutoplay: {
+                vAlign: "top",
+                hAlign: "left",
+              },
+              btnSound: {
+                vAlign: "top",
+                hAlign: "left",
+              },
+              btnExpand: {
+                vAlign: "top",
+                hAlign: "right",
+              },
+              btnZoomIn: {
+                vAlign: "top",
+              },
+              btnZoomOut: {
+                vAlign: "top",
+              },
+              btnSearch: {
+                vAlign: "top",
+                hAlign: "left",
+              },
+              btnBookmark: {
+                vAlign: "top",
+                hAlign: "left",
+              },
+              btnToc: {
+                vAlign: "top",
+                hAlign: "left",
+              },
+              btnThumbs: {
+                vAlign: "top",
+                hAlign: "left",
+              },
+              btnShare: {
+                vAlign: "top",
+                hAlign: "right",
+              },
+              btnPrint: {
+                vAlign: "top",
+                hAlign: "right",
+              },
+              btnDownloadPages: {
+                vAlign: "top",
+                hAlign: "right",
+              },
+              btnDownloadPdf: {
+                vAlign: "top",
+                hAlign: "right",
+              },
+              btnTools: {
+                vAlign: "top",
+                hAlign: "right",
+              },
             },
           },
           d = {
@@ -597,6 +830,7 @@ var FLIPBOOK = FLIPBOOK || {};
                         }, 100))));
           }
         }
+
         function k() {
           if (!s.initStarted)
             if (((s.initStarted = !0), b.fillPreloader.enabled)) {
@@ -619,6 +853,7 @@ var FLIPBOOK = FLIPBOOK || {};
                 });
             } else w();
         }
+
         function w() {
           s.initialized ||
             ((s.define = e.define),
@@ -792,7 +1027,9 @@ var FLIPBOOK = FLIPBOOK || {};
               o < b.numPages;
               o++
             ) {
-              var i = { canvas: {} };
+              var i = {
+                canvas: {},
+              };
               b.pages && b.pages[o] && jQuery.extend(i, b.pages[o]), (t[o] = i);
             }
             (b.pages = t),
@@ -830,16 +1067,46 @@ var FLIPBOOK = FLIPBOOK || {};
           x = P ? ".min" : "";
         if (
           ([
-            { key: "iscrollSrc", value: "libs/iscroll" },
-            { key: "threejsSrc", value: "libs/three" },
-            { key: "flipbookWebGlSrc", value: "flipbook.webgl" },
-            { key: "flipbookBook3Src", value: "flipbook.book3" },
-            { key: "flipBookSwipeSrc", value: "flipbook.swipe" },
-            { key: "flipBookScrollSrc", value: "flipbook.scroll" },
-            { key: "pdfjsSrc", value: "libs/pdf" },
-            { key: "pdfServiceSrc", value: "flipbook.pdfservice" },
-            { key: "pdfjsworkerSrc", value: "libs/pdf.worker" },
-            { key: "markSrc", value: "libs/mark" },
+            {
+              key: "iscrollSrc",
+              value: "libs/iscroll",
+            },
+            {
+              key: "threejsSrc",
+              value: "libs/three",
+            },
+            {
+              key: "flipbookWebGlSrc",
+              value: "flipbook.webgl",
+            },
+            {
+              key: "flipbookBook3Src",
+              value: "flipbook.book3",
+            },
+            {
+              key: "flipBookSwipeSrc",
+              value: "flipbook.swipe",
+            },
+            {
+              key: "flipBookScrollSrc",
+              value: "flipbook.scroll",
+            },
+            {
+              key: "pdfjsSrc",
+              value: "libs/pdf",
+            },
+            {
+              key: "pdfServiceSrc",
+              value: "flipbook.pdfservice",
+            },
+            {
+              key: "pdfjsworkerSrc",
+              value: "libs/pdf.worker",
+            },
+            {
+              key: "markSrc",
+              value: "libs/mark",
+            },
           ].forEach((t) => {
             FLIPBOOK[t.key] = FLIPBOOK.flipbookSrc.replace(
               y,
@@ -966,10 +1233,12 @@ var FLIPBOOK = FLIPBOOK || {};
             this.options.pages.some((t) => !!t.htmlContent);
           var h = this.options.rightToLeft,
             p = this;
+
           function c(t) {
             t.htmlContent +=
               '<a href="#" draggable="false" class="internalLink pageClickArea pageClickAreaLeft" data-page="prev"></a>';
           }
+
           function d(t, e) {
             const o = e ? l : r;
             t.htmlContent +=
@@ -1135,7 +1404,9 @@ var FLIPBOOK = FLIPBOOK || {};
           (this.animating = !1), this.updateCurrentPage();
           var t = this.Book.rightIndex || 0;
           this.options.rightToLeft && (t = this.options.pages.length - t),
-            this.trigger("turnpagecomplete", { rightIndex: t }),
+            this.trigger("turnpagecomplete", {
+              rightIndex: t,
+            }),
             this.options.zoomReset && this.Book.zoomTo(this.options.zoomMin);
         },
         updateCurrentPage: function () {
@@ -1385,19 +1656,58 @@ var FLIPBOOK = FLIPBOOK || {};
                   let e = "";
                   return (
                     [
-                      { value: 1e3, numeral: "M" },
-                      { value: 900, numeral: "CM" },
-                      { value: 500, numeral: "D" },
-                      { value: 400, numeral: "CD" },
-                      { value: 100, numeral: "C" },
-                      { value: 90, numeral: "XC" },
-                      { value: 50, numeral: "L" },
-                      { value: 40, numeral: "XL" },
-                      { value: 10, numeral: "X" },
-                      { value: 9, numeral: "IX" },
-                      { value: 5, numeral: "V" },
-                      { value: 4, numeral: "IV" },
-                      { value: 1, numeral: "I" },
+                      {
+                        value: 1e3,
+                        numeral: "M",
+                      },
+                      {
+                        value: 900,
+                        numeral: "CM",
+                      },
+                      {
+                        value: 500,
+                        numeral: "D",
+                      },
+                      {
+                        value: 400,
+                        numeral: "CD",
+                      },
+                      {
+                        value: 100,
+                        numeral: "C",
+                      },
+                      {
+                        value: 90,
+                        numeral: "XC",
+                      },
+                      {
+                        value: 50,
+                        numeral: "L",
+                      },
+                      {
+                        value: 40,
+                        numeral: "XL",
+                      },
+                      {
+                        value: 10,
+                        numeral: "X",
+                      },
+                      {
+                        value: 9,
+                        numeral: "IX",
+                      },
+                      {
+                        value: 5,
+                        numeral: "V",
+                      },
+                      {
+                        value: 4,
+                        numeral: "IV",
+                      },
+                      {
+                        value: 1,
+                        numeral: "I",
+                      },
                     ].forEach(function (o) {
                       for (; t >= o.value; ) (e += o.numeral), (t -= o.value);
                     }),
@@ -1467,7 +1777,11 @@ var FLIPBOOK = FLIPBOOK || {};
           ) {
             const e = fetch(t)
               .then((t) => t.blob())
-              .then((t) => createImageBitmap(t, { imageOrientation: "flipY" }));
+              .then((t) =>
+                createImageBitmap(t, {
+                  imageOrientation: "flipY",
+                })
+              );
             this.imageCache[t] = e;
           }
           return this.imageCache[t];
@@ -1485,7 +1799,14 @@ var FLIPBOOK = FLIPBOOK || {};
             else if (e == this.options.thumbTextureSize && a.thumb)
               if (a.thumbImg)
                 a.thumbLoaded
-                  ? n.pageLoaded({ index: t, size: e, image: a.thumb }, i)
+                  ? n.pageLoaded(
+                      {
+                        index: t,
+                        size: e,
+                        image: a.thumb,
+                      },
+                      i
+                    )
                   : setTimeout(function () {
                       n.loadPage(t, e, i);
                     }, 300);
@@ -1495,7 +1816,14 @@ var FLIPBOOK = FLIPBOOK || {};
                   a.thumbImg.setAttribute("data-id", t),
                   (a.thumbImg.onload = function () {
                     (a.thumbLoaded = !0),
-                      n.pageLoaded({ index: t, size: e, image: a.thumbImg }, i);
+                      n.pageLoaded(
+                        {
+                          index: t,
+                          size: e,
+                          image: a.thumbImg,
+                        },
+                        i
+                      );
                   }),
                   "webgl" == this.options.viewMode &&
                     (a.thumbImg.crossOrigin = "Anonymous"),
@@ -1509,7 +1837,14 @@ var FLIPBOOK = FLIPBOOK || {};
               }
             else if (a.img)
               a.imgLoaded
-                ? n.pageLoaded({ index: t, size: e, image: a.img }, i)
+                ? n.pageLoaded(
+                    {
+                      index: t,
+                      size: e,
+                      image: a.img,
+                    },
+                    i
+                  )
                 : setTimeout(function () {
                     n.loadPage(t, e, i);
                   }, 300);
@@ -1523,13 +1858,27 @@ var FLIPBOOK = FLIPBOOK || {};
                     (a.imgLoaded = !0),
                       (a.width = o.width),
                       (a.height = o.height),
-                      n.pageLoaded({ index: t, size: e, imageBitmap: o }, i);
+                      n.pageLoaded(
+                        {
+                          index: t,
+                          size: e,
+                          imageBitmap: o,
+                        },
+                        i
+                      );
                   })
                 : ((a.img = o.createElement("img")),
                   a.img.setAttribute("data-id", t),
                   (a.img.onload = function () {
                     (a.imgLoaded = !0),
-                      n.pageLoaded({ index: t, size: e, image: a.img }, i);
+                      n.pageLoaded(
+                        {
+                          index: t,
+                          size: e,
+                          image: a.img,
+                        },
+                        i
+                      );
                   }),
                   (a.img.src = a.src));
             }
@@ -1577,7 +1926,9 @@ var FLIPBOOK = FLIPBOOK || {};
               if (t.marked) {
                 t.marked = null;
                 var e = jQuery(t.htmlContent);
-                new Mark(e[0]).unmark({ className: "mark-search" });
+                new Mark(e[0]).unmark({
+                  className: "mark-search",
+                });
               }
             });
         },
@@ -1624,7 +1975,12 @@ var FLIPBOOK = FLIPBOOK || {};
                   });
             FLIPBOOK.scripts[t] = {
               loaded: !1,
-              promises: [{ resolve: s, reject: a }],
+              promises: [
+                {
+                  resolve: s,
+                  reject: a,
+                },
+              ],
             };
             let r = o.createElement("script");
             (r.async = !0),
@@ -1951,6 +2307,7 @@ var FLIPBOOK = FLIPBOOK || {};
         },
         spotlight: function (t, e, i) {
           let n = o.querySelector(".flipbook-spotlight-overlay");
+
           function s() {
             const t = n.querySelector("video, iframe");
             t &&
@@ -2014,7 +2371,10 @@ var FLIPBOOK = FLIPBOOK || {};
                 t.endsWith(".gif") ||
                 t.endsWith(".bmp") ||
                 t.endsWith(".webp")
-              ? r("img", { src: t, style: "max-width: 80%; max-height: 80%;" })
+              ? r("img", {
+                  src: t,
+                  style: "max-width: 80%; max-height: 80%;",
+                })
               : r("iframe", {
                   src: t,
                   style:
@@ -2242,19 +2602,26 @@ var FLIPBOOK = FLIPBOOK || {};
             h = !1,
             p = 0,
             c = !1;
+
           function d(t) {
             if (t.length < 2) return 0;
             let e = t[0].clientX - t[1].clientX,
               o = t[0].clientY - t[1].clientY;
             return Math.sqrt(e * e + o * o);
           }
+
           function g(t, e) {
-            return { distanceX: t - o, distanceY: e - i };
+            return {
+              distanceX: t - o,
+              distanceY: e - i,
+            };
           }
+
           function u(t) {
             return t.type.includes("mouse") ? t : t.touches[0];
           }
           var m = this;
+
           function b(n) {
             if ("touchstart" === n.type) c = !0;
             else {
@@ -2275,8 +2642,11 @@ var FLIPBOOK = FLIPBOOK || {};
               (p = n.touches ? n.touches.length : 1),
               e(n, "start", null, 0, 0, p),
               t.addEventListener("mousemove", f),
-              t.addEventListener("touchmove", f, { passive: !1 });
+              t.addEventListener("touchmove", f, {
+                passive: !1,
+              });
           }
+
           function f(t) {
             let o = u(t),
               { distanceX: i, distanceY: s } = g(o.clientX, o.clientY);
@@ -2299,6 +2669,7 @@ var FLIPBOOK = FLIPBOOK || {};
                 1 === t.touches.length &&
                 (m.zoom > 1 && t.preventDefault(), e(t, "move", i, s, 0, 1));
           }
+
           function v(t) {
             m.trigger("enableIScroll"),
               ("touchend" !== t.type && "mouseup" !== t.type) ||
@@ -2321,6 +2692,7 @@ var FLIPBOOK = FLIPBOOK || {};
               h && ((h = !1), e(t, "pinchend", null, 0, 0, 2)),
               w();
           }
+
           function k(t) {
             setTimeout(function () {
               c = !1;
@@ -2331,6 +2703,7 @@ var FLIPBOOK = FLIPBOOK || {};
               h && ((h = !1), e(t, "pinchcancel", i, n, o, 2)),
               w();
           }
+
           function w() {
             t.removeEventListener("mousemove", f),
               t.removeEventListener("touchmove", f);
@@ -2486,6 +2859,7 @@ var FLIPBOOK = FLIPBOOK || {};
               "material" == e.icons
                 ? (t.size || e.btnSize) + 8
                 : t.size || e.btnSize;
+
           function m(t) {
             (t.style.fontSize = `${u}px`),
               (t.style.margin = `${p}px`),
@@ -2716,10 +3090,12 @@ var FLIPBOOK = FLIPBOOK || {};
                 n.createButton(t).index(1);
               });
           }
+
           function l(t, e) {
             const i = o.createElement("div");
             return (i.className = t), e[0].appendChild(i), i;
           }
+
           function h(e, o) {
             e
               .click(function (t) {
@@ -3077,14 +3453,12 @@ var FLIPBOOK = FLIPBOOK || {};
             padding: i.btnPaddingV + "px",
           }),
             s || (n += "skin-color "),
-            p
-              .addClass(n)
-              .css({
-                color: r,
-                background: a,
-                "text-shadow": l,
-                "border-radius": h + "px",
-              }),
+            p.addClass(n).css({
+              color: r,
+              background: a,
+              "text-shadow": l,
+              "border-radius": h + "px",
+            }),
             i.currentPage.order && p.css("order", i.currentPage.order),
             (this.currentPageHolder = p);
           var c = jQuery("<form>")
@@ -3311,7 +3685,10 @@ var FLIPBOOK = FLIPBOOK || {};
                 this.options.sideMenuPosition,
                 t.sideMenuOverBook ? "0px" : "250px"
               );
-              let e = { bottom: "0px", top: "0px" };
+              let e = {
+                bottom: "0px",
+                top: "0px",
+              };
               t.sideMenuOverMenu ||
                 (e.bottom = this.menuBottom.outerHeight() + "px"),
                 t.sideMenuOverMenu2 ||
@@ -4245,7 +4622,9 @@ var FLIPBOOK = FLIPBOOK || {};
             const t = this.dataset.note,
               o = this.value;
             (e.getNoteById(t).text = o),
-              e.main.trigger("r3d-update-note", { note: e.getNoteById(t) });
+              e.main.trigger("r3d-update-note", {
+                note: e.getNoteById(t),
+              });
           }),
           this.updateNoteVisibility();
       }),
@@ -4359,17 +4738,23 @@ var FLIPBOOK = FLIPBOOK || {};
             this.addPageNoteListeners(this.main.options.pages[t.page - 1]),
             (this.activeNote = t),
             this.enableNoteEdit(),
-            this.main.trigger("r3d-update-note", { note: t });
+            this.main.trigger("r3d-update-note", {
+              note: t,
+            });
         },
         deleteNote: function () {
           const t = this.main.options.pages[this.activeNote.page - 1];
           jQuery(t.htmlContent)
             .find(".textLayer")
-            .unmark({ className: `flipbook-note-${this.activeNote.id}` });
+            .unmark({
+              className: `flipbook-note-${this.activeNote.id}`,
+            });
           const e = this.notes.indexOf(this.activeNote);
           e > -1 && this.notes.splice(e, 1),
             this.hideNote(),
-            this.main.trigger("r3d-delete-note", { note: this.activeNote });
+            this.main.trigger("r3d-delete-note", {
+              note: this.activeNote,
+            });
         },
         getNoteById: function (t) {
           let e = null;
@@ -4438,7 +4823,10 @@ var FLIPBOOK = FLIPBOOK || {};
           (this.domElement.style.display = "none"),
           (this.domElement.className = "flipbook-tooltip flipbook-noselect");
         const t = this;
-        (this.currentPosition = { x: 0, y: 0 }),
+        (this.currentPosition = {
+          x: 0,
+          y: 0,
+        }),
           o.addEventListener("scroll", function () {
             t.position();
           });
@@ -4729,13 +5117,20 @@ var FLIPBOOK = FLIPBOOK || {};
         loadThumbFromPdf: function (t, e) {
           var o = this;
           this.main.pdfService.pdfDocument.getPage(t + 1).then(function (t) {
-            var i = t.getViewport({ scale: 1 }),
+            var i = t.getViewport({
+                scale: 1,
+              }),
               n = o.options.thumbSize / i.height,
-              s = t.getViewport({ scale: n }),
+              s = t.getViewport({
+                scale: n,
+              }),
               a = e[t._pageIndex].thumbCanvas,
               r = a.getContext("2d");
             (a.height = s.height), (a.width = s.width);
-            var l = { canvasContext: r, viewport: s };
+            var l = {
+              canvasContext: r,
+              viewport: s,
+            };
             (t.cleanupAfterRender = !0),
               t.render(l).promise.then(function () {
                 t.cleanup(),
@@ -4980,6 +5375,7 @@ var FLIPBOOK = FLIPBOOK || {};
     complete: a,
   }) {
     const r = performance.now();
+
     function l(o) {
       const h = o - r,
         p = Math.min(h / i, 1),
