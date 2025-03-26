@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipbook Viewer</title>
 
-    <link rel="stylesheet" href="../build/css/flipbook.min.css">
+    <link rel="stylesheet" href="../build/css/flipbook.min.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="../build/js/flipbook.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            // Ensure the PDF file path is correct
-            $.get("./pdf/SEXUALPURITYSOARHQ.pdf")
-                .done(function () {
-                    $('#container').flipBook({
-                        pdfUrl: './pdf/SEXUALPURITYSOARHQ.pdf',
-                        textLayer: true,
-                    });
-                })
-                .fail(function () {
-                    console.error("Error: PDF file not found!");
-                });
-        });
-    </script>
-</head>
+    <style>
+      /* Ensure the flipbook container has proper dimensions */
+      #container {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
 
-<body>
-    <div id="container" style="max-height: 100vh; overflow: hidden;"></div>
-</body>
+    <script type="text/javascript">
+      // Prevent ResizeObserver warnings
+      window.addEventListener(
+        "error",
+        (e) => {
+          if (e.message.includes("ResizeObserver")) {
+            e.stopImmediatePropagation();
+          }
+        },
+        true
+      );
+
+      $(document).ready(function () {
+        setTimeout(() => {
+          // Ensure the PDF file exists before initializing Flipbook
+          $.get("./pdf/SEXUALPURITYSOARHQ.pdf")
+            .done(function () {
+              $("#container").flipBook({
+                pdfUrl: "./pdf/SEXUALPURITYSOARHQ.pdf",
+                textLayer: true,
+              });
+            })
+            .fail(function () {
+              console.error("Error: PDF file not found!");
+            });
+        }, 100); // Delay initialization to avoid ResizeObserver issues
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="container"></div>
+  </body>
 </html>
