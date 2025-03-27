@@ -465,7 +465,7 @@ body::-webkit-scrollbar {
   width: 8rem;
   border: 1px solid #d4af37c5;
   aspect-ratio: 1/1;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
 }
 
@@ -1123,6 +1123,10 @@ filter: grayscale(1);
 }
 
 @media (max-width: 750px) {
+#testimonialBlock{
+  flex-direction: column;
+}
+
   .testimonialcard h3 {
     font-size: 1.5rem;
   }
@@ -1131,6 +1135,11 @@ filter: grayscale(1);
     height: 25vh;
   }
 }
+
+@media (max-width: 730px) {
+  #testimonialBlock{
+  flex-direction: column;
+}}
 
 @media (max-width: 650px) {
   #testimonialSection .figureWrap {
@@ -1531,6 +1540,11 @@ right: -1rem;
     width: 80vw;
     height: auto;
   }
+
+.testCard{
+  display: flex;
+  flex-direction: column;
+}
 
   /* .meetOurTeamLayer {
     display: flex;
