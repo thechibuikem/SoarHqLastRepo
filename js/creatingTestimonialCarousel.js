@@ -2,7 +2,7 @@
 const slideListFiller = [
   {
     id: 1,
-    image:" images\ testimonialImages\ ugochiOguike.webp ",
+    image:" images\testimonialImages\ugochiOguike.webp ",
     name: "Success Nwankpa",
     testimony: `Good evening, Excellencies! I am Excellent Success, Success Nwankpa.I just concluded my discipleship call with the steward, @Excellent Nancy, and it was truly transformative.I used the word "transformative" because just a few minutes before the call, I was feeling down, there is a power outage, it left my laptop unusable. I have important tasks to complete to meet upcoming timelines, and I was also troubled by some family issues. However, joining the call opened my eyes to hope and strengthened me by the grace of God.During our conversation, Excellent Nancy shared some of her undergraduate experiences, which resonated deeply with me. I left the call feeling uplifted and strengthened in God's word; I even received insights to share with my twin sister.I am continually grateful for this community of Godliness and excellence.God bless you, @Excellent Nancy; may you receive more of God's grace ma.God bless us all!`,
   },
