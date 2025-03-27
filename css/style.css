@@ -1039,31 +1039,13 @@ filter: grayscale(1);
   #eLibraryBtnSection {
     align-self: center;
   }
-
-  .footX {
-    align-self: flex-start;
-  }
-
+  
   /* making testimonials responsive */
   .figureWrap {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     row-gap: 2rem;
   }
-
-  /* making team responsive */
-  /* .meetOurTeamLayer {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    height: fit-content; */
-  /* grid-template-rows: repeat(1, 1fr); */
-  /* animation: scrollContinousTablet 10s linear infinite;
-  } */
-
-  /* .meetOurTeamFigure {
-    max-width: 70vw;
-    width: 17rem;
-  } */
 
   .figureGrp2 h4 {
     font-size: 1rem;
@@ -1103,15 +1085,6 @@ filter: grayscale(1);
   #remHeroText {
     /* font-size: 3.7rem; */
     width: 99%;
-  }
-  /* 
-  .meetOurTeamWrap {
-    flex-direction: row;
-    width: fit-content;
-  } */
-
-  .meetOurTeamLayer {
-    /* animation: scrollContinous 10s 2s infinite; */
   }
 
   /* styling mission section */
