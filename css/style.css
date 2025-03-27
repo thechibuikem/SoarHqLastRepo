@@ -640,7 +640,7 @@ body::-webkit-scrollbar {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  min-width: 16rem;
+  min-width: 20rem;
   height: 70vh;
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.081) 0px 3px 6px, rgba(0, 0, 0, 0.081) 0px 3px 6px;
@@ -1139,7 +1139,28 @@ filter: grayscale(1);
 @media (max-width: 730px) {
   #testimonialBlock{
   flex-direction: column;
-}}
+    align-items: center;
+    padding-left:0 ;
+    padding-right:0 ;
+}
+
+#tBlockGrp2{
+align-items: center;
+}
+
+.testimonialcard{
+    /* justify-self: center */
+}
+
+#right{
+      right:1rem;
+}
+
+#left{
+      left:1rem;
+}
+}
+
 
 @media (max-width: 650px) {
   #testimonialSection .figureWrap {
@@ -1151,6 +1172,14 @@ filter: grayscale(1);
     height: 60vh;
     justify-self: center;
   }
+
+  #right{
+      right:0.5rem;
+}
+
+#left{
+      left:0.5rem;
+}
 }
 
 /* large screen mobile phones or small tablets */
@@ -1261,11 +1290,6 @@ filter: grayscale(1);
 
   .aboutUs {
     font-size: 1.2rem;
-  }
-
-  /* making testimonials responsive */
-  #testimonialSection {
-    height: fit-content;
   }
 
   /* making testimonials responsive */
@@ -1495,6 +1519,7 @@ right: -1rem;
     column-gap: 3rem;
     row-gap: 3rem;
   }
+  
 }
 
 /* Better layout for tablets (768px - 1100px) */
@@ -1510,11 +1535,6 @@ right: -1rem;
     gap: 2rem;
     justify-content: center;
   }
-  /* 
-  .meetOurTeamLayer {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-  } */
 
   .figureWrap {
     grid-template-columns: repeat(2, 1fr);
@@ -1524,8 +1544,12 @@ right: -1rem;
 
   .testimonialcard {
     height: auto;
-    min-height: 40vh;
-  }
+    min-height: 40vh;}
+
+      /* styling meet figures */
+    .meetOurTeamFigure{
+      min-width: 24rem;
+    }
 }
 
 /* Standardizing mobile design for better readability */
