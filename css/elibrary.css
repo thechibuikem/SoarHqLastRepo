@@ -264,8 +264,8 @@ line-height: 1.6;
   max-width: 100%;
   width: 100%;
   /* background-color: #d4af37; */
-  border: 1px solid #c9c3c3;
   border: 1px solid #d4af3741 ;
+  border: 1px solid #c9c3c3;
   height: 60%;
   max-height: 60%;
   border-radius: 1rem;
@@ -278,7 +278,7 @@ line-height: 1.6;
   height:100%;
   object-fit: contain;
   border-radius: 1rem;
-  border: 1px solid #d4af371d;
+  /* border: 1px solid #d4af371d; */
 }
 
 .textPart{
