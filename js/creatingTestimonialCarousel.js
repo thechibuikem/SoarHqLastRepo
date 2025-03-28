@@ -148,7 +148,7 @@ let slideList = Array.from(document.querySelectorAll(".invi"));
 slideList.forEach((element, index) => {
   let name = element.querySelector("#tBlockGrp2 h3");
   let testimony = element.querySelector("#tBlockGrp2 h4");
-  let image = element.querySelector("#tBlockGrp1 img")
+  let image = element.querySelector("#tBlockGrp1 img");
 
   if (name) name.textContent = slideListFiller[index].name;
   if (testimony) testimony.textContent = slideListFiller[index].testimony;
