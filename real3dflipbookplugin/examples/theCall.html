@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="../build/css/flipbook.min.css">
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.3.js"
+            integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="../build/js/flipbook.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#container').flipBook({
+                    pages: [
+                        {
+                            src: '/books/theCall/1.webp',
+                            thumb: '/books/theCall/1.webp',
+                            title: 'Cover',
+                        },
+                        {
+                            src: '/books/theCall/2.webp',
+                            thumb: '/books/theCall/2.webp',
+                            title: 'content',
+                        },
+                         {
+                            src: '/books/theCall/3.webp',
+                            thumb: '/books/theCall/3.webp',
+                            title: 'content',
+                        },
+                         {
+                            src: '/books/theCall/4.webp',
+                            thumb: '/books/theCall/4.webp',
+                            title: 'content',
+                        },
+                         {
+                            src: '/books/theCall/5.webp',
+                            thumb: '/books/theCall/5.webp',
+                            title: 'content',
+                        },
+                         {
+                            src: '/books/theCall/6.webp',
+                            thumb: '/books/theCall/6.webp',
+                            title: 'content',
+                        },
+                         {
+                            src: '/books/theCall/7.webp',
+                            thumb: '/books/theCall/7.webp',
+                            title: 'content',
+                        },
+                         {
+                            src: '/books/theCall/8.webp',
+                            thumb: '/books/theCall/8.webp',
+                            title: 'content',
+                        },
+                         {
+                            src: '/books/theCall/9.webp',
+                            thumb: '/books/theCall/9.webp',
+                            title: 'content',
+                        },
+                        
+
+                    ],
+                    // singlePageMode: true,
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="container"></div>
+    </body>
+</html>
