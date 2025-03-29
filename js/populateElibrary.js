@@ -49,18 +49,16 @@ for (let i = 2; i < 4; i++) {
 // creating array that would house my soar posts
 let booksArray = Array.from(document.querySelectorAll(".ElibraryPostFigure"));
 
-
 // temporarily link the call i.e book 2
-const changePage = () =>{
-  window.location =
-    "https://soarhqvercel.vercel.app/real3dflipbookplugin/examples/theCall.html";
-}
+const changePage = () => {
+  window.location.pathname = "../real3dflipbookplugin/examples/theCall.html";
+};
 let theCall = booksArray[1];
-theCall.addEventListener("click",changePage);
+theCall.addEventListener("click", changePage);
 
 // temporarily hide book3
-let hiddenBook = booksArray[2]
-hiddenBook.style.display="none"
+let hiddenBook = booksArray[2];
+hiddenBook.style.display = "none";
 // the for each statement that does the dynamic manipulation
 booksArray.forEach((element, index) => {
   //private variable declaration
