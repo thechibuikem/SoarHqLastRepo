@@ -49,12 +49,14 @@ for (let i = 2; i < 4; i++) {
 // creating array that would house my soar posts
 let booksArray = Array.from(document.querySelectorAll(".ElibraryPostFigure"));
 
-// temporarily link the call i.e book 2
+// link the books
+for (let i = 0; i<booksArray.length; i++){
 const changePage = () => {
-  window.location.pathname = "../real3dflipbookplugin/examples/theCall.html";
+  window.location.pathname = `../real3dflipbookplugin/examples/${booksArray[i].click.fileName}.html`;
 };
-let theCall = booksArray[1];
-theCall.addEventListener("click", changePage);
+
+booksArray[i].addEventListener("click", changePage);
+}
 
 // temporarily hide book3
 let hiddenBook = booksArray[2];
