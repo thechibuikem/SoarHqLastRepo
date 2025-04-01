@@ -1291,7 +1291,7 @@ body::-webkit-scrollbar {
   /* our mission section */
   #mission {
     gap: 2rem;
-    background-image: url(brownearth.jpg);
+    background-image: url(backgroundImages/brownearth.jpg);
     background-blend-mode: darken;
     background-color: #000000be;
     background-size: cover;
