@@ -1,5 +1,24 @@
 {
   "dependencies": {
-    "aos": "^2.3.4"
-  }
+    "aos": "^2.3.4",
+    "express": "^4.21.2"
+  },
+  "name": "soarhq",
+  "version": "1.0.0",
+  "main": "pluggin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thechibuikem/SoarHqLastRepo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thechibuikem/SoarHqLastRepo/issues"
+  },
+  "homepage": "https://github.com/thechibuikem/SoarHqLastRepo#readme",
+  "description": ""
 }

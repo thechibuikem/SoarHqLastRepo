@@ -254,7 +254,7 @@ body::-webkit-scrollbar {
   width: 100%;
   min-height: 100vh;
   height: fit-content;
-  background-image: url(soarfinalbackground.webp);
+  background-image: url(backgroundImages/soarbackground.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: darken;
@@ -324,47 +324,17 @@ body::-webkit-scrollbar {
 }
 
 /* text on the discover section */
-.learnMore {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 5rem;
-  gap: 2rem;
-}
-
-.learnMoreText {
-  font-size: 1.75rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2px;
-  color: #f2f3f7;
-  font-weight: lighter;
-  padding-bottom: 3rem;
-}
-
-.learnMoreIcon {
-  display: none;
-}
-
-.learnMoreIconBg:hover .learnMoreIcon {
-  stroke: #d4af37;
-}
-
-.learnMoreIcon:hover {
-  stroke: #d4af37;
-}
 
 /* the section having the about statement   */
 #moreAboutSection {
-  margin-top: 11rem;
-  margin-bottom: 12rem;
+  padding-top: 11rem;
+  padding-bottom: 11rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: fit-content;
-  height: 50vh;
+  /* height: 50vh; */
   gap: 2rem;
   width: 100%;
 }
@@ -379,7 +349,8 @@ body::-webkit-scrollbar {
 }
 
 .aboutUs {
-  font-size: 1.75rem;
+  font-size: 1.65rem;
+  line-height: 2;
   font-weight: 300;
   color: #2c2b2b;
 }
@@ -436,15 +407,13 @@ body::-webkit-scrollbar {
   flex-direction: column;
   position: relative;
 }
-
+/* the cards */
 #testimonialBlock {
   max-height: 70vh;
   height: fit-content;
   display: flex;
-  /* width: 100%; */
   width: 80%;
   border: 1px solid #d4af37c5;
-  /* box-shadow: px 1px 0.25rem #cfcfcf; */
   padding-bottom: 6rem;
   box-shadow: rgba(0, 0, 0, 0.078) 0px 3px 6px, rgba(0, 0, 0, 0.086) 0px 3px 6px;
   border-radius: 0.5rem;
@@ -453,11 +422,11 @@ body::-webkit-scrollbar {
   transition: 0.2s ease;
 }
 
-#testimonialBlock::-webkit-scrollbar{
+#testimonialBlock::-webkit-scrollbar {
   visibility: hidden;
 }
 
-#testimonialBlock:hover{
+#testimonialBlock:hover {
   overflow: scroll;
 }
 
@@ -519,9 +488,6 @@ body::-webkit-scrollbar {
   font-weight: 200;
   line-height: 1.6;
   width: 90%;
-}
-
-.arrange {
 }
 
 /* styling mission section */
@@ -613,11 +579,11 @@ body::-webkit-scrollbar {
 }
 
 @keyframes scroll {
-  to{
+  to {
     transform: translateX(-100%);
   }
 }
-  
+
 .meetOurTeamLayer {
   height: 70vh;
   width: 100vw;
@@ -631,7 +597,7 @@ body::-webkit-scrollbar {
   animation: scroll 20s linear infinite;
 }
 
-.meetOurTeamLayer:hover{
+.meetOurTeamLayer:hover {
   animation-play-state: paused;
 }
 
@@ -645,11 +611,11 @@ body::-webkit-scrollbar {
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.081) 0px 3px 6px, rgba(0, 0, 0, 0.081) 0px 3px 6px;
   border: 1px solid #28282839;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.meetOurTeamFigure:hover{
-filter: grayscale(1);
+.meetOurTeamFigure:hover {
+  filter: grayscale(1);
 }
 
 .figureGrp1 {
@@ -879,18 +845,6 @@ filter: grayscale(1);
     font-size: 3rem;
   }
 
-  /* .meetOurTeamLayer {
-    animation: growContinous 5s linear infinite;
-  } */
-
-  /* #meetFigure4 {
-    transform: translateX(50%);
-  }
-
-  #meetFigure5 {
-    transform: translateX(50%);
-  } */
-
   .missionHeader h3 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
@@ -988,7 +942,7 @@ filter: grayscale(1);
   /* our mission section */
   #mission {
     gap: 2rem;
-    background-image: url(brownearth.jpg);
+    background-image: url(backgroundImages/brownearth.jpg);
     background-blend-mode: darken;
     background-color: #000000be;
     background-size: cover;
@@ -1039,7 +993,7 @@ filter: grayscale(1);
   #eLibraryBtnSection {
     align-self: center;
   }
-  
+
   /* making testimonials responsive */
   .figureWrap {
     grid-template-columns: repeat(2, 1fr);
@@ -1096,9 +1050,9 @@ filter: grayscale(1);
 }
 
 @media (max-width: 750px) {
-#testimonialBlock{
-  flex-direction: column;
-}
+  #testimonialBlock {
+    flex-direction: column;
+  }
 
   .testimonialcard h3 {
     font-size: 1.5rem;
@@ -1110,30 +1064,29 @@ filter: grayscale(1);
 }
 
 @media (max-width: 730px) {
-  #testimonialBlock{
-  flex-direction: column;
+  #testimonialBlock {
+    flex-direction: column;
     align-items: center;
-    padding-left:0 ;
-    padding-right:0 ;
-}
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-#tBlockGrp2{
-align-items: center;
-}
+  #tBlockGrp2 {
+    align-items: center;
+  }
 
-.testimonialcard{
+  .testimonialcard {
     /* justify-self: center */
-}
+  }
 
-#right{
-      right:1rem;
-}
+  #right {
+    right: 1rem;
+  }
 
-#left{
-      left:1rem;
+  #left {
+    left: 1rem;
+  }
 }
-}
-
 
 @media (max-width: 650px) {
   #testimonialSection .figureWrap {
@@ -1146,13 +1099,13 @@ align-items: center;
     justify-self: center;
   }
 
-  #right{
-      right:0.5rem;
-}
+  #right {
+    right: 0.5rem;
+  }
 
-#left{
-      left:0.5rem;
-}
+  #left {
+    left: 0.5rem;
+  }
 }
 
 /* large screen mobile phones or small tablets */
@@ -1240,21 +1193,13 @@ align-items: center;
     padding-top: 6rem;
   }
 
-  .learnMore {
-    padding-top: 4.5rem;
-  }
-
-  .learnMoreText {
-    font-size: 1rem;
-  }
-
   #moreAboutSection {
     margin: 6rem 0;
     width: 80%;
     height: fit-content;
     align-self: center;
     text-align: center;
-    gap: 0.5rem;
+    gap: 2rem;
   }
 
   .aboutHeader {
@@ -1263,6 +1208,7 @@ align-items: center;
 
   .aboutUs {
     font-size: 1.2rem;
+    line-height: 1.5;
   }
 
   /* making testimonials responsive */
@@ -1300,21 +1246,21 @@ align-items: center;
     /* text-align:center; */
   }
 
-/*moregenerically targetting the buttons  */
-  .testButton path{
+  /*moregenerically targetting the buttons  */
+  .testButton path {
     /* stroke:#d4af37; */
-    fill:#e0c97e;
+    fill: #e0c97e;
   }
 
-/* right button in the testimonial */
-#right{
-right: -1rem;
-}
+  /* right button in the testimonial */
+  #right {
+    right: -1rem;
+  }
 
-/* left button in the testimonial */
-#left{
-  left: -1rem;
-}
+  /* left button in the testimonial */
+  #left {
+    left: -1rem;
+  }
 
   .figureWrap {
     grid-template-columns: repeat(1, 1fr);
@@ -1329,35 +1275,21 @@ right: -1rem;
   }
 
   /* making meet our team in homepage responsive */
-  
-  
+
   #meetOurTeam {
     width: 90%;
     height: fit-content;
     gap: 2rem;
     margin-bottom: 0;
   }
-  
-    .meetOurTeamFigure {
-      width: 100%;
-    }
+
+  .meetOurTeamFigure {
+    width: 100%;
+  }
 
   #meetOurTeam h3 {
     font-size: 1.2rem;
   }
-  /* 
-  .meetOurTeamLayer {
-    display: flex; */
-  /* gap: 2rem; */
-  /* animation: scrollContinousMobile 10s linear infinite;
-    animation-play-state: running;
-  }
-
-  .meetOurTeamLayer:hover {
-    animation-play-state: paused;
-  } */
-   
-
 
   /* our mission section */
   #mission {
@@ -1369,7 +1301,7 @@ right: -1rem;
     height: fit-content;
     color: #f2f3f7;
     padding: 3rem 1rem;
-    height: 70vh;
+    height: 80vh;
   }
 
   /* styling missions header */
@@ -1492,7 +1424,6 @@ right: -1rem;
     column-gap: 3rem;
     row-gap: 3rem;
   }
-  
 }
 
 /* Better layout for tablets (768px - 1100px) */
@@ -1517,12 +1448,13 @@ right: -1rem;
 
   .testimonialcard {
     height: auto;
-    min-height: 40vh;}
+    min-height: 40vh;
+  }
 
-      /* styling meet figures */
-    .meetOurTeamFigure{
-      min-width: 24rem;
-    }
+  /* styling meet figures */
+  .meetOurTeamFigure {
+    min-width: 24rem;
+  }
 }
 
 /* Standardizing mobile design for better readability */
@@ -1538,10 +1470,10 @@ right: -1rem;
     height: auto;
   }
 
-.testCard{
-  display: flex;
-  flex-direction: column;
-}
+  .testCard {
+    display: flex;
+    flex-direction: column;
+  }
 
   /* .meetOurTeamLayer {
     display: flex;
