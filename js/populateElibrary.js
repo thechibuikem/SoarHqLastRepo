@@ -27,29 +27,9 @@ const booksFillerArray = [
     authorsName: "Nancy Chukwuemeka",
     authorsImageSrc: "/images/nancysoar.webp",
     datePublished: "",
-    folderName: "theCall",
-  },
-  // book3
-  {
-    imageSrc: "",
-    bookTitle: "",
-    bookDescription: "",
-    authorsName: "",
-    authorsImageSrc: "",
-    datePublished: "",
-    folderName: "",
+    folderName: "theCallDynamic",
   },
 
-  // book1
-  {
-    imageSrc: "books/sexualPurity/1.webp",
-    bookTitle: "Sexual Purity",
-    bookDescription: "",
-    authorsName: "Nancy Chukwuemeka",
-    authorsImageSrc: "/images/nancysoar.webp",
-    datePublished: "",
-    folderName: "sexualPurity",
-  },
 ];
 
 // getting the first figure block from my soar post collection
@@ -59,7 +39,7 @@ let booksArray = []
 booksArray = [columnFigure1];
 // cloning the first to get two extra new blocks
 let columnFigureCloned;
-for (let i = 2; i < 100; i++) {
+for (let i = 2; i < 3; i++) {
   columnFigureCloned = columnFigure1.cloneNode(true);
   columnFigureCloned.setAttribute("id", `postFigure${i}`);
   column1.appendChild(columnFigureCloned);
@@ -67,10 +47,6 @@ for (let i = 2; i < 100; i++) {
 }
 
 
-for(let i = 0; i < (booksArray.length); i++){
-booksArray[i]
-
-};
 
 
 // creating array that would house my soar posts
@@ -88,8 +64,8 @@ booksArray.forEach((element, index) => {
   let bookDesc = element.querySelector(".textPart h4");
   let authors = element.querySelector(".textPartLast h5");
   let authorsImage = element.querySelector(".textPartLast img");
-  let date = element.querySelector(".textPartLast #hideH5");
-  let bookName = element.dataset.file
+  // let date = element.querySelector(".textPartLast #hideH5");
+  
 
   // manipulating the private variables
   if (image) image.src = booksFillerArray[index].imageSrc;
@@ -97,8 +73,22 @@ booksArray.forEach((element, index) => {
   if (bookDesc) bookDesc.innerHTML = booksFillerArray[index].bookDescription;
   if (authors) authors.innerHTML = booksFillerArray[index].authorsName;
   if (authorsImage) authorsImage.src = booksFillerArray[index].authorsImageSrc;
-  if (date) date.innerHTML = booksFillerArray[index].datePublished;
-  if (bookName) bookName.value = booksFillerArray[index].folderName;
+  // if (date) date.innerHTML = booksFillerArray[index].datePublished;
+  element.dataset.file = booksFillerArray[index].folderName;
 });
 
-// console.log(booksArray);
+
+
+
+booksArray.forEach((element) => {
+
+  
+// the event llistener
+  element.addEventListener("click", ()=>{
+    window.location.href = `https://soarhqvercel.vercel.app/real3dflipbookplugin/examples/${element.dataset.file}.html`
+
+  })
+
+});
+
+// console.log(bookName);
