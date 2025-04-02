@@ -427,12 +427,10 @@
   }
 }
 
-@media (max-)
+/* @media (max-width:1024p)()  */
 
 @media (max-width: 1024px) {
-  .remNav {
-    height: 40vh;
-  }
+
 
   .ElibraryBlockOfBlocksColumn {
     display: grid;
@@ -443,7 +441,7 @@
   }
 
   .ElibraryPostFigure {
-    height: 40vh;
+    /* height: 40vh; */
     max-width: 18rem;
   }
 }
@@ -481,10 +479,10 @@
     row-gap: 2rem;
   }
 
-  .ElibraryPostFigure {
+  /* .ElibraryPostFigure {
     height: 40vh;
     width: 20rem;
-  }
+  } */
 
   /* responsive footers */
   .footerWrap {
@@ -681,7 +679,12 @@
 }
 
 /* Better layout for tablets (768px - 1100px) */
-@media (max-width: 1100px) and (min-width: 768px) {
+@media (max-width: 1100px) and (min-width: 00px) {
+  
+    .remNav {
+    height: 60vh;
+  }
+  
   .footerWrap {
     flex-direction: column-reverse;
     gap: 2rem;
