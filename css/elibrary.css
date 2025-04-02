@@ -155,19 +155,19 @@
 }
 
 /* the featured panel */
+
 .remNav {
   height: 100vh;
   width: 98%;
   background-image: url(backgroundImages/elibraryBackground.webp);
   background-size: contain;
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   background-blend-mode: darken;
   background-color: #3d3b3b91;
   border-radius: 1rem;
   color: #e0d8d8;
   display: flex;
-  align-items: flex-end;
-  /* justify-content: center; */
+  align-items: last baseline;
   margin-top: 1rem;
 }
 
@@ -209,7 +209,7 @@
   flex-direction: column;
   color: #2c2b2b;
   gap: 1rem;
-  margin-bottom: 30vh;
+  /* margin-bottom: 30vh; */
 }
 
 #mainElibrarySectionHeader {
@@ -239,6 +239,7 @@
   height: 40vh;
   /* max-height: 80%; */
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 /* the blog images */
@@ -299,16 +300,15 @@
 
 /* styling footer section */
 .footer {
-  /* margin-top: 8rem; */
+  margin-top: 8rem;
   margin-bottom: 8rem;
 }
 /* wrapper */
 .footerWrap {
   display: flex;
   justify-content: space-around;
-  /* gap: 3rem; */
   max-width: 100%;
-  width: 100%;
+  width: 100vw;
   height: 80vh;
   padding: 4rem 4rem;
 }
@@ -318,6 +318,11 @@
   display: flex;
   max-width: 40%;
   gap: 6rem;
+}
+
+/* address part */
+#soarAddress {
+  line-height: 1.6;
 }
 
 /* list of links in 2nd and 3rd column of footer*/
@@ -364,7 +369,7 @@
 /* soarHq logo in the footer */
 #footerImg {
   max-width: 12rem;
-  background-color: #f2f3f7;
+  background-color: #fcfbfa;
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
   box-shadow: 2px 2px 0.25rem #30010163;
@@ -385,6 +390,7 @@
   transition: 0.5s ease;
   font-weight: 200;
   color: #2c2b2b;
+  word-wrap: break-word;
 }
 
 /* links in the footer hover state*/
@@ -403,6 +409,22 @@
 }
 
 /* responsiveness */
+
+@media (max-width: 1100px) {
+  .footerWrap {
+    flex-direction: column-reverse;
+    gap: 4rem;
+    align-items: first baseline;
+  }
+
+  .midFoot {
+    flex-direction: column;
+  }
+
+  #eLibraryBtnSection {
+    align-self: center;
+  }
+}
 
 @media (max-width: 1024px) {
   .ElibraryBlockOfBlocksColumn {
@@ -447,32 +469,31 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
   }
-}
 
-.ElibraryPostFigure {
-  height: 40vh;
-  width: 20rem;
-}
+  .ElibraryPostFigure {
+    height: 40vh;
+    width: 20rem;
+  }
 
-/* responsive footers */
-.footerWrap {
-  flex-direction: column-reverse;
-  gap: 4rem;
-  align-items: first baseline;
-}
+  /* responsive footers */
+  .footerWrap {
+    flex-direction: column-reverse;
+    gap: 4rem;
+    align-items: first baseline;
+  }
 
-.midFoot {
-  flex-direction: column;
-}
+  .midFoot {
+    flex-direction: column;
+  }
 
-#eLibraryBtnSection {
-  align-self: center;
-}
+  #eLibraryBtnSection {
+    align-self: center;
+  }
 
-.footX {
-  align-self: flex-start;
+  .footX {
+    align-self: flex-start;
+  }
 }
-
 @media (max-width: 450px) {
   .container {
     padding-bottom: 4rem;
@@ -500,9 +521,10 @@
   }
 
   .remNav {
-    min-height: 40vh;
-    height: 65vh;
+    /* height: 40vh; */
+    height: 50vh;
     margin-top: 1rem;
+    align-items: last baseline;
   }
 
   .remNav ::-webkit-scrollbar {
@@ -510,7 +532,7 @@
   }
 
   .remNavFigure {
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
     margin-left: 0.5rem;
     min-height: 40vh;
     max-height: 40vh;
@@ -595,7 +617,6 @@
   }
 
   /* footer responsive */
-
   /* footer responsive */
   .footer {
     display: flex;
@@ -635,5 +656,33 @@
 
   #eLibraryBtnSection button {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1101px) {
+  .footerWrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .midFoot {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+/* Better layout for tablets (768px - 1100px) */
+@media (max-width: 1100px) and (min-width: 768px) {
+  .footerWrap {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .midFoot {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
   }
 }

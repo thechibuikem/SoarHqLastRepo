@@ -756,7 +756,7 @@ body::-webkit-scrollbar {
   transition: 0.5s ease;
   font-weight: 200;
   color: #2c2b2b;
-  word-wrap:break-word;
+  word-wrap: break-word;
 }
 
 /* links in the footer hover state*/
@@ -979,6 +979,7 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 1100px) {
+  /* making footer responsive */
   .footerWrap {
     flex-direction: column-reverse;
     gap: 4rem;
@@ -1411,11 +1412,6 @@ body::-webkit-scrollbar {
     gap: 2rem;
   }
 
-  /* .meetOurTeamLayer {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-  } */
-
   .figureWrap {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3rem;
@@ -1472,14 +1468,4 @@ body::-webkit-scrollbar {
     flex-direction: column;
   }
 
-  /* .meetOurTeamLayer {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  }
-
-  .meetOurTeamFigure {
-    scroll-snap-align: center;
-    min-width: 50vw;
-  } */
 }
