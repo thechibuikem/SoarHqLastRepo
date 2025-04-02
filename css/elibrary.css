@@ -155,7 +155,6 @@
 }
 
 /* the featured panel */
-
 .remNav {
   height: 100vh;
   width: 98%;
@@ -172,6 +171,8 @@
 }
 
 .remNavFigure {
+  /* height: 30%; */
+  align-self: last baseline;
   margin-left: 2rem;
   margin-bottom: 1rem;
 }
@@ -427,6 +428,10 @@
 }
 
 @media (max-width: 1024px) {
+  .remNav {
+    height: 40vh;
+  }
+
   .ElibraryBlockOfBlocksColumn {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -447,6 +452,10 @@
   }
   .imagePart {
     max-height: 60%;
+  }
+
+  .remNav {
+    height: 30vh;
   }
 
   .ElibraryBlockOfBlocksColumn {
@@ -532,12 +541,10 @@
   }
 
   .remNavFigure {
-    margin-bottom: -1rem;
+    /* margin-bottom: -1rem; */
     margin-left: 0.5rem;
-    min-height: 40vh;
-    max-height: 40vh;
-    overflow-y: scroll;
-    /* background-color: red; */
+ 
+    /* overflow-y: scroll; */
   }
 
   #remNavFigureDown {
@@ -620,13 +627,12 @@
   /* footer responsive */
   .footer {
     display: flex;
-    justify-content: center;
   }
 
   .footerWrap {
     flex-direction: column-reverse;
     padding: 0 0;
-    width: 80%;
+    width: 100%;
   }
 
   .midFoot {

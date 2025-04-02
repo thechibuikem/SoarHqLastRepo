@@ -29,7 +29,16 @@ const booksFillerArray = [
     datePublished: "",
     folderName: "theCallDynamic",
   },
-
+  // book3
+  {
+    imageSrc: "books/jireh/1.webp",
+    bookTitle: "Jireh",
+    bookDescription: "",
+    authorsName: "Nancy Chukwuemeka",
+    authorsImageSrc: "/images/nancysoar.webp",
+    datePublished: "",
+    folderName: "jirehDynamic",
+  },
 ];
 
 // getting the first figure block from my soar post collection
@@ -39,7 +48,7 @@ let booksArray = []
 booksArray = [columnFigure1];
 // cloning the first to get two extra new blocks
 let columnFigureCloned;
-for (let i = 2; i < 3; i++) {
+for (let i = 2; i < (booksFillerArray.length + 1); i++) {
   columnFigureCloned = columnFigure1.cloneNode(true);
   columnFigureCloned.setAttribute("id", `postFigure${i}`);
   column1.appendChild(columnFigureCloned);
