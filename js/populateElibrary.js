@@ -1,11 +1,9 @@
-console.clear()
+console.clear();
 
 // getting and declaring my variables
 let body = document.querySelector("body");
 let column1 = document.getElementById("ElibraryBlockOfBlocksColumnId"); //the first column containing blocks of figure elements
 let columnWrapper = body.querySelector("#ElibraryBlockOfBlocksWrap");
-
-
 
 // creating array of objects that would dynamically change the contents of trybook
 const booksFillerArray = [
@@ -44,23 +42,19 @@ const booksFillerArray = [
 // getting the first figure block from my soar post collection
 let columnFigure1 = column1.querySelector("#postFigure1");
 
-let booksArray = []
+let booksArray = [];
 booksArray = [columnFigure1];
 // cloning the first to get two extra new blocks
 let columnFigureCloned;
-for (let i = 2; i < (booksFillerArray.length + 1); i++) {
+for (let i = 2; i < booksFillerArray.length + 1; i++) {
   columnFigureCloned = columnFigure1.cloneNode(true);
   columnFigureCloned.setAttribute("id", `postFigure${i}`);
   column1.appendChild(columnFigureCloned);
   booksArray.push(columnFigureCloned);
 }
 
-
-
-
 // creating array that would house my soar posts
 // let booksArray = Array.from(document.querySelectorAll(".ElibraryPostFigure"));
-
 
 // temporarily hide book3
 // let hiddenBook = booksArray[2];
@@ -74,7 +68,6 @@ booksArray.forEach((element, index) => {
   let authors = element.querySelector(".textPartLast h5");
   let authorsImage = element.querySelector(".textPartLast img");
   // let date = element.querySelector(".textPartLast #hideH5");
-  
 
   // manipulating the private variables
   if (image) image.src = booksFillerArray[index].imageSrc;
@@ -86,18 +79,11 @@ booksArray.forEach((element, index) => {
   element.dataset.file = booksFillerArray[index].folderName;
 });
 
-
-
-
 booksArray.forEach((element) => {
-
-  
-// the event llistener
-  element.addEventListener("click", ()=>{
-    window.location.href = `https://soarhqvercel.vercel.app/real3dflipbookplugin/examples/${element.dataset.file}.html`
-
-  })
-
+  // the event llistener
+  element.addEventListener("click", () => {
+    window.location.href = `https://soarhqvercel.vercel.app/real3dflipbookplugin/examples/${element.dataset.file}.html`;
+  });
 });
 
 // console.log(bookName);

@@ -427,6 +427,8 @@
   }
 }
 
+@media (max-)
+
 @media (max-width: 1024px) {
   .remNav {
     height: 40vh;
