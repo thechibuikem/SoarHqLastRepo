@@ -58,3 +58,36 @@ meetCardsArray.forEach((element, index) => {
   if (role) role.textContent = meetCardsArrayFiller[index].role;
   if (image) image.src = meetCardsArrayFiller[index].image;
 });
+
+// event listeners to control the animation of the sliding flex
+// mouseover event
+meetSlidingFlex.addEventListener("mouseover", (e) => {meetSlidingFlex.classList.toggle("pauseAnimation");})
+
+// click event
+meetSlidingFlex.addEventListener("click", (e) => {
+  meetSlidingFlex.classList.toggle("pauseAnimation");
+});
+// mouseout event
+meetSlidingFlex.addEventListener("mouseout", (e) => {
+  meetSlidingFlex.classList.remove("pauseAnimation");
+});
+
+// event listeners to control the grayscale on the cards
+// mouseover event
+meetCardsArray.forEach((element)=>{
+  element.addEventListener("mouseover", (e) => {
+    element.classList.toggle("turnCardGrey");
+  });
+})
+
+// click event
+meetCardsArray.forEach((element) => {
+  element.addEventListener("click", (e) => {
+    element.classList.toggle("turnCardGrey");
+  });
+});
+// mouseout event
+meetCardsArray.forEach((element) => {
+  element.addEventListener("mouseout", (e) => {
+    element.classList.toggle("turnCardGrey");
+  });});
