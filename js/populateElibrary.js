@@ -15,7 +15,7 @@ const booksFillerArray = [
     authorsName: "Nancy Chukwuemeka",
     authorsImageSrc: "/images/nancysoar.webp",
     datePublished: "",
-    folderName: "sexualPurity",
+    folderName: "sexualPurityDynamic",
   },
   // book2
   {

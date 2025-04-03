@@ -430,8 +430,6 @@
 /* @media (max-width:1024p)()  */
 
 @media (max-width: 1024px) {
-
-
   .ElibraryBlockOfBlocksColumn {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -543,7 +541,7 @@
   .remNavFigure {
     /* margin-bottom: -1rem; */
     margin-left: 0.5rem;
- 
+
     /* overflow-y: scroll; */
   }
 
@@ -680,11 +678,10 @@
 
 /* Better layout for tablets (768px - 1100px) */
 @media (max-width: 1100px) and (min-width: 00px) {
-  
-    .remNav {
+  .remNav {
     height: 60vh;
   }
-  
+
   .footerWrap {
     flex-direction: column-reverse;
     gap: 2rem;
