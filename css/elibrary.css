@@ -677,7 +677,7 @@
 }
 
 /* Better layout for tablets (768px - 1100px) */
-@media (max-width: 1100px) and (min-width: 00px) {
+@media (max-width: 1100px) and (min-width: 800px) {
   .remNav {
     height: 60vh;
   }
