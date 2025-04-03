@@ -1187,7 +1187,8 @@ body::-webkit-scrollbar {
   }
 
   #moreAboutSection {
-    margin: 6rem 0;
+    margin: 0rem 0;
+    padding: 5rem 0;
     width: 80%;
     height: fit-content;
     align-self: center;
@@ -1220,12 +1221,9 @@ body::-webkit-scrollbar {
     margin-top: 0;
     width: 100%;
     padding-left: 0.5rem;
-    /* display: flex; */
-    /* justify-content: center; */
   }
 
   #tBlockGrp2 h3 {
-    /* width: 80%; */
     text-align: center;
   }
 
@@ -1236,12 +1234,10 @@ body::-webkit-scrollbar {
     margin-bottom: 3rem;
     display: block;
 
-    /* text-align:center; */
   }
 
-  /*moregenerically targetting the buttons  */
+  /*more generically targetting the buttons  */
   .testButton path {
-    /* stroke:#d4af37; */
     fill: #e0c97e;
   }
 
@@ -1352,7 +1348,7 @@ body::-webkit-scrollbar {
   }
 
   #eLibraryBtnSection {
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
   }
 
   #eLibraryBtnSection button {

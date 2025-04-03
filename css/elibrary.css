@@ -4,10 +4,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   caret-color: transparent;
-  /* background-color: #fcfbfa !importan */
 }
 
-/* developments  general container */
+.footer{
+  background-color: #fcfbfa!important;
+}
+  /* developments  general container */
 .container {
   display: flex;
   flex-direction: column;
@@ -223,6 +225,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 8rem;
+  justify-content: space-between;
 }
 
 .ElibraryPostFigure {
@@ -655,8 +658,10 @@
     font-size: 1.7rem;
   }
 
+
   #eLibraryBtnSection {
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
+    margin-top: -2rem;
   }
 
   #eLibraryBtnSection button {
