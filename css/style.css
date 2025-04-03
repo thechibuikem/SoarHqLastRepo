@@ -537,9 +537,13 @@ body::-webkit-scrollbar {
   overflow-x: scroll;
 }
 
+.meetOurTeamWrap::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes scroll {
   to {
-    transform: translateX(-275%);
+    transform: translateX(-325%);/* add 50% for each new card that is added */
   }
 }
 
@@ -551,8 +555,8 @@ body::-webkit-scrollbar {
   justify-content: center;
   gap: 3rem;
   align-items: center;
-  transform: translateX(175%);
-  animation: scroll 5s linear infinite;
+  transform: translateX(125%);/* sub 50% for each new card that is added*/
+  animation: scroll 20s linear infinite;
 }
 
 .pauseAnimation {
@@ -565,6 +569,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   min-width: 20rem;
+  width: 19rem;
   height: 70vh;
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.081) 0px 3px 6px, rgba(0, 0, 0, 0.081) 0px 3px 6px;
@@ -609,11 +614,11 @@ body::-webkit-scrollbar {
   text-transform: uppercase;
   text-align: center;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .figureGrp2 h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
   color: #f2f3f7e5;

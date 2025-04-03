@@ -9,7 +9,7 @@ const meetCardsArray = [
   // object1
   {
     id: 1,
-    image: "images/nancysoar.webp",
+    image: "images/meetOurTeam/nancysoar.webp",
     Name: "Nancy Chukwuemeka",
     role: "Steward, Soar HQ",
   },
@@ -17,53 +17,41 @@ const meetCardsArray = [
   // object2
   {
     id: 2,
-    image: "images/chisomSoar.webp",
+    image: "images/meetOurTeam/chisomSoar.webp",
     Name: "Excellent Ugochi Oguikpe",
     role: "Steward, Soar HQ",
   },
   // object3
   {
     id: 3,
-    image: "images/giftSoar.webp",
+    image: "images/meetOurTeam/giftSoar.webp",
     Name: "Excellent Gift Nwose",
     role: "Public Relations Manager",
   },
   // object4
   {
     id: 4,
-    image: "images/chinazaSoar.webp",
+    image: "images/meetOurTeam/chinazaSoar.webp",
     Name: "Excellent Chinaza Okoye",
     role: "media and communication managerPublic Relations Manager",
   },
   // object5
   {
     id: 5,
-    image: "images/adaezesoar.webp",
+    image: "images/meetOurTeam/adaezesoar.webp",
     Name: "Adaeze Chukwuma",
     role: " Executor, Light Podcast",
   },
+
+  // object6
+  {
+    id: 6,
+    image: "images/meetOurTeam/janeSoar.webp",
+    Name: "Jane Daniel",
+    role: " Executor, Social Media Engagement.",
+  },
 ];
 
-// for (let i = 2; i < 6; i++) {
-//   const meetCardClone = meetCard1.cloneNode(true);
-//   meetCardClone.setAttribute("id", `meetFigure${i}`);
-
-//   meetSlidingFlex.append(meetCardClone);
-// }
-
-// const meetCardsArray = Array.from(
-//   meetSlidingFlex.querySelectorAll(".meetOurTeamFigure")
-// );
-
-// meetCardsArray.forEach((element, index) => {
-//   let name = element.querySelector(".figureGrp2 h4");
-//   let role = element.querySelector(".figureGrp2 #role");
-//   let image = element.querySelector(".figureGrp1 .meetImg");
-
-//   if (name) name.textContent = meetCardsArrayFiller[index].Name;
-//   if (role) role.textContent = meetCardsArrayFiller[index].role;
-//   if (image) image.src = meetCardsArrayFiller[index].image;
-// });
 
 // creating the meet elements
 meetCardsArray.forEach((e) => {

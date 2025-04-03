@@ -52,14 +52,7 @@ for (let i = 2; i < booksFillerArray.length + 1; i++) {
   column1.appendChild(columnFigureCloned);
   booksArray.push(columnFigureCloned);
 }
-
-// creating array that would house my soar posts
-// let booksArray = Array.from(document.querySelectorAll(".ElibraryPostFigure"));
-
-// temporarily hide book3
-// let hiddenBook = booksArray[2];
-// hiddenBook.style.display = "none";
-// the for each statement that does the dynamic manipulation
+// dynamically updating books
 booksArray.forEach((element, index) => {
   //private variable declaration
   let image = element.querySelector(".imagePart img");
@@ -86,4 +79,3 @@ booksArray.forEach((element) => {
   });
 });
 
-// console.log(bookName);
