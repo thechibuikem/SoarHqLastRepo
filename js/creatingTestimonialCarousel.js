@@ -25,7 +25,7 @@ const slideListFiller = [
   {
     id: 3,
     image: "images/testimonialImages/soarHq.webp",
-    name: "Udoka Ngozichukwu",
+    name: "Ngozichukwu Udoka",
     testimony: `
  
     I had my discipleship call with the steward about a week ago and I can say for a fact that I was blessed.<br>
@@ -39,8 +39,8 @@ const slideListFiller = [
 
   {
     id: 4,
-    image: "images/testimonialImages/faithNdubisi.webp",
-    name: "Chukwuma-Emeaso Faith Adaeze",
+    image: "images/testimonialImages/adaezesoar.webp",
+    name: "Faith Adaeze Chukwuma-Emeaso ",
     testimony: `
     My discipleship call with the steward was like spring.<br> I have been going through some things which have been bugging me for a long while.<br> It made me judge myself harshly but the call gave me hope and showed me that I will be fine if I just do the needful and trust God,
     Thank you.<br> I truly appreciate the effort you put towards us here. God bless you and everyone at SOAR HQ.
@@ -72,7 +72,7 @@ const slideListFiller = [
   {
     id: 7,
     image: "images/testimonialImages/chinazaMartha.webp",
-    name: "Chinaza Martha",
+    name: "Chinaza Okoye",
     testimony: `
     "As far as my eyes can see."<br>
     This statement keeps ringing in my mind everytime I feel confused.<br>
@@ -99,7 +99,7 @@ const slideListFiller = [
   {
     id: 9,
     image: "images/testimonialImages/soarHq.webp",
-    name: "Jayeola Oluwatoyin Eunice",
+    name: "Eunice Oluwatoyin ",
     testimony: `I had my discipleship call with the steward and I must say the call was needed and its nice to have to talk to someone who sees from your perspective or has been at the stage where youre at at the moment. <br>
     I remember we spoke about building a relationship with the Holy Spirit and it made me realize what Ive been doing wrong instead of trying to emotionalize my relationship with God than building it by constantly being in his presence instead of basing his presence on feeling.<br>
     The call was really an eye and mind opening one and exactly what I needed and Im really grateful for that`,

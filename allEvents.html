@@ -3,36 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>soarhq</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/allEvents.css" />
+    <!-- Font Awesome for icons -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:i tal,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <!-- for faviicon -->
-    <link
-      rel="shortcut icon"
-      href="images/SOAR HQLOGO-A PNG.png"
-      type="image/x-icon"
-    />
-    <!-- <link rel="ostylesheet" href="css/style.css" /> -->
-    <!-- <link rel="stylesheet" href="nav.css" /> -->
-    <link rel="stylesheet" href="css/elibrary.css" />
   </head>
-
   <body>
-    <!-- development's general container -->
-    <div class="container">
-      <!-- hero section starts -->
-      <section id="heroSection">
-        <!-- nav bar starts  -->
-        <!-- top nav bar -->
-        <nav id="nav-bar">
+
+            <nav id="nav-bar">
           <!-- logo on navBar -->
           <div class="grp1">
             <img id="logo" src="images/SOAR HQLOGO-A PNG.png" />
-            <!-- <img id="logo" src="images/SOAR HQLOGO-A PNG.png" alt=""> -->
+
           </div>
 
           <!-- navBar list of links -->
@@ -167,77 +152,29 @@
             </svg>
           </button>
         </nav>
+        <section class="event-section">
+      <div class="container">
 
-        <!-- legal reminant of the hero section -->
-        <section class="remNav">
-          <!-- <figure class="remNavWrap"> -->
-          <figure class="remNavFigure">
-            <div id="remNavFigureUp">introducing</div>
-            <div id="remNavFigureMiddle">
-              <span class="spanLeft"> SoarHQ Digital Library </span>
+               <div class="section-header">
+          <div class="header-content">
 
-              <span class="spanRight" style="display: none">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="80"
-                  height="80"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="none"
-                    stroke="#cfcfcf"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 12l-6-6m6 6l-6 6m6-6H5"
-                  />
-                </svg>
-              </span>
-            </div>
-            <div id="remNavFigureDown">
-              Soar HQ is a global nation of nation nurturers, dedicated to
-              driving social impact for women through innovation, empowerment,
-              and meaningful change.
-            </div>
-          </figure>
-          <!-- </figure> -->
-        </section>
-      </section>
+  <h2 class="section-title">All Events</h2>
+            <p class="section-description">
+              Join us at our upcoming events and connect with the community.
+            </p>
+          </div>
+          <button class="btn btn-back">View upcoming Events</button>
+               </div>
 
-      <!-- remaining blog posts continue here -->
-      <section id="mainElibrarySection">
-        <!-- the header for the books -->
-        <div id="mainElibrarySectionHeader">other soar posts</div>
 
-        <!-- the body for the books -->
-        <div id="mainElibrarySectionBody">
-          <!-- where the book wraps itself are -->
-
-          <div
-            class="ElibraryBlockOfBlocksColumn"
-            id="ElibraryBlockOfBlocksColumnId"
-          >
-            <figure class="ElibraryPostFigure" id="postFigure1" data-file="">
-              <div class="imagePart">
-                <img src="" />
-              </div>
-
-              <div class="textPart">
-                <h3></h3>
-                <h4></h4>
-
-                <div class="textPartLast">
-                  <img src="images/nancysoar.webp" alt="authorsImage" />
-                  <h5></h5>
-                  <h5 id="hideH5"></h5>
-                </div>
-              </div>
-            </figure>
+        <div class="event-grid" id="event-grid">
+          <!-- all event cards will be added here -->
           </div>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <!-- footer section -->
+          <!-- footer section -->
       <footer class="footer">
         <!-- main foot wrap -->
         <div class="footerWrap">
@@ -286,13 +223,8 @@
           </div>
         </div>
       </footer>
-    </div>
 
-    <!-- scripts for populating blogs -->
-    <script src="js/populateElibrary.js"></script>
-    <!-- scripts for toggling sidepanel -->
-    <script src="js/toggleSideNav.js"></script>
-    <!-- scripts for navigating buttons -->
-    <script src="js/elibraryButtons.js"></script>
+      <script src="js/toggleSideNav.js"></script>
+      <script src="js/allEventsFiller.js"></script>
   </body>
 </html>

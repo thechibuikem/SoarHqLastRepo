@@ -19,7 +19,7 @@ const meetCardsArray = [
     id: 2,
     image: "images/meetOurTeam/chisomSoar.webp",
     Name: "Excellent Ugochi Oguikpe",
-    role: "Steward, Soar HQ",
+    role: "Executive Assistant <br> Administrative Manager",
   },
   // object3
   {
@@ -33,7 +33,7 @@ const meetCardsArray = [
     id: 4,
     image: "images/meetOurTeam/chinazaSoar.webp",
     Name: "Excellent Chinaza Okoye",
-    role: "media and communication managerPublic Relations Manager",
+    role: "media and communication manager",
   },
   // object5
   {

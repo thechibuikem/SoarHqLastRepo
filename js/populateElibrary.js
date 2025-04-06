@@ -13,7 +13,7 @@ const booksFillerArray = [
     bookTitle: "Sexual Purity",
     bookDescription: "",
     authorsName: "Nancy Chukwuemeka",
-    authorsImageSrc: "/images/nancysoar.webp",
+    authorsImageSrc: "/images/meetOurTeam/nancysoar.webp",
     datePublished: "",
     folderName: "sexualPurityDynamic",
   },
@@ -23,7 +23,7 @@ const booksFillerArray = [
     bookTitle: "The Call",
     bookDescription: "",
     authorsName: "Nancy Chukwuemeka",
-    authorsImageSrc: "/images/nancysoar.webp",
+    authorsImageSrc: "/images/meetOurTeam/nancysoar.webp",
     datePublished: "",
     folderName: "theCallDynamic",
   },
@@ -33,7 +33,7 @@ const booksFillerArray = [
     bookTitle: "Jireh",
     bookDescription: "",
     authorsName: "Nancy Chukwuemeka",
-    authorsImageSrc: "/images/nancysoar.webp",
+    authorsImageSrc: "/images/meetOurTeam/nancysoar.webp",
     datePublished: "",
     folderName: "jirehDynamic",
   },
@@ -75,7 +75,7 @@ booksArray.forEach((element, index) => {
 booksArray.forEach((element) => {
   // the event llistener
   element.addEventListener("click", () => {
-    window.location.href = `https://soarhqvercel.vercel.app/real3dflipbookplugin/examples/${element.dataset.file}.html`;
+    window.location.href = `../real3dflipbookplugin/examples/${element.dataset.file}.html`;
   });
 });
 
