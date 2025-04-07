@@ -553,8 +553,8 @@ body {
     height: 8vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    /* gap: 13rem; */
+    justify-content: center;
+    gap: 9rem;
     padding: 0 1rem;
     align-items: center;
     margin-top: 1rem;
