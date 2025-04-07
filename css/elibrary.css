@@ -18,10 +18,10 @@
     opacity: 0.9;
   }
 }
-.footer{
-  background-color: #fcfbfa!important;
+.footer {
+  background-color: #fcfbfa !important;
 }
-  /* developments  general container */
+/* developments  general container */
 .container {
   display: flex;
   flex-direction: column;
@@ -427,6 +427,38 @@
 
 /* responsiveness */
 
+@media (min-width: 1101px) {
+  .footerWrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .midFoot {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+/* Better layout for tablets (768px - 1100px) */
+@media (max-width: 1100px) and (min-width: 800px) {
+  .remNav {
+    height: 60vh;
+  }
+
+  .footerWrap {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .midFoot {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1100px) {
   .footerWrap {
     flex-direction: column-reverse;
@@ -444,14 +476,14 @@
 }
 
 @media (max-width: 1024px) {
-  #nav-bar .grp2{
+  #nav-bar .grp2 {
     display: none;
-  }  
-  
+  }
+
   #inviNav {
     display: block;
   }
-  
+
   .ElibraryBlockOfBlocksColumn {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -473,7 +505,7 @@
   }
 
   .remNav {
-    height: 30vh;
+    height: 50vh;
   }
 
   .ElibraryBlockOfBlocksColumn {
@@ -632,6 +664,7 @@
   /* footer responsive */
   .footer {
     display: flex;
+    width: 80%;
   }
 
   .footerWrap {
@@ -661,7 +694,6 @@
     font-size: 1.7rem;
   }
 
-
   #eLibraryBtnSection {
     margin-bottom: 4rem;
     margin-top: -2rem;
@@ -669,37 +701,5 @@
 
   #eLibraryBtnSection button {
     font-size: 1rem;
-  }
-}
-
-@media (min-width: 1101px) {
-  .footerWrap {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .midFoot {
-    flex-direction: row;
-    gap: 2rem;
-  }
-}
-
-/* Better layout for tablets (768px - 1100px) */
-@media (max-width: 1100px) and (min-width: 800px) {
-  .remNav {
-    height: 60vh;
-  }
-
-  .footerWrap {
-    flex-direction: column-reverse;
-    gap: 2rem;
-    align-items: center;
-  }
-
-  .midFoot {
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
   }
 }
