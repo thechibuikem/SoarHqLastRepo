@@ -20,6 +20,21 @@
   }
 }
 
+/*  animation for meet our team scroll bar*/
+@keyframes scroll {
+  to {
+    transform: translateX(-325%);/* add 50% for each new card that is added */
+  }
+}
+
+/* animation for grow */
+@keyframes grow{
+  0%{scale: 0.9;}
+  50%{scale: 1;}
+  100%{scale: 0.9;}
+}
+
+
 html {
   width: 100vw;
   overflow-x: hidden;
@@ -387,6 +402,17 @@ body::-webkit-scrollbar {
   visibility: hidden;
 }
 
+  .testButton path {
+    fill: #d4af3738;
+    transition: .5s ease;
+  }
+
+  
+  .testButton:hover path {
+    fill: #d4af37;
+  }
+
+
 #testimonialSection img {
   width: 8rem;
   border: 1px solid #d4af37c5;
@@ -539,13 +565,6 @@ body::-webkit-scrollbar {
 .meetOurTeamWrap::-webkit-scrollbar {
   display: none;
 }
-
-@keyframes scroll {
-  to {
-    transform: translateX(-325%);/* add 50% for each new card that is added */
-  }
-}
-
 .meetOurTeamLayer {
   height: 70vh;
   width: 100vw;
@@ -699,6 +718,7 @@ body::-webkit-scrollbar {
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
   box-shadow: 2px 2px 0.25rem #30010163;
+  animation: grow 2s ease-in-out infinite;
 }
 
 /* headers in the footer */
@@ -1228,16 +1248,6 @@ width: 80%;
   width: 2%;
 }
 
-  .testButton path {
-    fill: #e0c97e65;
-    transition: .5s ease;
-  }
-
-  
-  .testButton:hover path {
-    fill: #e0c97e;
-  }
-
   /* right button in the testimonial */
   #right {
     right: 0
@@ -1308,6 +1318,7 @@ width: 80%;
   .missionBody {
     color: #f2f3f7;
     text-shadow: 1px 1px 0.25rem #000000e8;
+  text-align: center;
   }
 
   /* footer responsive */
