@@ -549,6 +549,7 @@ body {
 }
 
 @media (max-width: 450px) {
+
   #nav-bar {
     height: 8vh;
     width: 100%;
