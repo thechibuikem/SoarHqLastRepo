@@ -1114,26 +1114,31 @@ body::-webkit-scrollbar {
 
   .remHero {
     height: 88vh;
+    min-height: fit-content;
     background-size: cover;
     background-position: center;
+    /* text-align: center; */
   }
 
   #remHeroText {
     width: 60%;
-    max-width: 80%;
+    min-width: 80%;
+
     padding-top: 10rem;
-    font-size: 3.8rem;
+    margin-inline: auto;
+    /* font-size: 5rem; */
+    font-weight: 800;
     letter-spacing: 2px;
     line-height: 1.6;
   }
 
   .remHeroText1 {
-    line-height: 1.4;
+    line-height: 1.6;
     letter-spacing: 1.4px;
   }
 
   .remHeroText2 {
-    letter-spacing: 1px;
+    letter-spacing: 1.4px;
     line-height: 1.4;
   }
 
@@ -1148,7 +1153,7 @@ body::-webkit-scrollbar {
   }
 
   #discoverXlearnmore {
-    padding-top: 6rem;
+    padding-top: 4rem;
   }
 
   #moreAboutSection {
@@ -1174,26 +1179,43 @@ body::-webkit-scrollbar {
   #testimonialSection {
     height: fit-content;
   }
+  
+  #testimonialSection .missionHeader h3{
+  margin-bottom: 2rem;
+}
 
-  #testimonialBlock {
+#testimonialBlock {
     flex-direction: column;
     align-items: center;
     padding-bottom: 0;
-    gap: 0.4rem;
+    width: 75%;
+    border: 1px solid #d4af37f8;
+ 
   }
-
+  
+  #testimonialSection img{
+    width: 5rem;
+    margin: 1.5rem auto;
+  }
+  
   #tBlockGrp2 {
     margin-top: 0;
     width: 100%;
     padding-left: 0.5rem;
+    gap: 0;
+    padding: 0;
   }
 
   #tBlockGrp2 h3 {
     text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+width: 80%;
   }
 
   #tBlockGrp2 h4 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 3rem;
@@ -1202,18 +1224,28 @@ body::-webkit-scrollbar {
   }
 
   /*more generically targetting the buttons  */
+.testButton{
+  width: 2%;
+}
+
   .testButton path {
+    fill: #e0c97e65;
+    transition: .5s ease;
+  }
+
+  
+  .testButton:hover path {
     fill: #e0c97e;
   }
 
   /* right button in the testimonial */
   #right {
-    right: -1rem;
+    right: 0
   }
 
   /* left button in the testimonial */
   #left {
-    left: -1rem;
+    left: 0
   }
 
   .figureWrap {
@@ -1322,7 +1354,7 @@ body::-webkit-scrollbar {
 
 @media (max-width: 415px) {
   #remHeroText {
-    font-size: 2.7rem;
+    font-size: 3.5rem;
   }
 }
 
