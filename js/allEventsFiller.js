@@ -3,43 +3,43 @@ let cardsWrapper = body.querySelector("#event-grid");
 let eventCardsArray = [
   {
     // card 1,
-    image: "../images/eventImages/InternationalWomensDay.webp",
-    title: "When women Pray",
+    image: "../images/eventImages/soarHqDiscipleshipProgram.webp",
+    title: "Soar HQ Discipleship Program 1.0",
     description:
-      "Join us for a day of inspiring talks, workshops, and networking opportunities",
-    date: "April 20, 2025",
+      "Soar HQ is a 24-week journey equipping women through faith, identity, encounters, and purpose for impactful, spirit-led transformation",
+    date: "October - April 2025",
     time: "10:00 AM - 5:00 PM",
-    location: "New York City, NY",
+    location: "Virtual",
   },
   {
     // card 2
-    image: "../images/eventImages/TechSummit2025.webp",
-    title: "Tech Summit 2025",
+    image: "../images/eventImages/healingToTheNations.webp",
+    title: "Annual Visionary Vigil",
     description:
-      "Explore the latest trends in technology with industry leaders and innovators.",
-    date: "May 15, 2025",
-    time: "9:00 AM - 6:00 PM",
-    location: "San Francisco, CA",
+      "Annual Visionary Vigil is a mountain of divine encounters, healing, vision, and Kingdom-aligned blueprints..",
+    date: "29th December 2024",
+    time: "11:30 PM",
+    location: "Virtual",
   },
   {
     // card 3
-    image: "../images/eventImages/HealthWellnessExpo.webp",
-    title: "Health & Wellness Expo",
+    image: "../images/eventImages/whenWomenPray.webp",
+    title: "When Women Pray",
     description:
-      "Discover ways to improve your health and well-being with expert advice and activities.",
-    date: "June 10, 2025",
-    time: "11:00 AM - 4:00 PM",
-    location: "Austin, TX",
+      "When women pray is a  quarterly spiritual boot camp for nation-nurturing women.",
+    date: "29th December 2024",
+    time: " 11:30 PM",
+    location: "Virtual",
   },
   {
     // card 4
-    image: "../images/eventImages/ArtFestival.webp",
-    title: "Art Festival 2025",
+    image: "../images/eventImages/socialImpactEffectiveness.webp",
+    title: "Social Impact Effectiveness",
     description:
-      "Celebrate creativity with art exhibitions, live performances, and workshops.",
-    date: "July 25, 2025",
-    time: "12:00 PM - 8:00 PM",
-    location: "Chicago, IL",
+      "Social Impact Effectiveness is an activation—an awakening to the leadership competencies essential for driving impact across every field",
+    date: "22nd February 2025",
+    time: "7:00 PM",
+    location: "Virtual",
   },
 ];
 

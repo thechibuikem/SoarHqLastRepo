@@ -718,7 +718,7 @@ body::-webkit-scrollbar {
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
   box-shadow: 2px 2px 0.25rem #30010163;
-  animation: grow 2s ease-in-out infinite;
+  /* animation: grow 2s ease-in-out infinite; */
 }
 
 /* headers in the footer */
